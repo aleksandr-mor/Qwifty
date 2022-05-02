@@ -21,61 +21,78 @@ class QuizViewController: UIViewController {
     @IBOutlet weak var submitButton: UIButton!
     
     var questionList = [Question]()
-    let score = Score()
-    
+    var currentQuestion: Question? = nil
     var previouslyUsedNumbers: [Int] = []
     let numberOfQuestionPerRound = 5
-    var currentQuestion: Question? = nil
-    
+    let score = Score()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         fillData()
         displayQuestion()
     }
     
     @IBAction func submitButtonPressed(_ sender: Any) {
-        
+        if (isGameOver()) {
+            displayScore()
+        } else {
+            displayQuestion()
+        }
     }
     
     @IBAction func checkAnswer(_ sender: UIButton) {
+        if let question = currentQuestion, let answer = sender.titleLabel?.text {
+            if(question.validateAnswer(to: answer)) {
+                score.incrementCorrectAnswers()
+                correctIncorrectLabel.textColor = UIColor(red: 0.15, green: 0.61, blue: 0.61, alpha: 1.0)
+                correctIncorrectLabel.text = "Correct"
+            } else {
+                score.incrementIncorrectAnswers()
+                correctIncorrectLabel.textColor = UIColor(red: 0.82, green: 0.40, blue: 0.26, alpha: 1.0)
+                correctIncorrectLabel.text = "Incorrect"
+            }
+            firstChoiceButton.isEnabled = false
+            secondChoiceButton.isEnabled = false
+            thirdChoiceButton.isEnabled = false
+            fourthChoiceButton.isEnabled = false
+            correctIncorrectLabel.isHidden = false
+            submitButton.isEnabled = true
+        }
+    }
+    
+    func isGameOver() -> Bool {
+        return score.numberOfQuestionsAsked() >= numberOfQuestionPerRound
     }
     
     func fillData() {
-        
         questionList.append(Question(questionTitle: "Who is Peter Parker?", answers: ["Batman", "Spider-Man", "Iron-Man", "Superman"], correctAnswerIndex: 1))
         questionList.append(Question(questionTitle: "Who is Mr. Wayne?", answers: ["Batman", "Spider-Man", "Iron-Man", "Superman"], correctAnswerIndex: 0))
         questionList.append(Question(questionTitle: "Who is Mr. Stark?", answers: ["Batman", "Spider-Man", "Iron-Man", "Superman"], correctAnswerIndex: 2))
         questionList.append(Question(questionTitle: "Who is Clark Kent?", answers: ["Batman", "Spider-Man", "Iron-Man", "Superman"], correctAnswerIndex: 3))
+        questionList.append(Question(questionTitle: "Who is your daddy?", answers: ["Batman", "Spider-Man", "Iron-Man", "You are!"], correctAnswerIndex: 3))
     }
     
     func getRandomQuestion() -> Question {
-        
         if (previouslyUsedNumbers.count == questionList.count) {
             previouslyUsedNumbers = []
         }
         var randomNumber = GKRandomSource.sharedRandom().nextInt(upperBound: questionList.count)
         while (previouslyUsedNumbers.contains(randomNumber)) {
-            var randomNumber = GKRandomSource.sharedRandom().nextInt(upperBound: questionList.count)
+            randomNumber = GKRandomSource.sharedRandom().nextInt(upperBound: questionList.count)
         }
         previouslyUsedNumbers.append(randomNumber)
         return questionList[randomNumber]
     }
     
     func displayQuestion() {
-        
         currentQuestion = getRandomQuestion()
-        
         if let question = currentQuestion {
             let choices = question.getChoices()
-            
             questionTextLabel.text = question.getQuestionTitle()
-            
             firstChoiceButton.setTitle(choices[0], for: .normal)
             secondChoiceButton.setTitle(choices[1], for: .normal)
             thirdChoiceButton.setTitle(choices[2], for: .normal)
             fourthChoiceButton.setTitle(choices[3], for: .normal)
-            
             if (score.numberOfQuestionsAsked() == numberOfQuestionPerRound - 1) {
                 submitButton.setTitle("End Quiz", for: .normal)
             } else {
@@ -86,15 +103,23 @@ class QuizViewController: UIViewController {
         secondChoiceButton.isEnabled = true
         thirdChoiceButton.isEnabled = true
         fourthChoiceButton.isEnabled = true
-        
         firstChoiceButton.isHidden = false
         secondChoiceButton.isHidden = false
         thirdChoiceButton.isHidden = false
         fourthChoiceButton.isHidden = false
-        
         correctIncorrectLabel.isHidden = true
-        
         submitButton.isEnabled = false
+    }
+    //TODO: - Last screen to show the score
+    func displayScore() {
+        questionTextLabel.text = score.getScore()
+        score.reset()
+        submitButton.setTitle("Start Again", for: .normal)
+        correctIncorrectLabel.isHidden = true
+        firstChoiceButton.isHidden = true
+        secondChoiceButton.isHidden = true
+        thirdChoiceButton.isHidden = true
+        fourthChoiceButton.isHidden = true
     }
 }
 

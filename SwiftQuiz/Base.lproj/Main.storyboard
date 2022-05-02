@@ -57,6 +57,9 @@
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="push" id="Ww5-UC-Ylz"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YFA-P8-l0K"/>
@@ -92,7 +95,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p6R-eF-e1Y">
-                                <rect key="frame" x="30" y="117" width="368" height="66.666666666666686"/>
+                                <rect key="frame" x="30" y="161" width="368" height="66.666666666666686"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -175,7 +178,7 @@
                                 </subviews>
                             </stackView>
                             <progressView opaque="NO" tag="-1" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="jW7-rN-FxN">
-                                <rect key="frame" x="30" y="64" width="368" height="10"/>
+                                <rect key="frame" x="30" y="108" width="368" height="10"/>
                                 <color key="tintColor" red="0.90196073060000004" green="0.55686277149999996" blue="0.25490197539999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="10" id="rOt-6T-1r8"/>
@@ -207,13 +210,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 / 20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NQq-tb-V8D">
-                                <rect key="frame" x="194.66666666666666" y="79" width="38.666666666666657" height="18"/>
+                                <rect key="frame" x="194.66666666666666" y="123" width="38.666666666666657" height="18"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
                                 <color key="textColor" red="0.74838696809293248" green="0.75101750625757824" blue="0.75890912075151518" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correct / Incorrect" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ni4-Su-jiU">
-                                <rect key="frame" x="144.33333333333337" y="233.66666666666666" width="139.66666666666663" height="20.333333333333343"/>
+                                <rect key="frame" x="144.33333333333337" y="277.66666666666669" width="139.66666666666663" height="20.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" systemColor="systemPinkColor"/>
                                 <nil key="highlightedColor"/>
@@ -374,6 +377,7 @@
         <!--Navigation Controller-->
         <scene sceneID="1kX-PG-zbe">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hNN-Yf-3Nv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zhp-B5-kdE" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="TsT-Vu-kQH">
@@ -385,7 +389,6 @@
                         <segue destination="b2J-nc-lNQ" kind="relationship" relationship="rootViewController" id="CTw-0m-vCE"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hNN-Yf-3Nv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-691.12149532710271" y="69.330453563714912"/>
         </scene>
