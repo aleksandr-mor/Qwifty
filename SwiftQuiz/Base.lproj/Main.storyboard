@@ -54,11 +54,11 @@
                                     <backgroundConfiguration key="background">
                                         <color key="backgroundColor" red="0.90196073060000004" green="0.55686277149999996" blue="0.25490197539999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </backgroundConfiguration>
-                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="playButttonAction:" destination="b2J-nc-lNQ" eventType="touchUpInside" id="xVJ-ds-zWM"/>
+                                    <action selector="playButtonAction:" destination="b2J-nc-lNQ" eventType="touchUpInside" id="X8d-tR-DqW"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -117,7 +117,7 @@
                                             <backgroundConfiguration key="background">
                                                 <color key="backgroundColor" red="0.90192127352929297" green="0.55993551273484821" blue="0.26110900527956071" alpha="0.40464610927152317" colorSpace="custom" customColorSpace="displayP3"/>
                                             </backgroundConfiguration>
-                                            <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                            <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                             <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
                                             <color key="baseForegroundColor" red="0.90196073060000004" green="0.55686277149999996" blue="0.25490197539999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </buttonConfiguration>
@@ -136,7 +136,7 @@
                                             <backgroundConfiguration key="background">
                                                 <color key="backgroundColor" red="0.90196073060000004" green="0.55686277149999996" blue="0.25490197539999998" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="displayP3"/>
                                             </backgroundConfiguration>
-                                            <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                            <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                             <color key="baseForegroundColor" red="0.90196073060000004" green="0.55686277149999996" blue="0.25490197539999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </buttonConfiguration>
                                         <connections>
@@ -154,7 +154,7 @@
                                             <backgroundConfiguration key="background">
                                                 <color key="backgroundColor" red="0.90196073060000004" green="0.55686277149999996" blue="0.25490197539999998" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="displayP3"/>
                                             </backgroundConfiguration>
-                                            <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                            <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                             <color key="baseForegroundColor" red="0.90196073060000004" green="0.55686277149999996" blue="0.25490197539999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </buttonConfiguration>
                                         <connections>
@@ -172,7 +172,7 @@
                                             <backgroundConfiguration key="background">
                                                 <color key="backgroundColor" red="0.90196073060000004" green="0.55686277149999996" blue="0.25490197539999998" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="displayP3"/>
                                             </backgroundConfiguration>
-                                            <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                            <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                             <color key="baseForegroundColor" red="0.90196073060000004" green="0.55686277149999996" blue="0.25490197539999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </buttonConfiguration>
                                         <connections>
@@ -195,17 +195,11 @@
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" cornerStyle="capsule">
+                                <buttonConfiguration key="configuration" style="plain" title="SUBMIT" cornerStyle="capsule">
                                     <backgroundConfiguration key="background">
                                         <color key="backgroundColor" red="0.90196073060000004" green="0.55686277149999996" blue="0.25490197539999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </backgroundConfiguration>
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="SUBMIT">
-                                            <attributes>
-                                                <font key="NSFont" size="15" name="HelveticaNeue-Bold"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -360,7 +354,7 @@
                                     <backgroundConfiguration key="background">
                                         <color key="backgroundColor" red="0.90196073060000004" green="0.55686277149999996" blue="0.25490197539999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </backgroundConfiguration>
-                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
