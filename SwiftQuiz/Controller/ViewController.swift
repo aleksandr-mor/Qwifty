@@ -12,6 +12,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+    }
+    @IBAction func playButtonAction(_ sender: UIButton) {
+        
+        guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "QuizViewController") else {return}
+        
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }

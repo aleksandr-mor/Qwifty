@@ -25,7 +25,7 @@ class QuizViewController: UIViewController {
     var previouslyUsedNumbers: [Int] = []
     let numberOfQuestionPerRound = 5
     let score = Score()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         fillData()
@@ -97,6 +97,7 @@ class QuizViewController: UIViewController {
                 submitButton.setTitle("End Quiz", for: .normal)
             } else {
                 submitButton.setTitle("SUBMIT", for: .normal)
+                submitButton.titleLabel?.font = UIFont(name: "HelveticaNeue-Bold", size: 15)
             }
         }
         firstChoiceButton.isEnabled = true
@@ -109,17 +110,13 @@ class QuizViewController: UIViewController {
         fourthChoiceButton.isHidden = false
         correctIncorrectLabel.isHidden = true
         submitButton.isEnabled = false
+        submitButton.titleLabel?.font = UIFont(name:"Helvetica Neue", size: 20.0)
     }
-    //TODO: - Score Screen
+    
     func displayScore() {
-        questionTextLabel.text = score.getScore()
-        score.reset()
-        submitButton.setTitle("Start Again", for: .normal)
-        correctIncorrectLabel.isHidden = true
-        firstChoiceButton.isHidden = true
-        secondChoiceButton.isHidden = true
-        thirdChoiceButton.isHidden = true
-        fourthChoiceButton.isHidden = true
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "ScoreViewController") as! ScoreViewController
+        vc.result = score.correctAnswers
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 

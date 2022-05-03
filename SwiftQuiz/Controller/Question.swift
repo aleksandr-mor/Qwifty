@@ -62,12 +62,4 @@ class Score {
     func numberOfQuestionsAsked() -> Int {
         correctAnswers + incorrectAnswers
     }
-    
-    func getScore() -> String {
-        if (correctAnswers == 5) {
-            return "You are a genius!\n\n Your score \(correctAnswers) out of \(questionPerRound)!"
-        } else {
-            return "Try again!"
-        }
-    }
 }
