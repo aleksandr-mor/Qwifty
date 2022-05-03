@@ -110,7 +110,7 @@ class QuizViewController: UIViewController {
         correctIncorrectLabel.isHidden = true
         submitButton.isEnabled = false
     }
-    //TODO: - Last screen to show the score
+    //TODO: - Score Screen
     func displayScore() {
         questionTextLabel.text = score.getScore()
         score.reset()
