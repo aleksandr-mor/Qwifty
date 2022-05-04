@@ -121,7 +121,7 @@ class QuizViewController: UIViewController {
             thirdChoiceButton.setTitle(choices[2], for: .normal)
             fourthChoiceButton.setTitle(choices[3], for: .normal)
             if (score.numberOfQuestionsAsked() == numberOfQuestionPerRound - 1) {
-                submitButton.setTitle("End Quiz", for: .normal)
+                submitButton.setTitle("END QUIZ", for: .normal)
             } else {
                 submitButton.setTitle("SUBMIT", for: .normal)
             }
