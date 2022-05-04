@@ -23,21 +23,33 @@ class QuizViewController: UIViewController {
     var questionList = [Question]()
     var currentQuestion: Question? = nil
     var previouslyUsedNumbers: [Int] = []
-    let numberOfQuestionPerRound = 5
+    let numberOfQuestionPerRound = 20
     let score = Score()
+    var progress: Float = 0.05
+    var progressNumber = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()
         fillData()
         displayQuestion()
+        progressLabel.text = "\(progressNumber) / 20"
+        progressBar.progress = progress
+        
     }
     
     @IBAction func submitButtonPressed(_ sender: Any) {
         if (isGameOver()) {
             displayScore()
+            progressNumber = 1
         } else {
             displayQuestion()
         }
+        progress += 0.05
+        progressNumber += 1
+        progressBar.progress = progress
+        progressLabel.text = "\(progressNumber) / 20"
+        
+        
     }
     
     @IBAction func checkAnswer(_ sender: UIButton) {
@@ -70,6 +82,21 @@ class QuizViewController: UIViewController {
         questionList.append(Question(questionTitle: "Who is Mr. Stark?", answers: ["Batman", "Spider-Man", "Iron-Man", "Superman"], correctAnswerIndex: 2))
         questionList.append(Question(questionTitle: "Who is Clark Kent?", answers: ["Batman", "Spider-Man", "Iron-Man", "Superman"], correctAnswerIndex: 3))
         questionList.append(Question(questionTitle: "Who is your daddy?", answers: ["Batman", "Spider-Man", "Iron-Man", "You are!"], correctAnswerIndex: 3))
+        questionList.append(Question(questionTitle: "Who is Peter Parker?", answers: ["Batman", "Spider-Man", "Iron-Man", "Superman"], correctAnswerIndex: 1))
+        questionList.append(Question(questionTitle: "Who is Mr. Wayne?", answers: ["Batman", "Spider-Man", "Iron-Man", "Superman"], correctAnswerIndex: 0))
+        questionList.append(Question(questionTitle: "Who is Mr. Stark?", answers: ["Batman", "Spider-Man", "Iron-Man", "Superman"], correctAnswerIndex: 2))
+        questionList.append(Question(questionTitle: "Who is Clark Kent?", answers: ["Batman", "Spider-Man", "Iron-Man", "Superman"], correctAnswerIndex: 3))
+        questionList.append(Question(questionTitle: "Who is your daddy?", answers: ["Batman", "Spider-Man", "Iron-Man", "You are!"], correctAnswerIndex: 3))
+        questionList.append(Question(questionTitle: "Who is Peter Parker?", answers: ["Batman", "Spider-Man", "Iron-Man", "Superman"], correctAnswerIndex: 1))
+        questionList.append(Question(questionTitle: "Who is Mr. Wayne?", answers: ["Batman", "Spider-Man", "Iron-Man", "Superman"], correctAnswerIndex: 0))
+        questionList.append(Question(questionTitle: "Who is Mr. Stark?", answers: ["Batman", "Spider-Man", "Iron-Man", "Superman"], correctAnswerIndex: 2))
+        questionList.append(Question(questionTitle: "Who is Clark Kent?", answers: ["Batman", "Spider-Man", "Iron-Man", "Superman"], correctAnswerIndex: 3))
+        questionList.append(Question(questionTitle: "Who is your daddy?", answers: ["Batman", "Spider-Man", "Iron-Man", "You are!"], correctAnswerIndex: 3))
+        questionList.append(Question(questionTitle: "Who is Peter Parker?", answers: ["Batman", "Spider-Man", "Iron-Man", "Superman"], correctAnswerIndex: 1))
+        questionList.append(Question(questionTitle: "Who is Mr. Wayne?", answers: ["Batman", "Spider-Man", "Iron-Man", "Superman"], correctAnswerIndex: 0))
+        questionList.append(Question(questionTitle: "Who is Mr. Stark?", answers: ["Batman", "Spider-Man", "Iron-Man", "Superman"], correctAnswerIndex: 2))
+        questionList.append(Question(questionTitle: "Who is Clark Kent?", answers: ["Batman", "Spider-Man", "Iron-Man", "Superman"], correctAnswerIndex: 3))
+        questionList.append(Question(questionTitle: "Who is your daddy?", answers: ["Batman", "Spider-Man", "Iron-Man", "You are!"], correctAnswerIndex: 3))
     }
     
     func getRandomQuestion() -> Question {
@@ -97,7 +124,6 @@ class QuizViewController: UIViewController {
                 submitButton.setTitle("End Quiz", for: .normal)
             } else {
                 submitButton.setTitle("SUBMIT", for: .normal)
-                submitButton.titleLabel?.font = UIFont(name: "HelveticaNeue-Bold", size: 15)
             }
         }
         firstChoiceButton.isEnabled = true
@@ -110,7 +136,6 @@ class QuizViewController: UIViewController {
         fourthChoiceButton.isHidden = false
         correctIncorrectLabel.isHidden = true
         submitButton.isEnabled = false
-        submitButton.titleLabel?.font = UIFont(name:"Helvetica Neue", size: 20.0)
     }
     
     func displayScore() {
