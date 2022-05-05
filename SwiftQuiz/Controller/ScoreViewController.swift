@@ -21,4 +21,5 @@ class ScoreViewController: UIViewController {
     @IBAction func playAgainButtonPressed(_ sender: Any) {
         navigationController?.popToRootViewController(animated: true)
     }
+    
 }

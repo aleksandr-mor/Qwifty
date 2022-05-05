@@ -18,7 +18,7 @@ class QuizViewController: UIViewController {
     @IBOutlet weak var secondChoiceButton: UIButton!
     @IBOutlet weak var thirdChoiceButton: UIButton!
     @IBOutlet weak var fourthChoiceButton: UIButton!
-    @IBOutlet weak var submitButton: UIButton!
+    @IBOutlet weak var nextButton: UIButton!
     
     var questionList = [Question]()
     var currentQuestion: Question? = nil
@@ -35,9 +35,13 @@ class QuizViewController: UIViewController {
         progressLabel.text = "\(progressNumber) / 20"
         progressBar.progress = progress
         
+//        firstChoiceButton.layer.cornerRadius = 25
+//        secondChoiceButton.layer.cornerRadius = 25
+//        thirdChoiceButton.layer.cornerRadius = 25
+//        fourthChoiceButton.layer.cornerRadius = 25
     }
     
-    @IBAction func submitButtonPressed(_ sender: Any) {
+    @IBAction func nextButtonPressed(_ sender: Any) {
         if (isGameOver()) {
             displayScore()
             progressNumber = 1
@@ -49,7 +53,10 @@ class QuizViewController: UIViewController {
         progressBar.progress = progress
         progressLabel.text = "\(progressNumber) / 20"
         
-        
+        firstChoiceButton.setTitleColor(.none, for: .normal)
+        secondChoiceButton.setTitleColor(.none, for: .normal)
+        thirdChoiceButton.setTitleColor(.none, for: .normal)
+        fourthChoiceButton.setTitleColor(.none, for: .normal)
     }
     
     @IBAction func checkAnswer(_ sender: UIButton) {
@@ -58,17 +65,23 @@ class QuizViewController: UIViewController {
                 score.incrementCorrectAnswers()
                 correctIncorrectLabel.textColor = UIColor(red: 0.15, green: 0.61, blue: 0.61, alpha: 1.0)
                 correctIncorrectLabel.text = "Correct"
+//                sender.backgroundColor = UIColor(red: 216, green: 186, blue: 154, alpha: 1.0)
+//                sender.layer.borderWidth = 1.0
+//                sender.layer.borderColor = UIColor.orange.cgColor
+//                sender.setTitleColor(UIColor(displayP3Red: 0.15, green: 0.61, blue: 0.61, alpha: 1.0), for: .normal)
             } else {
                 score.incrementIncorrectAnswers()
                 correctIncorrectLabel.textColor = UIColor(red: 0.82, green: 0.40, blue: 0.26, alpha: 1.0)
                 correctIncorrectLabel.text = "Incorrect"
+//                sender.setTitleColor(UIColor(displayP3Red: 193.0/255.0, green: 40.0/255.0, blue: 27.0/255.0, alpha: 1.0), for: .normal)
             }
             firstChoiceButton.isEnabled = false
             secondChoiceButton.isEnabled = false
             thirdChoiceButton.isEnabled = false
             fourthChoiceButton.isEnabled = false
             correctIncorrectLabel.isHidden = false
-            submitButton.isEnabled = true
+            sender.isEnabled = true
+            nextButton.isEnabled = true
         }
     }
     
@@ -121,9 +134,10 @@ class QuizViewController: UIViewController {
             thirdChoiceButton.setTitle(choices[2], for: .normal)
             fourthChoiceButton.setTitle(choices[3], for: .normal)
             if (score.numberOfQuestionsAsked() == numberOfQuestionPerRound - 1) {
-                submitButton.setTitle("END QUIZ", for: .normal)
+                nextButton.setTitle("END QUIZ", for: .normal)
             } else {
-                submitButton.setTitle("SUBMIT", for: .normal)
+                nextButton.setTitle("NEXT", for: .normal)
+                nextButton.layer.cornerRadius = 25
             }
         }
         firstChoiceButton.isEnabled = true
@@ -135,7 +149,7 @@ class QuizViewController: UIViewController {
         thirdChoiceButton.isHidden = false
         fourthChoiceButton.isHidden = false
         correctIncorrectLabel.isHidden = true
-        submitButton.isEnabled = false
+        nextButton.isEnabled = false
     }
     
     func displayScore() {
