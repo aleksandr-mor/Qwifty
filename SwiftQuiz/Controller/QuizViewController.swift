@@ -32,13 +32,20 @@ class QuizViewController: UIViewController {
         super.viewDidLoad()
         fillData()
         displayQuestion()
+        
         progressLabel.text = "\(progressNumber) / 20"
         progressBar.progress = progress
         
-//        firstChoiceButton.layer.cornerRadius = 25
-//        secondChoiceButton.layer.cornerRadius = 25
-//        thirdChoiceButton.layer.cornerRadius = 25
-//        fourthChoiceButton.layer.cornerRadius = 25
+        nextButton.layer.cornerRadius = 25
+        firstChoiceButton.layer.cornerRadius = 25
+        secondChoiceButton.layer.cornerRadius = 25
+        thirdChoiceButton.layer.cornerRadius = 25
+        fourthChoiceButton.layer.cornerRadius = 25
+        
+        firstChoiceButton.backgroundColor = UIColor.peachColor
+        secondChoiceButton.backgroundColor = UIColor.peachColor
+        thirdChoiceButton.backgroundColor = UIColor.peachColor
+        fourthChoiceButton.backgroundColor = UIColor.peachColor
     }
     
     @IBAction func nextButtonPressed(_ sender: Any) {
@@ -53,27 +60,27 @@ class QuizViewController: UIViewController {
         progressBar.progress = progress
         progressLabel.text = "\(progressNumber) / 20"
         
-        firstChoiceButton.setTitleColor(.none, for: .normal)
-        secondChoiceButton.setTitleColor(.none, for: .normal)
-        thirdChoiceButton.setTitleColor(.none, for: .normal)
-        fourthChoiceButton.setTitleColor(.none, for: .normal)
+        firstChoiceButton.setTitleColor(UIColor.orangeColor, for: .normal)
+        secondChoiceButton.setTitleColor(UIColor.orangeColor, for: .normal)
+        thirdChoiceButton.setTitleColor(UIColor.orangeColor, for: .normal)
+        fourthChoiceButton.setTitleColor(UIColor.orangeColor, for: .normal)
+    
+        firstChoiceButton.backgroundColor = UIColor.peachColor
+        secondChoiceButton.backgroundColor = UIColor.peachColor
+        thirdChoiceButton.backgroundColor = UIColor.peachColor
+        fourthChoiceButton.backgroundColor = UIColor.peachColor
     }
     
     @IBAction func checkAnswer(_ sender: UIButton) {
         if let question = currentQuestion, let answer = sender.titleLabel?.text {
             if(question.validateAnswer(to: answer)) {
                 score.incrementCorrectAnswers()
-                correctIncorrectLabel.textColor = UIColor(red: 0.15, green: 0.61, blue: 0.61, alpha: 1.0)
+                correctIncorrectLabel.textColor = UIColor.turquoiseColor
                 correctIncorrectLabel.text = "Correct"
-//                sender.backgroundColor = UIColor(red: 216, green: 186, blue: 154, alpha: 1.0)
-//                sender.layer.borderWidth = 1.0
-//                sender.layer.borderColor = UIColor.orange.cgColor
-//                sender.setTitleColor(UIColor(displayP3Red: 0.15, green: 0.61, blue: 0.61, alpha: 1.0), for: .normal)
             } else {
                 score.incrementIncorrectAnswers()
-                correctIncorrectLabel.textColor = UIColor(red: 0.82, green: 0.40, blue: 0.26, alpha: 1.0)
+                correctIncorrectLabel.textColor = UIColor.redColor
                 correctIncorrectLabel.text = "Incorrect"
-//                sender.setTitleColor(UIColor(displayP3Red: 193.0/255.0, green: 40.0/255.0, blue: 27.0/255.0, alpha: 1.0), for: .normal)
             }
             firstChoiceButton.isEnabled = false
             secondChoiceButton.isEnabled = false
@@ -82,7 +89,14 @@ class QuizViewController: UIViewController {
             correctIncorrectLabel.isHidden = false
             sender.isEnabled = true
             nextButton.isEnabled = true
+            
+            sender.setTitleColor(UIColor.white, for: .normal)
+            sender.backgroundColor = UIColor.orangeColor
         }
+        
+        
+        
+//        sender.backgroundColor = UIColor(red: 230, green: 142, blue: 65, alpha: 1.0)
     }
     
     func isGameOver() -> Bool {
@@ -137,7 +151,6 @@ class QuizViewController: UIViewController {
                 nextButton.setTitle("END QUIZ", for: .normal)
             } else {
                 nextButton.setTitle("NEXT", for: .normal)
-                nextButton.layer.cornerRadius = 25
             }
         }
         firstChoiceButton.isEnabled = true
@@ -159,3 +172,9 @@ class QuizViewController: UIViewController {
     }
 }
 
+extension UIColor {
+    static var orangeColor = UIColor.init(red: 244/255, green: 137/255, blue: 40/255, alpha: 1.0)
+    static var peachColor = UIColor.init(red: 250/255, green: 210/255, blue: 174/255, alpha: 1.0)
+    static var turquoiseColor = UIColor.init(red: 77/255, green: 154/255, blue: 155/255, alpha: 1.0)
+    static var redColor = UIColor.init(red: 235/255, green: 69/255, blue: 90/255, alpha: 1.0)
+}
