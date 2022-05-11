@@ -93,10 +93,6 @@ class QuizViewController: UIViewController {
             sender.setTitleColor(UIColor.white, for: .normal)
             sender.backgroundColor = UIColor.orangeColor
         }
-        
-        
-        
-//        sender.backgroundColor = UIColor(red: 230, green: 142, blue: 65, alpha: 1.0)
     }
     
     func isGameOver() -> Bool {
@@ -104,18 +100,19 @@ class QuizViewController: UIViewController {
     }
     
     func fillData() {
-        questionList.append(Question(questionTitle: "Who is Peter Parker?", answers: ["Batman", "Spider-Man", "Iron-Man", "Superman"], correctAnswerIndex: 1))
-        questionList.append(Question(questionTitle: "Who is Mr. Wayne?", answers: ["Batman", "Spider-Man", "Iron-Man", "Superman"], correctAnswerIndex: 0))
-        questionList.append(Question(questionTitle: "Who is Mr. Stark?", answers: ["Batman", "Spider-Man", "Iron-Man", "Superman"], correctAnswerIndex: 2))
-        questionList.append(Question(questionTitle: "Who is Clark Kent?", answers: ["Batman", "Spider-Man", "Iron-Man", "Superman"], correctAnswerIndex: 3))
-        questionList.append(Question(questionTitle: "Who is your daddy?", answers: ["Batman", "Spider-Man", "Iron-Man", "You are!"], correctAnswerIndex: 3))
-        questionList.append(Question(questionTitle: "Who is Peter Parker?", answers: ["Batman", "Spider-Man", "Iron-Man", "Superman"], correctAnswerIndex: 1))
-        questionList.append(Question(questionTitle: "Who is Mr. Wayne?", answers: ["Batman", "Spider-Man", "Iron-Man", "Superman"], correctAnswerIndex: 0))
-        questionList.append(Question(questionTitle: "Who is Mr. Stark?", answers: ["Batman", "Spider-Man", "Iron-Man", "Superman"], correctAnswerIndex: 2))
-        questionList.append(Question(questionTitle: "Who is Clark Kent?", answers: ["Batman", "Spider-Man", "Iron-Man", "Superman"], correctAnswerIndex: 3))
-        questionList.append(Question(questionTitle: "Who is your daddy?", answers: ["Batman", "Spider-Man", "Iron-Man", "You are!"], correctAnswerIndex: 3))
-        questionList.append(Question(questionTitle: "Who is Peter Parker?", answers: ["Batman", "Spider-Man", "Iron-Man", "Superman"], correctAnswerIndex: 1))
-        questionList.append(Question(questionTitle: "Who is Mr. Wayne?", answers: ["Batman", "Spider-Man", "Iron-Man", "Superman"], correctAnswerIndex: 0))
+                
+        questionList.append(Question(questionTitle: "What is the default data type for floating point numbers in Swift?", answers: ["Float", "Double", "Int", "Fract"], correctAnswerIndex: 1))
+        questionList.append(Question(questionTitle: "What keyword is used to declare a constant in Swift?", answers: ["var", "const", "let", "strong"], correctAnswerIndex: 2))
+        questionList.append(Question(questionTitle: "How to write a multiple line comment in Swift?", answers: ["/ … /", "/n … n/", "/* … */", "// … //"], correctAnswerIndex: 2))
+        questionList.append(Question(questionTitle: "How are Structs different from Classes in Swift?", answers: ["Structures are value types", "Structures are reference types", "Structures support inheritance", "Structures don’t receive a default initializer"], correctAnswerIndex: 0))
+        questionList.append(Question(questionTitle: "Name the properties whose initial values are not calculated until the first use", answers: ["Computed Properties", "Delayed Properties", "Stored Properties", "Lazy Stored Properties"], correctAnswerIndex: 3))
+        questionList.append(Question(questionTitle: "What is the significance of “?” in Swift?", answers: ["It is used to force unwrap the variable", "It makes a property optional", "It is used to return first none nil value", "It is used to replace the function parameter’s external label"], correctAnswerIndex: 1))
+        questionList.append(Question(questionTitle: "Choose the correct statement", answers: ["Bounds are in a view’s own coordinate system", "Frame is in the superview’s coordinate system", "Both statements are correct", "Both statements are incorrect"], correctAnswerIndex: 2))
+        questionList.append(Question(questionTitle: "Name a protocol that allows us to convert Swift types to and from JSON", answers: ["Decodable", "Codable", "Encodable", "JSONDecoder"], correctAnswerIndex: 1))
+        questionList.append(Question(questionTitle: "A function inside a function is called…", answers: ["Nested Function", "Super Function", "Base Function", "Encapsulation"], correctAnswerIndex: 0))
+        questionList.append(Question(questionTitle: "Constant and variable names in Swift can't contain…", answers: ["Numbers", "Capital letters", "Spaces", "Emoji"], correctAnswerIndex: 2))
+        questionList.append(Question(questionTitle: "What keyword is used to declare a variable in Swift?", answers: ["No keyword required", "let", "dyn", "var"], correctAnswerIndex: 3))
+        questionList.append(Question(questionTitle: "Swift consists of the following Control transfer statements, except for:", answers: ["Continue", "Fallthrough", "Pass", "Break"], correctAnswerIndex: 2))
         questionList.append(Question(questionTitle: "Who is Mr. Stark?", answers: ["Batman", "Spider-Man", "Iron-Man", "Superman"], correctAnswerIndex: 2))
         questionList.append(Question(questionTitle: "Who is Clark Kent?", answers: ["Batman", "Spider-Man", "Iron-Man", "Superman"], correctAnswerIndex: 3))
         questionList.append(Question(questionTitle: "Who is your daddy?", answers: ["Batman", "Spider-Man", "Iron-Man", "You are!"], correctAnswerIndex: 3))
