@@ -113,14 +113,14 @@ class QuizViewController: UIViewController {
         questionList.append(Question(questionTitle: "Constant and variable names in Swift can't contain…", answers: ["Numbers", "Capital letters", "Spaces", "Emoji"], correctAnswerIndex: 2))
         questionList.append(Question(questionTitle: "What keyword is used to declare a variable in Swift?", answers: ["No keyword required", "let", "dyn", "var"], correctAnswerIndex: 3))
         questionList.append(Question(questionTitle: "Swift consists of the following Control transfer statements, except for:", answers: ["Continue", "Fallthrough", "Pass", "Break"], correctAnswerIndex: 2))
-        questionList.append(Question(questionTitle: "Who is Mr. Stark?", answers: ["Batman", "Spider-Man", "Iron-Man", "Superman"], correctAnswerIndex: 2))
-        questionList.append(Question(questionTitle: "Who is Clark Kent?", answers: ["Batman", "Spider-Man", "Iron-Man", "Superman"], correctAnswerIndex: 3))
-        questionList.append(Question(questionTitle: "Who is your daddy?", answers: ["Batman", "Spider-Man", "Iron-Man", "You are!"], correctAnswerIndex: 3))
-        questionList.append(Question(questionTitle: "Who is Peter Parker?", answers: ["Batman", "Spider-Man", "Iron-Man", "Superman"], correctAnswerIndex: 1))
-        questionList.append(Question(questionTitle: "Who is Mr. Wayne?", answers: ["Batman", "Spider-Man", "Iron-Man", "Superman"], correctAnswerIndex: 0))
-        questionList.append(Question(questionTitle: "Who is Mr. Stark?", answers: ["Batman", "Spider-Man", "Iron-Man", "Superman"], correctAnswerIndex: 2))
-        questionList.append(Question(questionTitle: "Who is Clark Kent?", answers: ["Batman", "Spider-Man", "Iron-Man", "Superman"], correctAnswerIndex: 3))
-        questionList.append(Question(questionTitle: "Who is your daddy?", answers: ["Batman", "Spider-Man", "Iron-Man", "You are!"], correctAnswerIndex: 3))
+        questionList.append(Question(questionTitle: "What is PLIST?", answers: ["Process list", "Programming list", "Property list", "Protocol list"], correctAnswerIndex: 2))
+        questionList.append(Question(questionTitle: "What is “??” in Swift?", answers: ["Optional", "Binary operator", "Logical OR operator", "Nil-coalescing operator"], correctAnswerIndex: 3))
+        questionList.append(Question(questionTitle: "What is the logical 'AND' operator in Swift?", answers: ["||", "&&", "&", "+"], correctAnswerIndex: 1))
+        questionList.append(Question(questionTitle: "What is wrong with this code? \n\nlet num = 1.0 + 1 ", answers: ["There is nothing wrong", "There is no semicolon", "num is constant and can’t be changed", "1.0 and 1 are different types"], correctAnswerIndex: 0))
+        questionList.append(Question(questionTitle: "What can AnyObject represent?", answers: ["An instance of any class", "An instance of function type", "An instance of an optional type", "All answers are correct"], correctAnswerIndex: 3))
+        questionList.append(Question(questionTitle: "What is the type of num? \n\nlet num = 'number1.count' ", answers: ["number.count", "Int", "nil", "String"], correctAnswerIndex: 3))
+        questionList.append(Question(questionTitle: "What is data type of nums? \n\nlet nums = (“num”, 0)", answers: ["Dictionary", "Optional", "Tuple", "All answers are incorrect"], correctAnswerIndex: 2))
+        questionList.append(Question(questionTitle: "How many times will this loop be executed? \n\nfor I in 0…100 { \nprint(i) \n{", answers: ["0", "99", "100", "101"], correctAnswerIndex: 3))
     }
     
     func getRandomQuestion() -> Question {
