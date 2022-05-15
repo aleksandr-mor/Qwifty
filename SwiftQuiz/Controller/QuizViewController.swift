@@ -35,6 +35,7 @@ class QuizViewController: UIViewController {
         
         progressLabel.text = "\(progressNumber) / 20"
         progressBar.progress = progress
+
         
         nextButton.layer.cornerRadius = 25
         firstChoiceButton.layer.cornerRadius = 25
@@ -42,10 +43,20 @@ class QuizViewController: UIViewController {
         thirdChoiceButton.layer.cornerRadius = 25
         fourthChoiceButton.layer.cornerRadius = 25
         
-        firstChoiceButton.backgroundColor = UIColor.peachColor
-        secondChoiceButton.backgroundColor = UIColor.peachColor
-        thirdChoiceButton.backgroundColor = UIColor.peachColor
-        fourthChoiceButton.backgroundColor = UIColor.peachColor
+        firstChoiceButton.backgroundColor = UIColor(named: "ButtonColor")
+        secondChoiceButton.backgroundColor = UIColor(named: "ButtonColor")
+        thirdChoiceButton.backgroundColor = UIColor(named: "ButtonColor")
+        fourthChoiceButton.backgroundColor = UIColor(named: "ButtonColor")
+        
+        firstChoiceButton.contentEdgeInsets = UIEdgeInsets(top: 5,left: 5,bottom: 5,right: 5)
+        secondChoiceButton.contentEdgeInsets = UIEdgeInsets(top: 5,left: 5,bottom: 5,right: 5)
+        thirdChoiceButton.contentEdgeInsets = UIEdgeInsets(top: 5,left: 5,bottom: 5,right: 5)
+        fourthChoiceButton.contentEdgeInsets = UIEdgeInsets(top: 5,left: 5,bottom: 5,right: 5)
+
+        firstChoiceButton.titleLabel?.textAlignment = NSTextAlignment.center
+        secondChoiceButton.titleLabel?.textAlignment = NSTextAlignment.center
+        thirdChoiceButton.titleLabel?.textAlignment = NSTextAlignment.center
+        fourthChoiceButton.titleLabel?.textAlignment = NSTextAlignment.center
     }
     
     @IBAction func nextButtonPressed(_ sender: Any) {
@@ -65,10 +76,10 @@ class QuizViewController: UIViewController {
         thirdChoiceButton.setTitleColor(UIColor.orangeColor, for: .normal)
         fourthChoiceButton.setTitleColor(UIColor.orangeColor, for: .normal)
     
-        firstChoiceButton.backgroundColor = UIColor.peachColor
-        secondChoiceButton.backgroundColor = UIColor.peachColor
-        thirdChoiceButton.backgroundColor = UIColor.peachColor
-        fourthChoiceButton.backgroundColor = UIColor.peachColor
+        firstChoiceButton.backgroundColor = UIColor(named: "ButtonColor")
+        secondChoiceButton.backgroundColor = UIColor(named: "ButtonColor")
+        thirdChoiceButton.backgroundColor = UIColor(named: "ButtonColor")
+        fourthChoiceButton.backgroundColor = UIColor(named: "ButtonColor")
     }
     
     @IBAction func checkAnswer(_ sender: UIButton) {
@@ -118,9 +129,9 @@ class QuizViewController: UIViewController {
         questionList.append(Question(questionTitle: "What is the logical 'AND' operator in Swift?", answers: ["||", "&&", "&", "+"], correctAnswerIndex: 1))
         questionList.append(Question(questionTitle: "What is wrong with this code? \n\nlet num = 1.0 + 1 ", answers: ["There is nothing wrong", "There is no semicolon", "num is constant and can’t be changed", "1.0 and 1 are different types"], correctAnswerIndex: 0))
         questionList.append(Question(questionTitle: "What can AnyObject represent?", answers: ["An instance of any class", "An instance of function type", "An instance of an optional type", "All answers are correct"], correctAnswerIndex: 3))
-        questionList.append(Question(questionTitle: "What is the type of num? \n\nlet num = 'number1.count' ", answers: ["number.count", "Int", "nil", "String"], correctAnswerIndex: 3))
+        questionList.append(Question(questionTitle: "What is LLVM?", answers: ["Objective-C compiler", "Swiftc compiler", "        Contains both compilers", "None of the above"], correctAnswerIndex: 2))
         questionList.append(Question(questionTitle: "What is data type of nums? \n\nlet nums = (“num”, 0)", answers: ["Dictionary", "Optional", "Tuple", "All answers are incorrect"], correctAnswerIndex: 2))
-        questionList.append(Question(questionTitle: "How many times will this loop be executed? \n\nfor I in 0…100 { \nprint(i) \n{", answers: ["0", "99", "100", "101"], correctAnswerIndex: 3))
+        questionList.append(Question(questionTitle: "How many times will this loop be executed? \n\nfor i in 0…100 { \nprint(i) \n}", answers: ["0", "99", "100", "101"], correctAnswerIndex: 3))
     }
     
     func getRandomQuestion() -> Question {
