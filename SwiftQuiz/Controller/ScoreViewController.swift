@@ -31,4 +31,3 @@ class ScoreViewController: UIViewController {
         navigationController?.popToRootViewController(animated: true)
     }
 }
-
