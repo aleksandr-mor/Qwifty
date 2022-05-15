@@ -182,7 +182,6 @@ class QuizViewController: UIViewController {
 
 extension UIColor {
     static var orangeColor = UIColor.init(red: 244/255, green: 137/255, blue: 40/255, alpha: 1.0)
-    static var peachColor = UIColor.init(red: 250/255, green: 210/255, blue: 174/255, alpha: 1.0)
     static var turquoiseColor = UIColor.init(red: 77/255, green: 154/255, blue: 155/255, alpha: 1.0)
     static var redColor = UIColor.init(red: 235/255, green: 69/255, blue: 90/255, alpha: 1.0)
 }

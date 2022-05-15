@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zhp-B5-kdE">
-    <device id="retina6_7" orientation="portrait" appearance="dark"/>
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -385,6 +385,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="6Xc-x7-Cor"/>
                     <connections>
+                        <outlet property="backgroundView" destination="DqL-Dn-dvT" id="rTt-HI-Mp9"/>
                         <outlet property="scoreLabel" destination="Hyx-AE-m4r" id="6IL-lx-3pr"/>
                     </connections>
                 </viewController>
@@ -415,7 +416,7 @@
         <image name="pngwing.com-4" width="558" height="648"/>
         <image name="whiteOrange" width="2000" height="2000"/>
         <namedColor name="ButtonColor">
-            <color red="0.98039215690000003" green="0.82352941180000006" blue="0.68235294120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.98000001907348633" green="0.82400000095367432" blue="0.68199998140335083" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
