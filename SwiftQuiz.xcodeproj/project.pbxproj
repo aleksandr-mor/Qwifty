@@ -13,7 +13,6 @@
 		4700BB072819D9AA00A6FCB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4700BB052819D9AA00A6FCB9 /* Main.storyboard */; };
 		4700BB092819D9AA00A6FCB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4700BB082819D9AA00A6FCB9 /* Assets.xcassets */; };
 		4700BB0C2819D9AA00A6FCB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4700BB0A2819D9AA00A6FCB9 /* LaunchScreen.storyboard */; };
-		47564FA228318045005AF26E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 47564FA128318045005AF26E /* Podfile */; };
 		475D0A7128206F8B001BEE0F /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475D0A7028206F8B001BEE0F /* ScoreViewController.swift */; };
 		47620CD8281F060900EDA436 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47620CD7281F060900EDA436 /* Question.swift */; };
 		47AA6C73281DB6A600308E06 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47AA6C72281DB6A600308E06 /* ViewController.swift */; };
@@ -29,7 +28,6 @@
 		4700BB082819D9AA00A6FCB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4700BB0B2819D9AA00A6FCB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4700BB0D2819D9AA00A6FCB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		47564FA128318045005AF26E /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		475D0A7028206F8B001BEE0F /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
 		47620CD7281F060900EDA436 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		47AA6C72281DB6A600308E06 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,14 +54,12 @@
 				7D1C43F615B8F6F3A16DB50A /* Pods-SwiftQuiz.debug.xcconfig */,
 				6D37D05A370DF736D73583EA /* Pods-SwiftQuiz.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
 		4700BAF32819D9A900A6FCB9 = {
 			isa = PBXGroup;
 			children = (
-				47564FA128318045005AF26E /* Podfile */,
 				4700BAFE2819D9AA00A6FCB9 /* SwiftQuiz */,
 				4700BAFD2819D9A900A6FCB9 /* Products */,
 				2E5888ECAB90A9D752FB5201 /* Pods */,
@@ -174,7 +170,6 @@
 			files = (
 				4700BB0C2819D9AA00A6FCB9 /* LaunchScreen.storyboard in Resources */,
 				4700BB092819D9AA00A6FCB9 /* Assets.xcassets in Resources */,
-				47564FA228318045005AF26E /* Podfile in Resources */,
 				4700BB072819D9AA00A6FCB9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -384,6 +379,7 @@
 				DEVELOPMENT_TEAM = ZNR2D834QB;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftQuiz/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SwiftQuiz;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -414,6 +410,7 @@
 				DEVELOPMENT_TEAM = ZNR2D834QB;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftQuiz/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SwiftQuiz;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

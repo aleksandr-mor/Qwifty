@@ -47,11 +47,6 @@ class QuizViewController: UIViewController {
         secondChoiceButton.backgroundColor = UIColor(named: "ButtonColor")
         thirdChoiceButton.backgroundColor = UIColor(named: "ButtonColor")
         fourthChoiceButton.backgroundColor = UIColor(named: "ButtonColor")
-        
-        firstChoiceButton.contentEdgeInsets = UIEdgeInsets(top: 5,left: 5,bottom: 5,right: 5)
-        secondChoiceButton.contentEdgeInsets = UIEdgeInsets(top: 5,left: 5,bottom: 5,right: 5)
-        thirdChoiceButton.contentEdgeInsets = UIEdgeInsets(top: 5,left: 5,bottom: 5,right: 5)
-        fourthChoiceButton.contentEdgeInsets = UIEdgeInsets(top: 5,left: 5,bottom: 5,right: 5)
 
         firstChoiceButton.titleLabel?.textAlignment = NSTextAlignment.center
         secondChoiceButton.titleLabel?.textAlignment = NSTextAlignment.center
