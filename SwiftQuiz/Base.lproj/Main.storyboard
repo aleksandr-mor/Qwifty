@@ -21,23 +21,23 @@
                                 <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="FJk-7X-39G">
-                                <rect key="frame" x="98.666666666666671" y="288.66666666666669" width="230.66666666666663" height="163.33333333333331"/>
+                                <rect key="frame" x="98.666666666666671" y="298.66666666666669" width="230.66666666666663" height="143.33333333333331"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pngwing.com" translatesAutoresizingMaskIntoConstraints="NO" id="HNG-PO-1OU">
-                                        <rect key="frame" x="65.333333333333329" y="0.0" width="99.999999999999986" height="100"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SwiftQuizRounded" translatesAutoresizingMaskIntoConstraints="NO" id="HNG-PO-1OU">
+                                        <rect key="frame" x="75.333333333333329" y="0.0" width="79.999999999999986" height="80"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="100" id="4xd-i6-9Ui"/>
-                                            <constraint firstAttribute="height" constant="100" id="m8y-L3-oro"/>
+                                            <constraint firstAttribute="width" constant="80" id="4xd-i6-9Ui"/>
+                                            <constraint firstAttribute="height" constant="80" id="m8y-L3-oro"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swift Quiz" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gNR-0C-1py">
-                                        <rect key="frame" x="54.999999999999986" y="107" width="121.00000000000001" height="30"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swifty Quiz" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gNR-0C-1py">
+                                        <rect key="frame" x="48.333333333333329" y="87" width="134" height="30"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
                                         <color key="textColor" red="0.78823530669999997" green="0.44313728810000003" blue="0.20000001789999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Take Quiz • Repeat • Get a job!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GyK-jw-iUV">
-                                        <rect key="frame" x="0.0" y="144" width="230.66666666666666" height="19.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="123.99999999999999" width="230.66666666666666" height="19.333333333333329"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
                                         <color key="textColor" systemColor="systemGrayColor"/>
                                         <nil key="highlightedColor"/>
@@ -403,7 +403,7 @@
     </scenes>
     <resources>
         <image name="Background" width="2000" height="2000"/>
-        <image name="pngwing.com" width="512" height="512"/>
+        <image name="SwiftQuizRounded" width="1024" height="1024"/>
         <image name="pngwing.com-4" width="558" height="648"/>
         <namedColor name="ButtonColor">
             <color red="0.98000001907348633" green="0.82400000095367432" blue="0.68199998140335083" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
