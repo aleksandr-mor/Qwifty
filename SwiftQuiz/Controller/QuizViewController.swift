@@ -19,6 +19,7 @@ class QuizViewController: UIViewController {
     @IBOutlet weak var thirdChoiceButton: UIButton!
     @IBOutlet weak var fourthChoiceButton: UIButton!
     @IBOutlet weak var nextButton: UIButton!
+    @IBOutlet weak var correctIncorrectImage: UIImageView!
     
     var questionList = [Question]()
     var currentQuestion: Question? = nil
@@ -28,6 +29,13 @@ class QuizViewController: UIViewController {
     var progress: Float = 0.05
     var progressNumber = 1
     
+    var isCorrectAnswer : Bool = false {
+        didSet {
+            correctIncorrectImage.isHidden = false
+            correctIncorrectImage.image = isCorrectAnswer ? UIImage(named: "correct") : UIImage(named: "incorrect")
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         fillData()
@@ -36,6 +44,8 @@ class QuizViewController: UIViewController {
         progressLabel.text = "\(progressNumber) / 20"
         progressBar.progress = progress
 
+        nextButton.setTitle("NEXT", for: .normal)
+        nextButton.titleLabel?.textColor = .gray
         
         nextButton.layer.cornerRadius = 25
         firstChoiceButton.layer.cornerRadius = 25
@@ -52,6 +62,8 @@ class QuizViewController: UIViewController {
         secondChoiceButton.titleLabel?.textAlignment = NSTextAlignment.center
         thirdChoiceButton.titleLabel?.textAlignment = NSTextAlignment.center
         fourthChoiceButton.titleLabel?.textAlignment = NSTextAlignment.center
+        
+       
     }
     
     @IBAction func nextButtonPressed(_ sender: Any) {
@@ -75,24 +87,27 @@ class QuizViewController: UIViewController {
         secondChoiceButton.backgroundColor = UIColor(named: "ButtonColor")
         thirdChoiceButton.backgroundColor = UIColor(named: "ButtonColor")
         fourthChoiceButton.backgroundColor = UIColor(named: "ButtonColor")
+        
     }
     
     @IBAction func checkAnswer(_ sender: UIButton) {
         if let question = currentQuestion, let answer = sender.titleLabel?.text {
             if(question.validateAnswer(to: answer)) {
                 score.incrementCorrectAnswers()
-                correctIncorrectLabel.textColor = UIColor.turquoiseColor
-                correctIncorrectLabel.text = "Correct"
+                correctIncorrectImage.isHidden = false
+                isCorrectAnswer = true
+//                correctIncorrectLabel.text = "Correct"
             } else {
                 score.incrementIncorrectAnswers()
-                correctIncorrectLabel.textColor = UIColor.redColor
-                correctIncorrectLabel.text = "Incorrect"
+//                correctIncorrectLabel.textColor = UIColor.redColor
+                isCorrectAnswer = false
+//                correctIncorrectLabel.text = "Incorrect"
             }
             firstChoiceButton.isEnabled = false
             secondChoiceButton.isEnabled = false
             thirdChoiceButton.isEnabled = false
             fourthChoiceButton.isEnabled = false
-            correctIncorrectLabel.isHidden = false
+//            correctIncorrectLabel.isHidden = false
             sender.isEnabled = true
             nextButton.isEnabled = true
             
@@ -152,15 +167,19 @@ class QuizViewController: UIViewController {
             fourthChoiceButton.setTitle(choices[3], for: .normal)
             if (score.numberOfQuestionsAsked() == numberOfQuestionPerRound - 1) {
                 nextButton.setTitle("END QUIZ", for: .normal)
+                nextButton.isEnabled = false
+                
             } else {
                 nextButton.setTitle("NEXT", for: .normal)
+                nextButton.titleLabel?.font = UIFont.systemFont(ofSize: 17, weight: .bold)
             }
         }
         firstChoiceButton.isEnabled = true
         secondChoiceButton.isEnabled = true
         thirdChoiceButton.isEnabled = true
         fourthChoiceButton.isEnabled = true
-        correctIncorrectLabel.isHidden = true
+//        correctIncorrectLabel.isHidden = true
+        correctIncorrectImage.isHidden = true
         nextButton.isEnabled = false
     }
     
@@ -171,8 +190,12 @@ class QuizViewController: UIViewController {
     }
 }
 
+
+
 extension UIColor {
     static var orangeColor = UIColor.init(red: 244/255, green: 137/255, blue: 40/255, alpha: 1.0)
     static var turquoiseColor = UIColor.init(red: 77/255, green: 154/255, blue: 155/255, alpha: 1.0)
     static var redColor = UIColor.init(red: 235/255, green: 69/255, blue: 90/255, alpha: 1.0)
 }
+
+

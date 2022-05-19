@@ -118,10 +118,6 @@
                                         <state key="normal" title="First Choice ">
                                             <color key="titleColor" red="0.90196078431372551" green="0.55686274509803924" blue="0.25490196078431371" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
-                                        <buttonConfiguration key="configuration" style="plain" title="First Choice ">
-                                            <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                            <color key="baseForegroundColor" red="0.90196078431372551" green="0.55686274509803924" blue="0.25490196078431371" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </buttonConfiguration>
                                         <connections>
                                             <action selector="checkAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yd2-ja-7qD"/>
                                         </connections>
@@ -138,10 +134,6 @@
                                         <state key="normal" title="Second Choice">
                                             <color key="titleColor" red="0.90196073060000004" green="0.55686277149999996" blue="0.25490197539999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
-                                        <buttonConfiguration key="configuration" style="plain" title="Second Choice">
-                                            <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                            <color key="baseForegroundColor" red="0.90196073060000004" green="0.55686277149999996" blue="0.25490197539999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </buttonConfiguration>
                                         <connections>
                                             <action selector="checkAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pnw-0q-J2p"/>
                                         </connections>
@@ -152,16 +144,12 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="dLq-Mi-UXr"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Third Choice">
                                             <color key="titleColor" red="0.90196073060000004" green="0.55686277149999996" blue="0.25490197539999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
-                                        <buttonConfiguration key="configuration" style="plain" title="Third Choice">
-                                            <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                            <color key="baseForegroundColor" red="0.90196073060000004" green="0.55686277149999996" blue="0.25490197539999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </buttonConfiguration>
                                         <connections>
                                             <action selector="checkAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wNA-tc-yqg"/>
                                         </connections>
@@ -172,16 +160,12 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="Nhb-Jj-MG1"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Fourth Choice">
                                             <color key="titleColor" red="0.90196073060000004" green="0.55686277149999996" blue="0.25490197539999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
-                                        <buttonConfiguration key="configuration" style="plain" title="Fourth Choice">
-                                            <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                            <color key="baseForegroundColor" red="0.90196073060000004" green="0.55686277149999996" blue="0.25490197539999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </buttonConfiguration>
                                         <connections>
                                             <action selector="checkAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sTw-ff-DTR"/>
                                         </connections>
@@ -204,9 +188,7 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="NEXT">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
+                                <state key="normal" title="NEXT"/>
                                 <connections>
                                     <action selector="nextButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Ee-WQ-p6e"/>
                                     <action selector="playAgainButtonPressed:" destination="TXq-pH-Hoa" eventType="touchUpInside" id="Zfp-NW-hyV"/>
@@ -218,19 +200,20 @@
                                 <color key="textColor" red="0.43029909459999999" green="0.43029909459999999" blue="0.43029909459999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correct / Incorrect" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ni4-Su-jiU">
-                                <rect key="frame" x="144.33333333333337" y="213.66666666666666" width="139.66666666666663" height="20.333333333333343"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" systemColor="systemPinkColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="incorrect" translatesAutoresizingMaskIntoConstraints="NO" id="KxI-d0-qV4">
+                                <rect key="frame" x="179" y="623.66666666666663" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="KsT-Lv-DET"/>
+                                    <constraint firstAttribute="width" constant="70" id="VGz-lc-H9U"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="wbU-kG-NAy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="3Hf-C8-22t"/>
+                            <constraint firstItem="KxI-d0-qV4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4Ag-6a-fwK"/>
                             <constraint firstItem="H6T-5k-mqv" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="4OE-LO-qsD"/>
-                            <constraint firstItem="ni4-Su-jiU" firstAttribute="top" secondItem="p6R-eF-e1Y" secondAttribute="bottom" constant="30" id="5bg-kM-YCr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="p6R-eF-e1Y" secondAttribute="trailing" constant="30" id="5dN-9h-9FN"/>
                             <constraint firstItem="wbU-kG-NAy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8KK-Fu-CmF"/>
                             <constraint firstItem="NQq-tb-V8D" firstAttribute="top" secondItem="jW7-rN-FxN" secondAttribute="bottom" constant="5" id="ADh-TS-5a2"/>
@@ -242,7 +225,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jW7-rN-FxN" secondAttribute="trailing" constant="30" id="Pty-aJ-UGG"/>
                             <constraint firstItem="H6T-5k-mqv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QXa-av-uRp"/>
                             <constraint firstItem="jW7-rN-FxN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VRI-Nn-jvK"/>
-                            <constraint firstItem="ni4-Su-jiU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VrA-eN-oc9"/>
+                            <constraint firstItem="KxI-d0-qV4" firstAttribute="top" secondItem="wbU-kG-NAy" secondAttribute="bottom" constant="50" id="YWq-wp-4vr"/>
                             <constraint firstItem="NQq-tb-V8D" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZGW-ae-UFK"/>
                             <constraint firstItem="p6R-eF-e1Y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="ZgD-ES-hzE"/>
                             <constraint firstAttribute="bottom" secondItem="yXf-H4-hat" secondAttribute="bottom" id="hay-Bj-Fb4"/>
@@ -255,7 +238,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="onX-hw-c9o"/>
                     <connections>
-                        <outlet property="correctIncorrectLabel" destination="ni4-Su-jiU" id="RpE-VK-TT5"/>
+                        <outlet property="correctIncorrectImage" destination="KxI-d0-qV4" id="jXq-1G-rWM"/>
                         <outlet property="firstChoiceButton" destination="erN-mC-jMH" id="tVW-br-9Eu"/>
                         <outlet property="fourthChoiceButton" destination="Jgq-Jb-bVl" id="zPs-hD-cse"/>
                         <outlet property="nextButton" destination="H6T-5k-mqv" id="7Od-ZV-BTO"/>
@@ -404,6 +387,7 @@
     <resources>
         <image name="Background" width="2000" height="2000"/>
         <image name="SwiftQuizRounded" width="1024" height="1024"/>
+        <image name="incorrect" width="512" height="512"/>
         <image name="pngwing.com-4" width="558" height="648"/>
         <namedColor name="ButtonColor">
             <color red="0.98000001907348633" green="0.82400000095367432" blue="0.68199998140335083" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -413,9 +397,6 @@
         </systemColor>
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
