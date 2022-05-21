@@ -79,6 +79,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="gqt-IQ-qHa"/>
                     <connections>
+                        <outlet property="playButton" destination="DmJ-em-VV1" id="5oP-qk-ilz"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="ShowSegue" id="jeA-1V-kfW"/>
                     </connections>
                 </viewController>
@@ -106,7 +107,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="wbU-kG-NAy">
                                 <rect key="frame" x="50" y="352.66666666666669" width="328" height="221.00000000000006"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="erN-mC-jMH">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="erN-mC-jMH">
                                         <rect key="frame" x="0.0" y="0.0" width="328" height="50"/>
                                         <color key="backgroundColor" name="ButtonColor"/>
                                         <constraints>
@@ -122,7 +123,7 @@
                                             <action selector="checkAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yd2-ja-7qD"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Dfk-vc-0wI">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Dfk-vc-0wI">
                                         <rect key="frame" x="0.0" y="57" width="328" height="50"/>
                                         <color key="backgroundColor" name="ButtonColor"/>
                                         <constraints>
@@ -138,7 +139,7 @@
                                             <action selector="checkAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pnw-0q-J2p"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Vdx-MV-wQy">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Vdx-MV-wQy">
                                         <rect key="frame" x="0.0" y="114" width="328" height="50"/>
                                         <color key="backgroundColor" name="ButtonColor"/>
                                         <constraints>
@@ -154,7 +155,7 @@
                                             <action selector="checkAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wNA-tc-yqg"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Jgq-Jb-bVl">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Jgq-Jb-bVl">
                                         <rect key="frame" x="0.0" y="170.99999999999994" width="328" height="50"/>
                                         <color key="backgroundColor" name="ButtonColor"/>
                                         <constraints>
@@ -359,6 +360,7 @@
                     <navigationItem key="navigationItem" id="6Xc-x7-Cor"/>
                     <connections>
                         <outlet property="backgroundView" destination="DqL-Dn-dvT" id="rTt-HI-Mp9"/>
+                        <outlet property="playAgainButton" destination="uAx-A5-xfp" id="9Fq-4d-wsF"/>
                         <outlet property="scoreLabel" destination="Hyx-AE-m4r" id="6IL-lx-3pr"/>
                     </connections>
                 </viewController>

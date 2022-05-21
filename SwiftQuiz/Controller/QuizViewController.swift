@@ -45,6 +45,8 @@ class QuizViewController: UIViewController {
         nextButton.setTitle("NEXT", for: .normal)
         nextButton.titleLabel?.textColor = .gray
         
+        nextButton.addShadowView()
+        
         nextButton.layer.cornerRadius = 25
         firstChoiceButton.layer.cornerRadius = 25
         secondChoiceButton.layer.cornerRadius = 25
@@ -104,6 +106,7 @@ class QuizViewController: UIViewController {
             sender.isEnabled = true
             sender.setTitleColor(UIColor.white, for: .normal)
             sender.backgroundColor = UIColor.orangeColor
+            sender.addShadowView()
         }
     }
     
@@ -112,7 +115,6 @@ class QuizViewController: UIViewController {
     }
     
     func fillData() {
-        
         questionList.append(Question(questionTitle: "What is the default data type for floating point numbers in Swift?", answers: ["Float", "Double", "Int", "Fract"], correctAnswerIndex: 1))
         questionList.append(Question(questionTitle: "What keyword is used to declare a constant in Swift?", answers: ["var", "const", "let", "strong"], correctAnswerIndex: 2))
         questionList.append(Question(questionTitle: "How to write a multiple line comment in Swift?", answers: ["/ … /", "/n … n/", "/* … */", "// … //"], correctAnswerIndex: 2))
@@ -171,6 +173,11 @@ class QuizViewController: UIViewController {
         fourthChoiceButton.isEnabled = true
         correctIncorrectImage.isHidden = true
         nextButton.isEnabled = false
+        
+        firstChoiceButton.disableShadowView()
+        secondChoiceButton.disableShadowView()
+        thirdChoiceButton.disableShadowView()
+        fourthChoiceButton.disableShadowView()
     }
     
     func displayScore() {
@@ -186,4 +193,17 @@ extension UIColor {
     static var redColor = UIColor.init(red: 235/255, green: 69/255, blue: 90/255, alpha: 1.0)
 }
 
+extension UIView {
 
+    func addShadowView(){
+        self.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
+                self.layer.shadowOffset = CGSize(width: 0, height: 3)
+                self.layer.shadowOpacity = 1.0
+                self.layer.shadowRadius = 10.0
+                self.layer.masksToBounds = false
+    }
+    
+    func disableShadowView() {
+        self.layer.shadowColor = UIColor.clear.cgColor
+    }
+}
