@@ -201,10 +201,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="incorrect" translatesAutoresizingMaskIntoConstraints="NO" id="KxI-d0-qV4">
-                                <rect key="frame" x="179" y="623.66666666666663" width="70" height="70"/>
+                                <rect key="frame" x="184" y="603.66666666666663" width="60" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="KsT-Lv-DET"/>
-                                    <constraint firstAttribute="width" constant="70" id="VGz-lc-H9U"/>
+                                    <constraint firstAttribute="height" constant="60" id="KsT-Lv-DET"/>
+                                    <constraint firstAttribute="width" constant="60" id="VGz-lc-H9U"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -225,7 +225,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jW7-rN-FxN" secondAttribute="trailing" constant="30" id="Pty-aJ-UGG"/>
                             <constraint firstItem="H6T-5k-mqv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QXa-av-uRp"/>
                             <constraint firstItem="jW7-rN-FxN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VRI-Nn-jvK"/>
-                            <constraint firstItem="KxI-d0-qV4" firstAttribute="top" secondItem="wbU-kG-NAy" secondAttribute="bottom" constant="50" id="YWq-wp-4vr"/>
+                            <constraint firstItem="KxI-d0-qV4" firstAttribute="top" secondItem="wbU-kG-NAy" secondAttribute="bottom" constant="30" id="YWq-wp-4vr"/>
                             <constraint firstItem="NQq-tb-V8D" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZGW-ae-UFK"/>
                             <constraint firstItem="p6R-eF-e1Y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="ZgD-ES-hzE"/>
                             <constraint firstAttribute="bottom" secondItem="yXf-H4-hat" secondAttribute="bottom" id="hay-Bj-Fb4"/>
@@ -387,7 +387,7 @@
     <resources>
         <image name="Background" width="2000" height="2000"/>
         <image name="SwiftQuizRounded" width="1024" height="1024"/>
-        <image name="incorrect" width="512" height="512"/>
+        <image name="incorrect" width="1000" height="1000"/>
         <image name="pngwing.com-4" width="558" height="648"/>
         <namedColor name="ButtonColor">
             <color red="0.98000001907348633" green="0.82400000095367432" blue="0.68199998140335083" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

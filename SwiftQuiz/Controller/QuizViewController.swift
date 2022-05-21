@@ -13,7 +13,6 @@ class QuizViewController: UIViewController {
     @IBOutlet weak var progressBar: UIProgressView!
     @IBOutlet weak var progressLabel: UILabel!
     @IBOutlet weak var questionTextLabel: UILabel!
-    @IBOutlet weak var correctIncorrectLabel: UILabel!
     @IBOutlet weak var firstChoiceButton: UIButton!
     @IBOutlet weak var secondChoiceButton: UIButton!
     @IBOutlet weak var thirdChoiceButton: UIButton!
@@ -28,7 +27,6 @@ class QuizViewController: UIViewController {
     let score = Score()
     var progress: Float = 0.05
     var progressNumber = 1
-    
     var isCorrectAnswer : Bool = false {
         didSet {
             correctIncorrectImage.isHidden = false
@@ -62,8 +60,6 @@ class QuizViewController: UIViewController {
         secondChoiceButton.titleLabel?.textAlignment = NSTextAlignment.center
         thirdChoiceButton.titleLabel?.textAlignment = NSTextAlignment.center
         fourthChoiceButton.titleLabel?.textAlignment = NSTextAlignment.center
-        
-       
     }
     
     @IBAction func nextButtonPressed(_ sender: Any) {
@@ -96,21 +92,16 @@ class QuizViewController: UIViewController {
                 score.incrementCorrectAnswers()
                 correctIncorrectImage.isHidden = false
                 isCorrectAnswer = true
-//                correctIncorrectLabel.text = "Correct"
             } else {
                 score.incrementIncorrectAnswers()
-//                correctIncorrectLabel.textColor = UIColor.redColor
                 isCorrectAnswer = false
-//                correctIncorrectLabel.text = "Incorrect"
             }
             firstChoiceButton.isEnabled = false
             secondChoiceButton.isEnabled = false
             thirdChoiceButton.isEnabled = false
             fourthChoiceButton.isEnabled = false
-//            correctIncorrectLabel.isHidden = false
-            sender.isEnabled = true
             nextButton.isEnabled = true
-            
+            sender.isEnabled = true
             sender.setTitleColor(UIColor.white, for: .normal)
             sender.backgroundColor = UIColor.orangeColor
         }
@@ -121,7 +112,7 @@ class QuizViewController: UIViewController {
     }
     
     func fillData() {
-                
+        
         questionList.append(Question(questionTitle: "What is the default data type for floating point numbers in Swift?", answers: ["Float", "Double", "Int", "Fract"], correctAnswerIndex: 1))
         questionList.append(Question(questionTitle: "What keyword is used to declare a constant in Swift?", answers: ["var", "const", "let", "strong"], correctAnswerIndex: 2))
         questionList.append(Question(questionTitle: "How to write a multiple line comment in Swift?", answers: ["/ … /", "/n … n/", "/* … */", "// … //"], correctAnswerIndex: 2))
@@ -178,7 +169,6 @@ class QuizViewController: UIViewController {
         secondChoiceButton.isEnabled = true
         thirdChoiceButton.isEnabled = true
         fourthChoiceButton.isEnabled = true
-//        correctIncorrectLabel.isHidden = true
         correctIncorrectImage.isHidden = true
         nextButton.isEnabled = false
     }
@@ -189,8 +179,6 @@ class QuizViewController: UIViewController {
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }
-
-
 
 extension UIColor {
     static var orangeColor = UIColor.init(red: 244/255, green: 137/255, blue: 40/255, alpha: 1.0)
