@@ -79,6 +79,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="gqt-IQ-qHa"/>
                     <connections>
+                        <outlet property="playButton" destination="DmJ-em-VV1" id="5oP-qk-ilz"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="ShowSegue" id="jeA-1V-kfW"/>
                     </connections>
                 </viewController>
@@ -106,7 +107,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="wbU-kG-NAy">
                                 <rect key="frame" x="50" y="352.66666666666669" width="328" height="221.00000000000006"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="erN-mC-jMH">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="erN-mC-jMH">
                                         <rect key="frame" x="0.0" y="0.0" width="328" height="50"/>
                                         <color key="backgroundColor" name="ButtonColor"/>
                                         <constraints>
@@ -122,7 +123,7 @@
                                             <action selector="checkAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yd2-ja-7qD"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Dfk-vc-0wI">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Dfk-vc-0wI">
                                         <rect key="frame" x="0.0" y="57" width="328" height="50"/>
                                         <color key="backgroundColor" name="ButtonColor"/>
                                         <constraints>
@@ -138,7 +139,7 @@
                                             <action selector="checkAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pnw-0q-J2p"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Vdx-MV-wQy">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Vdx-MV-wQy">
                                         <rect key="frame" x="0.0" y="114" width="328" height="50"/>
                                         <color key="backgroundColor" name="ButtonColor"/>
                                         <constraints>
@@ -154,7 +155,7 @@
                                             <action selector="checkAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wNA-tc-yqg"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Jgq-Jb-bVl">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Jgq-Jb-bVl">
                                         <rect key="frame" x="0.0" y="170.99999999999994" width="328" height="50"/>
                                         <color key="backgroundColor" name="ButtonColor"/>
                                         <constraints>
@@ -341,12 +342,27 @@
                                     <action selector="playAgainButtonPressed:" destination="Pzm-gj-lCo" eventType="touchUpInside" id="Cfw-Ax-8k7"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RhM-0R-TpM">
+                                <rect key="frame" x="168.66666666666666" y="634" width="90.666666666666657" height="32"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrowshape.turn.up.right" catalog="system" title=" Share" cornerStyle="capsule">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.95841950180000002" green="0.53686577079999998" blue="0.1567414701" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="shareButtonPressed:" destination="Pzm-gj-lCo" eventType="touchUpInside" id="TCP-Mc-DtK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Lgg-IK-NsK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="uAx-A5-xfp" firstAttribute="centerX" secondItem="Qrj-9S-Sd3" secondAttribute="centerX" id="2ws-74-gIM"/>
                             <constraint firstItem="DqL-Dn-dvT" firstAttribute="top" secondItem="Qrj-9S-Sd3" secondAttribute="top" id="CzI-lA-zWK"/>
+                            <constraint firstItem="RhM-0R-TpM" firstAttribute="top" secondItem="Wss-U0-gsg" secondAttribute="bottom" constant="30" id="E7O-pa-Utt"/>
                             <constraint firstItem="DqL-Dn-dvT" firstAttribute="leading" secondItem="Lgg-IK-NsK" secondAttribute="leading" id="Ik0-fR-0l4"/>
                             <constraint firstItem="uAx-A5-xfp" firstAttribute="leading" secondItem="Lgg-IK-NsK" secondAttribute="leading" constant="50" id="Ndh-B0-Ahd"/>
                             <constraint firstItem="Wss-U0-gsg" firstAttribute="centerX" secondItem="Qrj-9S-Sd3" secondAttribute="centerX" id="XMB-Lm-tsx"/>
@@ -354,12 +370,15 @@
                             <constraint firstAttribute="bottom" secondItem="DqL-Dn-dvT" secondAttribute="bottom" id="egB-2l-elq"/>
                             <constraint firstItem="Lgg-IK-NsK" firstAttribute="bottom" secondItem="uAx-A5-xfp" secondAttribute="bottom" id="i33-Iz-gi2"/>
                             <constraint firstItem="DqL-Dn-dvT" firstAttribute="trailing" secondItem="Lgg-IK-NsK" secondAttribute="trailing" id="i7Q-FR-x6X"/>
+                            <constraint firstItem="RhM-0R-TpM" firstAttribute="centerX" secondItem="Qrj-9S-Sd3" secondAttribute="centerX" id="iRP-QY-0qy"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="6Xc-x7-Cor"/>
                     <connections>
                         <outlet property="backgroundView" destination="DqL-Dn-dvT" id="rTt-HI-Mp9"/>
+                        <outlet property="playAgainButton" destination="uAx-A5-xfp" id="wkz-tW-u6E"/>
                         <outlet property="scoreLabel" destination="Hyx-AE-m4r" id="6IL-lx-3pr"/>
+                        <outlet property="shareButton" destination="RhM-0R-TpM" id="7jV-nd-6Zd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aT5-CH-s6i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -387,6 +406,7 @@
     <resources>
         <image name="Background" width="2000" height="2000"/>
         <image name="SwiftQuizRounded" width="1024" height="1024"/>
+        <image name="arrowshape.turn.up.right" catalog="system" width="128" height="106"/>
         <image name="incorrect" width="1000" height="1000"/>
         <image name="pngwing.com-4" width="558" height="648"/>
         <namedColor name="ButtonColor">
