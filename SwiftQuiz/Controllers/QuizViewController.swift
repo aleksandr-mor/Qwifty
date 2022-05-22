@@ -10,6 +10,7 @@ import GameKit
 
 class QuizViewController: UIViewController {
     
+    //MARK: - IBOutlets
     @IBOutlet weak var progressBar: UIProgressView!
     @IBOutlet weak var progressLabel: UILabel!
     @IBOutlet weak var questionTextLabel: UILabel!
@@ -20,11 +21,11 @@ class QuizViewController: UIViewController {
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var correctIncorrectImage: UIImageView!
     
-    var questionList = [Question]()
-    var currentQuestion: Question? = nil
-    var previouslyUsedNumbers: [Int] = []
+    //MARK: - Variables
     let numberOfQuestionPerRound = 20
     let score = Score()
+    var currentQuestion: Question? = nil
+    var previouslyUsedNumbers: [Int] = []
     var progress: Float = 0.05
     var progressNumber = 1
     var isCorrectAnswer : Bool = false {
@@ -34,6 +35,7 @@ class QuizViewController: UIViewController {
         }
     }
     
+    //MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         fillData()
@@ -41,7 +43,7 @@ class QuizViewController: UIViewController {
         
         progressLabel.text = "\(progressNumber) / 20"
         progressBar.progress = progress
-
+        
         nextButton.setTitle("NEXT", for: .normal)
         nextButton.titleLabel?.textColor = .gray
         
@@ -57,13 +59,14 @@ class QuizViewController: UIViewController {
         secondChoiceButton.backgroundColor = UIColor(named: "ButtonColor")
         thirdChoiceButton.backgroundColor = UIColor(named: "ButtonColor")
         fourthChoiceButton.backgroundColor = UIColor(named: "ButtonColor")
-
+        
         firstChoiceButton.titleLabel?.textAlignment = NSTextAlignment.center
         secondChoiceButton.titleLabel?.textAlignment = NSTextAlignment.center
         thirdChoiceButton.titleLabel?.textAlignment = NSTextAlignment.center
         fourthChoiceButton.titleLabel?.textAlignment = NSTextAlignment.center
     }
     
+    //MARK: - IBActions
     @IBAction func nextButtonPressed(_ sender: Any) {
         if (isGameOver()) {
             displayScore()
@@ -80,12 +83,11 @@ class QuizViewController: UIViewController {
         secondChoiceButton.setTitleColor(UIColor.orangeColor, for: .normal)
         thirdChoiceButton.setTitleColor(UIColor.orangeColor, for: .normal)
         fourthChoiceButton.setTitleColor(UIColor.orangeColor, for: .normal)
-    
+        
         firstChoiceButton.backgroundColor = UIColor(named: "ButtonColor")
         secondChoiceButton.backgroundColor = UIColor(named: "ButtonColor")
         thirdChoiceButton.backgroundColor = UIColor(named: "ButtonColor")
         fourthChoiceButton.backgroundColor = UIColor(named: "ButtonColor")
-        
     }
     
     @IBAction func checkAnswer(_ sender: UIButton) {
@@ -110,31 +112,9 @@ class QuizViewController: UIViewController {
         }
     }
     
+    //MARK: - Logics
     func isGameOver() -> Bool {
         return score.numberOfQuestionsAsked() >= numberOfQuestionPerRound
-    }
-    
-    func fillData() {
-        questionList.append(Question(questionTitle: "What is the default data type for floating point numbers in Swift?", answers: ["Float", "Double", "Int", "Fract"], correctAnswerIndex: 1))
-        questionList.append(Question(questionTitle: "What keyword is used to declare a constant in Swift?", answers: ["var", "const", "let", "strong"], correctAnswerIndex: 2))
-        questionList.append(Question(questionTitle: "How to write a multiple line comment in Swift?", answers: ["/ … /", "/n … n/", "/* … */", "// … //"], correctAnswerIndex: 2))
-        questionList.append(Question(questionTitle: "How are Structs different from Classes in Swift?", answers: ["Structures are value types", "Structures are reference types", "Structures support inheritance", "Structures don’t receive a default initializer"], correctAnswerIndex: 0))
-        questionList.append(Question(questionTitle: "Name the properties whose initial values are not calculated until the first use", answers: ["Computed Properties", "Delayed Properties", "Stored Properties", "Lazy Stored Properties"], correctAnswerIndex: 3))
-        questionList.append(Question(questionTitle: "What is the significance of “?” in Swift?", answers: ["It is used to force unwrap the variable", "It makes a property optional", "It returns first none nil value", "It is used to replace the external label"], correctAnswerIndex: 1))
-        questionList.append(Question(questionTitle: "Choose the correct statement", answers: ["Bounds are in a view’s own coordinate system", "Frame is in the superview’s coordinate system", "Both statements are correct", "Both statements are incorrect"], correctAnswerIndex: 2))
-        questionList.append(Question(questionTitle: "Name a protocol that allows us to convert Swift types to and from JSON", answers: ["Decodable", "Codable", "Encodable", "JSONDecoder"], correctAnswerIndex: 1))
-        questionList.append(Question(questionTitle: "A function inside a function is called…", answers: ["Nested Function", "Super Function", "Base Function", "Encapsulation"], correctAnswerIndex: 0))
-        questionList.append(Question(questionTitle: "Constant and variable names in Swift can't contain…", answers: ["Numbers", "Capital letters", "Spaces", "Emoji"], correctAnswerIndex: 2))
-        questionList.append(Question(questionTitle: "What keyword is used to declare a variable in Swift?", answers: ["No keyword required", "let", "dyn", "var"], correctAnswerIndex: 3))
-        questionList.append(Question(questionTitle: "Swift consists of the following Control transfer statements, except for:", answers: ["Continue", "Fallthrough", "Pass", "Break"], correctAnswerIndex: 2))
-        questionList.append(Question(questionTitle: "What is PLIST?", answers: ["Process list", "Programming list", "Property list", "Protocol list"], correctAnswerIndex: 2))
-        questionList.append(Question(questionTitle: "What is “??” in Swift?", answers: ["Optional", "Binary operator", "Logical OR operator", "Nil-coalescing operator"], correctAnswerIndex: 3))
-        questionList.append(Question(questionTitle: "What is the logical 'AND' operator in Swift?", answers: ["||", "&&", "&", "+"], correctAnswerIndex: 1))
-        questionList.append(Question(questionTitle: "What is wrong with this code? \n\nlet num = 1.0 + 1 ", answers: ["There is nothing wrong", "There is no semicolon", "num is constant and can’t be changed", "1.0 and 1 are different types"], correctAnswerIndex: 0))
-        questionList.append(Question(questionTitle: "What can AnyObject represent?", answers: ["An instance of any class", "An instance of function type", "An instance of an optional type", "All answers are correct"], correctAnswerIndex: 3))
-        questionList.append(Question(questionTitle: "What is LLVM?", answers: ["Objective-C compiler", "Swiftc compiler", "Contains both compilers", "None of the above"], correctAnswerIndex: 2))
-        questionList.append(Question(questionTitle: "What is data type of nums? \n\nlet nums = (“num”, 0)", answers: ["Dictionary", "Optional", "Tuple", "All answers are incorrect"], correctAnswerIndex: 2))
-        questionList.append(Question(questionTitle: "How many times will this loop be executed? \n\nfor i in 0…100 { \nprint(i) \n}", answers: ["0", "99", "100", "101"], correctAnswerIndex: 3))
     }
     
     func getRandomQuestion() -> Question {
@@ -187,6 +167,7 @@ class QuizViewController: UIViewController {
     }
 }
 
+// MARK: - Extensions
 extension UIColor {
     static var orangeColor = UIColor.init(red: 244/255, green: 137/255, blue: 40/255, alpha: 1.0)
     static var turquoiseColor = UIColor.init(red: 77/255, green: 154/255, blue: 155/255, alpha: 1.0)
@@ -194,15 +175,13 @@ extension UIColor {
 }
 
 extension UIView {
-
     func addShadowView(){
         self.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
-                self.layer.shadowOffset = CGSize(width: 0, height: 3)
-                self.layer.shadowOpacity = 1.0
-                self.layer.shadowRadius = 10.0
-                self.layer.masksToBounds = false
+        self.layer.shadowOffset = CGSize(width: 0, height: 3)
+        self.layer.shadowOpacity = 1.0
+        self.layer.shadowRadius = 10.0
+        self.layer.masksToBounds = false
     }
-    
     func disableShadowView() {
         self.layer.shadowColor = UIColor.clear.cgColor
     }

@@ -15,8 +15,8 @@
 		4700BB0C2819D9AA00A6FCB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4700BB0A2819D9AA00A6FCB9 /* LaunchScreen.storyboard */; };
 		475D0A7128206F8B001BEE0F /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475D0A7028206F8B001BEE0F /* ScoreViewController.swift */; };
 		47620CD8281F060900EDA436 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47620CD7281F060900EDA436 /* Question.swift */; };
-		47AA6C73281DB6A600308E06 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47AA6C72281DB6A600308E06 /* ViewController.swift */; };
-		47D1895028358BF600FD9A05 /* SwiftyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D1894F28358BF600FD9A05 /* SwiftyButton.swift */; };
+		47AA6C73281DB6A600308E06 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47AA6C72281DB6A600308E06 /* StartViewController.swift */; };
+		47D542B0283AAEE600452EEC /* Questionnaire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D542AF283AAEE600452EEC /* Questionnaire.swift */; };
 		7C9FC324892B7BAFC9FE49F3 /* Pods_SwiftQuiz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2FEA90DC402C3006EC93C6E /* Pods_SwiftQuiz.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,8 +31,8 @@
 		4700BB0D2819D9AA00A6FCB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		475D0A7028206F8B001BEE0F /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
 		47620CD7281F060900EDA436 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
-		47AA6C72281DB6A600308E06 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		47D1894F28358BF600FD9A05 /* SwiftyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyButton.swift; sourceTree = "<group>"; };
+		47AA6C72281DB6A600308E06 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		47D542AF283AAEE600452EEC /* Questionnaire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questionnaire.swift; sourceTree = "<group>"; };
 		6D37D05A370DF736D73583EA /* Pods-SwiftQuiz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftQuiz.release.xcconfig"; path = "Target Support Files/Pods-SwiftQuiz/Pods-SwiftQuiz.release.xcconfig"; sourceTree = "<group>"; };
 		7D1C43F615B8F6F3A16DB50A /* Pods-SwiftQuiz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftQuiz.debug.xcconfig"; path = "Target Support Files/Pods-SwiftQuiz/Pods-SwiftQuiz.debug.xcconfig"; sourceTree = "<group>"; };
 		E2FEA90DC402C3006EC93C6E /* Pods_SwiftQuiz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftQuiz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,35 +80,51 @@
 		4700BAFE2819D9AA00A6FCB9 /* SwiftQuiz */ = {
 			isa = PBXGroup;
 			children = (
-				47D1894E28358B9900FD9A05 /* Component */,
-				47AA6C71281DB64200308E06 /* Controller */,
-				4700BAFF2819D9AA00A6FCB9 /* AppDelegate.swift */,
-				4700BB012819D9AA00A6FCB9 /* SceneDelegate.swift */,
-				4700BB052819D9AA00A6FCB9 /* Main.storyboard */,
-				4700BB082819D9AA00A6FCB9 /* Assets.xcassets */,
-				4700BB0A2819D9AA00A6FCB9 /* LaunchScreen.storyboard */,
+				47D542B3283AB8AB00452EEC /* Model */,
+				47D542B5283AB9B400452EEC /* View */,
+				47AA6C71281DB64200308E06 /* Controllers */,
+				47D542B4283AB95C00452EEC /* Supporting Files */,
 				4700BB0D2819D9AA00A6FCB9 /* Info.plist */,
 			);
 			path = SwiftQuiz;
 			sourceTree = "<group>";
 		};
-		47AA6C71281DB64200308E06 /* Controller */ = {
+		47AA6C71281DB64200308E06 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				47620CD7281F060900EDA436 /* Question.swift */,
-				47AA6C72281DB6A600308E06 /* ViewController.swift */,
+				47AA6C72281DB6A600308E06 /* StartViewController.swift */,
 				4700BB032819D9AA00A6FCB9 /* QuizViewController.swift */,
 				475D0A7028206F8B001BEE0F /* ScoreViewController.swift */,
+				47620CD7281F060900EDA436 /* Question.swift */,
 			);
-			path = Controller;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
-		47D1894E28358B9900FD9A05 /* Component */ = {
+		47D542B3283AB8AB00452EEC /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				47D1894F28358BF600FD9A05 /* SwiftyButton.swift */,
+				47D542AF283AAEE600452EEC /* Questionnaire.swift */,
 			);
-			path = Component;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		47D542B4283AB95C00452EEC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4700BAFF2819D9AA00A6FCB9 /* AppDelegate.swift */,
+				4700BB012819D9AA00A6FCB9 /* SceneDelegate.swift */,
+				4700BB082819D9AA00A6FCB9 /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		47D542B5283AB9B400452EEC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4700BB052819D9AA00A6FCB9 /* Main.storyboard */,
+				4700BB0A2819D9AA00A6FCB9 /* LaunchScreen.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		F11784E84A3D7E9C9FBA6E43 /* Frameworks */ = {
@@ -236,9 +252,9 @@
 			files = (
 				4700BB042819D9AA00A6FCB9 /* QuizViewController.swift in Sources */,
 				4700BB002819D9AA00A6FCB9 /* AppDelegate.swift in Sources */,
-				47D1895028358BF600FD9A05 /* SwiftyButton.swift in Sources */,
-				47AA6C73281DB6A600308E06 /* ViewController.swift in Sources */,
+				47AA6C73281DB6A600308E06 /* StartViewController.swift in Sources */,
 				47620CD8281F060900EDA436 /* Question.swift in Sources */,
+				47D542B0283AAEE600452EEC /* Questionnaire.swift in Sources */,
 				4700BB022819D9AA00A6FCB9 /* SceneDelegate.swift in Sources */,
 				475D0A7128206F8B001BEE0F /* ScoreViewController.swift in Sources */,
 			);
