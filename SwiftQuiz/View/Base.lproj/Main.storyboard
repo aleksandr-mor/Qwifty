@@ -24,13 +24,6 @@
                                     <constraint firstAttribute="height" constant="150" id="QKO-we-Q5K"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pngwing.com-4 copy" translatesAutoresizingMaskIntoConstraints="NO" id="Mbt-Wv-XZW">
-                                <rect key="frame" x="0.0" y="656" width="150" height="150"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="BAh-Ss-5RI"/>
-                                    <constraint firstAttribute="height" constant="150" id="Hqk-qm-APD"/>
-                                </constraints>
-                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="3tP-he-rsq">
                                 <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                             </imageView>
@@ -44,8 +37,8 @@
                                             <constraint firstAttribute="height" constant="80" id="m8y-L3-oro"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swiftly Quiz" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gNR-0C-1py">
-                                        <rect key="frame" x="45.333333333333329" y="87" width="140.33333333333337" height="30"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qwifty" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gNR-0C-1py">
+                                        <rect key="frame" x="76.999999999999972" y="87" width="76.666666666666657" height="30"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
                                         <color key="textColor" red="0.78823530669999997" green="0.44313728810000003" blue="0.20000001789999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
@@ -76,13 +69,6 @@
                                     <action selector="playButtonAction:" destination="b2J-nc-lNQ" eventType="touchUpInside" id="X8d-tR-DqW"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pngwing.com-4 copy 2" translatesAutoresizingMaskIntoConstraints="NO" id="kQZ-Je-kUS">
-                                <rect key="frame" x="139" y="-32" width="150" height="150"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="N7e-Kr-aLu"/>
-                                    <constraint firstAttribute="width" constant="150" id="VgR-Hu-ODn"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YFA-P8-l0K"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -91,11 +77,7 @@
                             <constraint firstItem="FJk-7X-39G" firstAttribute="centerY" secondItem="SC8-pl-EvQ" secondAttribute="centerY" multiplier="0.8" id="30e-lg-puo"/>
                             <constraint firstItem="FJk-7X-39G" firstAttribute="centerX" secondItem="SC8-pl-EvQ" secondAttribute="centerX" id="62i-HP-G49"/>
                             <constraint firstAttribute="bottom" secondItem="3tP-he-rsq" secondAttribute="bottom" id="DK9-co-W3w"/>
-                            <constraint firstItem="DmJ-em-VV1" firstAttribute="top" secondItem="Mbt-Wv-XZW" secondAttribute="bottom" constant="36" id="OJ2-dx-hKz"/>
-                            <constraint firstItem="kQZ-Je-kUS" firstAttribute="top" secondItem="SC8-pl-EvQ" secondAttribute="top" constant="-32" id="PUL-Az-BAM"/>
                             <constraint firstItem="3tP-he-rsq" firstAttribute="top" secondItem="SC8-pl-EvQ" secondAttribute="top" id="Q6o-7h-iUT"/>
-                            <constraint firstItem="kQZ-Je-kUS" firstAttribute="centerX" secondItem="SC8-pl-EvQ" secondAttribute="centerX" id="Y1C-Eh-UxS"/>
-                            <constraint firstItem="Mbt-Wv-XZW" firstAttribute="leading" secondItem="YFA-P8-l0K" secondAttribute="leading" id="cEd-dj-DLU"/>
                             <constraint firstItem="DmJ-em-VV1" firstAttribute="bottom" secondItem="YFA-P8-l0K" secondAttribute="bottom" id="e14-Pn-T4A"/>
                             <constraint firstItem="YFA-P8-l0K" firstAttribute="bottom" secondItem="U6f-kC-Qmz" secondAttribute="bottom" constant="44" id="fMw-PC-ThS"/>
                             <constraint firstItem="DmJ-em-VV1" firstAttribute="leading" secondItem="YFA-P8-l0K" secondAttribute="leading" constant="50" id="gVc-G3-kzL"/>
@@ -107,12 +89,10 @@
                     <navigationItem key="navigationItem" id="gqt-IQ-qHa"/>
                     <connections>
                         <outlet property="appImage" destination="HNG-PO-1OU" id="he6-Ss-h2a"/>
-                        <outlet property="leftCatImage" destination="Mbt-Wv-XZW" id="ZRk-cn-mfe"/>
+                        <outlet property="catImage" destination="U6f-kC-Qmz" id="iul-cB-QWW"/>
                         <outlet property="playButton" destination="DmJ-em-VV1" id="5oP-qk-ilz"/>
-                        <outlet property="rightCatImage" destination="U6f-kC-Qmz" id="iul-cB-QWW"/>
                         <outlet property="subtitleLabel" destination="GyK-jw-iUV" id="TGo-Pe-vTa"/>
                         <outlet property="titleLabel" destination="gNR-0C-1py" id="boE-JX-DqT"/>
-                        <outlet property="topCatImage" destination="kQZ-Je-kUS" id="NaN-6K-jzz"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="ShowSegue" id="jeA-1V-kfW"/>
                     </connections>
                 </viewController>
@@ -300,29 +280,29 @@
                                 <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Wss-U0-gsg">
-                                <rect key="frame" x="67" y="229.33333333333334" width="294" height="374.66666666666663"/>
+                                <rect key="frame" x="115.00000000000001" y="229.33333333333334" width="198.33333333333337" height="374.66666666666663"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pngwing.com-4" translatesAutoresizingMaskIntoConstraints="NO" id="hrg-Gw-RRG">
-                                        <rect key="frame" x="72" y="0.0" width="150" height="150"/>
+                                        <rect key="frame" x="24" y="0.0" width="150" height="150"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="150" id="GCq-Sy-icC"/>
                                             <constraint firstAttribute="width" constant="150" id="t3k-SF-FfY"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Congratulations!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HBv-hm-cfa">
-                                        <rect key="frame" x="48.000000000000014" y="169.99999999999997" width="198.33333333333337" height="30"/>
+                                        <rect key="frame" x="0.0" y="169.99999999999997" width="198.33333333333334" height="30"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
                                         <color key="textColor" red="0.95841950180000002" green="0.53686577079999998" blue="0.1567414701" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sd0-nu-tCp">
-                                        <rect key="frame" x="96.666666666666657" y="219.99999999999997" width="101" height="24"/>
+                                        <rect key="frame" x="48.666666666666657" y="219.99999999999997" width="101" height="24"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
                                         <color key="textColor" systemColor="systemGrayColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="trp-qI-Piu">
-                                        <rect key="frame" x="92.333333333333343" y="264" width="109.33333333333334" height="46.666666666666686"/>
+                                        <rect key="frame" x="44.333333333333336" y="264" width="109.33333333333331" height="46.666666666666686"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hyx-AE-m4r">
                                                 <rect key="frame" x="0.0" y="0.0" width="22.333333333333332" height="46.666666666666664"/>
@@ -339,16 +319,16 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="xua-fV-bvf">
-                                        <rect key="frame" x="0.0" y="330.66666666666663" width="294" height="44"/>
+                                        <rect key="frame" x="13" y="330.66666666666663" width="172.33333333333334" height="44"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You did a great job!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wTr-D3-5s0">
-                                                <rect key="frame" x="0.0" y="0.0" width="294" height="18"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="172.33333333333334" height="18"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
                                                 <color key="textColor" systemColor="systemGrayColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn more by taking another Swiftly Quiz!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VOc-fv-uy0">
-                                                <rect key="frame" x="0.0" y="26" width="294" height="18"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Play again to learn more!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VOc-fv-uy0">
+                                                <rect key="frame" x="0.0" y="26" width="172.33333333333334" height="18"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
                                                 <color key="textColor" systemColor="systemGrayColor"/>
                                                 <nil key="highlightedColor"/>
@@ -442,8 +422,6 @@
         <image name="arrowshape.turn.up.right" catalog="system" width="128" height="106"/>
         <image name="incorrect" width="1000" height="1000"/>
         <image name="pngwing.com-4" width="558" height="648"/>
-        <image name="pngwing.com-4 copy" width="558" height="648"/>
-        <image name="pngwing.com-4 copy 2" width="558" height="648"/>
         <namedColor name="ButtonColor">
             <color red="0.98000001907348633" green="0.82400000095367432" blue="0.68199998140335083" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

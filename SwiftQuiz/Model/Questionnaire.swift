@@ -114,4 +114,22 @@ func fillData() {
     questionList.append(Question(questionTitle: "How to swap a and b in Swift?\n\nvar a = 0\nvar b = 1", answers: ["(a)=(b)", "swap(a,b)", "a.swap(b)", "(a, b) = (b, a)"], correctAnswerIndex: 3))
     //51
     questionList.append(Question(questionTitle: "How to reverse a String in Swift?", answers: ["string.reverse()", "string.return()", "[::-1]", "string.reversed()"], correctAnswerIndex: 3))
+    //52
+    questionList.append(Question(questionTitle: "How to declare an Iboutlet property?", answers: ["var button: UIButton(IBOutlet)", "IBOutlet var button:UIButton", "var button: UIButtonOutlet", "None of the above"], correctAnswerIndex: 3))
+    //53
+    questionList.append(Question(questionTitle: "Name the control transfer statement in Swift?", answers: ["Break", "Continue", "Fallthrough", "All of the above"], correctAnswerIndex: 3))
+    //54
+    questionList.append(Question(questionTitle: "What are the advantages of Swift?", answers: ["All answers are correct", "It’s safe", "It’s fast", "It’s opensource"], correctAnswerIndex: 0))
+    //55
+    questionList.append(Question(questionTitle: "What type of integer is denoted by 'Int8'?", answers: ["Closed", "Signed", "Unsigned", "Open"], correctAnswerIndex: 1))
+    //56
+    questionList.append(Question(questionTitle: "What will be printed in the console?\n\nvar greeting = 'Hello World!'\ngreeting = nil?", answers: ["nil", "Hello World!", "greeting == nil", "The compiler won’t allow it"], correctAnswerIndex: 3))
+    //57
+    questionList.append(Question(questionTitle: "What is super class of AppDelegate?", answers: ["NSObject", "UIDelegate", "UIResponder", "None og the above"], correctAnswerIndex: 2))
+    //58
+    questionList.append(Question(questionTitle: "What access control modifier restricts the use of an entity within the same defined source file?", answers: ["fileprivate", "internal", "private", "open"], correctAnswerIndex: 0))
+    //59
+    questionList.append(Question(questionTitle: "What is default access control level in Swift?", answers: ["open", "public", "internal", "private"], correctAnswerIndex: 2))
+    //60
+    questionList.append(Question(questionTitle: "A function that can change any property in its enclosing value is called...", answers: ["temporary", "changeable", "mutating", "variable"], correctAnswerIndex: 2))
 }
