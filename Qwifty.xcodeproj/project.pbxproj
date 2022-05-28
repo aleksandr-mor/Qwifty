@@ -21,7 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4700BAFC2819D9A900A6FCB9 /* SwiftQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4700BAFC2819D9A900A6FCB9 /* Qwifty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Qwifty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4700BAFF2819D9AA00A6FCB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4700BB012819D9AA00A6FCB9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4700BB032819D9AA00A6FCB9 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
@@ -62,7 +62,7 @@
 		4700BAF32819D9A900A6FCB9 = {
 			isa = PBXGroup;
 			children = (
-				4700BAFE2819D9AA00A6FCB9 /* SwiftQuiz */,
+				4700BAFE2819D9AA00A6FCB9 /* Qwifty */,
 				4700BAFD2819D9A900A6FCB9 /* Products */,
 				2E5888ECAB90A9D752FB5201 /* Pods */,
 				F11784E84A3D7E9C9FBA6E43 /* Frameworks */,
@@ -72,12 +72,12 @@
 		4700BAFD2819D9A900A6FCB9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4700BAFC2819D9A900A6FCB9 /* SwiftQuiz.app */,
+				4700BAFC2819D9A900A6FCB9 /* Qwifty.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4700BAFE2819D9AA00A6FCB9 /* SwiftQuiz */ = {
+		4700BAFE2819D9AA00A6FCB9 /* Qwifty */ = {
 			isa = PBXGroup;
 			children = (
 				47D542B3283AB8AB00452EEC /* Model */,
@@ -86,7 +86,7 @@
 				47D542B4283AB95C00452EEC /* Supporting Files */,
 				4700BB0D2819D9AA00A6FCB9 /* Info.plist */,
 			);
-			path = SwiftQuiz;
+			path = Qwifty;
 			sourceTree = "<group>";
 		};
 		47AA6C71281DB64200308E06 /* Controllers */ = {
@@ -138,9 +138,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4700BAFB2819D9A900A6FCB9 /* SwiftQuiz */ = {
+		4700BAFB2819D9A900A6FCB9 /* Qwifty */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4700BB102819D9AA00A6FCB9 /* Build configuration list for PBXNativeTarget "SwiftQuiz" */;
+			buildConfigurationList = 4700BB102819D9AA00A6FCB9 /* Build configuration list for PBXNativeTarget "Qwifty" */;
 			buildPhases = (
 				546870EA4817E9EACD029779 /* [CP] Check Pods Manifest.lock */,
 				4700BAF82819D9A900A6FCB9 /* Sources */,
@@ -152,9 +152,9 @@
 			);
 			dependencies = (
 			);
-			name = SwiftQuiz;
+			name = Qwifty;
 			productName = SwiftQuiz;
-			productReference = 4700BAFC2819D9A900A6FCB9 /* SwiftQuiz.app */;
+			productReference = 4700BAFC2819D9A900A6FCB9 /* Qwifty.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -172,7 +172,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4700BAF72819D9A900A6FCB9 /* Build configuration list for PBXProject "SwiftQuiz" */;
+			buildConfigurationList = 4700BAF72819D9A900A6FCB9 /* Build configuration list for PBXProject "Qwifty" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -185,7 +185,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4700BAFB2819D9A900A6FCB9 /* SwiftQuiz */,
+				4700BAFB2819D9A900A6FCB9 /* Qwifty */,
 			);
 		};
 /* End PBXProject section */
@@ -406,7 +406,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZNR2D834QB;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SwiftQuiz/Info.plist;
+				INFOPLIST_FILE = Qwifty/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Qwifty;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -419,7 +419,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = almor.SwiftyQuiz;
+				PRODUCT_BUNDLE_IDENTIFIER = almor.Qwifty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -437,7 +437,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZNR2D834QB;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SwiftQuiz/Info.plist;
+				INFOPLIST_FILE = Qwifty/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Qwifty;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -450,7 +450,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = almor.SwiftyQuiz;
+				PRODUCT_BUNDLE_IDENTIFIER = almor.Qwifty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -461,7 +461,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4700BAF72819D9A900A6FCB9 /* Build configuration list for PBXProject "SwiftQuiz" */ = {
+		4700BAF72819D9A900A6FCB9 /* Build configuration list for PBXProject "Qwifty" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4700BB0E2819D9AA00A6FCB9 /* Debug */,
@@ -470,7 +470,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4700BB102819D9AA00A6FCB9 /* Build configuration list for PBXNativeTarget "SwiftQuiz" */ = {
+		4700BB102819D9AA00A6FCB9 /* Build configuration list for PBXNativeTarget "Qwifty" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4700BB112819D9AA00A6FCB9 /* Debug */,

@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:SwiftQuiz.xcodeproj">
+      location = "group:/Users/almor/Documents/Developer/iOS/App Store/Qwifty/Qwifty.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
