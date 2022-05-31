@@ -34,7 +34,7 @@ class ScoreViewController: UIViewController {
     }
     //MARK: - IBActions
     @IBAction func shareButtonPressed(_ sender: Any) {
-        let activityController = UIActivityViewController(activityItems: ["I got \(result)/20 in Qwifty! Check it out!\nhttps://apps.apple.com/us/app/swifty-quiz-app/id1624964426"], applicationActivities: nil)
+        let activityController = UIActivityViewController(activityItems: ["I got \(result)/20 in Qwifty! Check it out!\nhttps://apps.apple.com/us/app/qwifty/id1626605129"], applicationActivities: nil)
         present(activityController, animated: true, completion: nil)
     }
     @IBAction func playAgainButtonPressed(_ sender: Any) {

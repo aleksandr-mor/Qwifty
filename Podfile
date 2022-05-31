@@ -1,4 +1,4 @@
-target 'SwiftQuiz' do
+target 'Qwifty' do
 use_frameworks!
 
 pod 'SAConfettiView'
