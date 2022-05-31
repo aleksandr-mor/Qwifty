@@ -125,7 +125,7 @@ func fillData() {
     //56
     questionList.append(Question(questionTitle: "What will be printed in the console?\n\nvar greeting = 'Hello World!'\ngreeting = nil?", answers: ["nil", "Hello World!", "greeting == nil", "The compiler won’t allow it"], correctAnswerIndex: 3))
     //57
-    questionList.append(Question(questionTitle: "What is super class of AppDelegate?", answers: ["NSObject", "UIDelegate", "UIResponder", "None og the above"], correctAnswerIndex: 2))
+    questionList.append(Question(questionTitle: "What is super class of AppDelegate?", answers: ["NSObject", "UIDelegate", "UIResponder", "None of the above"], correctAnswerIndex: 2))
     //58
     questionList.append(Question(questionTitle: "What access control modifier restricts the use of an entity within the same defined source file?", answers: ["fileprivate", "internal", "private", "open"], correctAnswerIndex: 0))
     //59
