@@ -118,12 +118,13 @@ class QuizViewController: UIViewController {
     }
     
     func getRandomQuestion() -> Question {
-        if (previouslyUsedNumbers.count == questionList.count) {
+        if previouslyUsedNumbers.count == questionList.count {
             previouslyUsedNumbers = []
         }
-        var randomNumber = GKRandomSource.sharedRandom().nextInt(upperBound: questionList.count)
-        while (previouslyUsedNumbers.contains(randomNumber)) {
-            randomNumber = GKRandomSource.sharedRandom().nextInt(upperBound: questionList.count)
+        var randomNumber = Int.random(in: 0...questionList.count - 1)
+        
+        while previouslyUsedNumbers.contains(randomNumber) {
+            randomNumber = Int.random(in: 0...questionList.count - 1)
         }
         previouslyUsedNumbers.append(randomNumber)
         return questionList[randomNumber]
