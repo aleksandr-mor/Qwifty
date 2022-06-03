@@ -65,6 +65,8 @@ class QuizViewController: UIViewController {
         secondChoiceButton.titleLabel?.textAlignment = NSTextAlignment.center
         thirdChoiceButton.titleLabel?.textAlignment = NSTextAlignment.center
         fourthChoiceButton.titleLabel?.textAlignment = NSTextAlignment.center
+        
+        self.navigationItem.setHidesBackButton(true, animated: true)
     }
     
     //MARK: - IBActions
@@ -120,6 +122,18 @@ class QuizViewController: UIViewController {
             sender.backgroundColor = UIColor.orangeColor
             sender.addShadowView()
         }
+    }
+    @IBAction func restartButtonPressed(_ sender: Any) {
+        let refreshAlert = UIAlertController(title: "Start a new game!", message: "Current progress will be lost", preferredStyle: UIAlertController.Style.alert)
+
+        refreshAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
+            guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "QuizViewController") else {return}
+            self.navigationController?.pushViewController(vc, animated: true)
+        }))
+
+        refreshAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (action: UIAlertAction!) in
+        }))
+        present(refreshAlert, animated: true, completion: nil)
     }
     
     //MARK: - Logics

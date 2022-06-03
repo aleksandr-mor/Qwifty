@@ -51,7 +51,7 @@ func fillData() {
     //19
     questionList.append(Question(questionTitle: "What is data type of nums? \n\nlet nums = (“num”, 0)", answers: ["Dictionary", "Optional", "Tuple", "All answers are incorrect"], correctAnswerIndex: 2))
     //20
-    questionList.append(Question(questionTitle: "How many times will this loop be executed? \n\nfor i in 0…100 { \nprint(i) \n}", answers: ["0", "99", "100", "101"], correctAnswerIndex: 3))
+    questionList.append(Question(questionTitle: "How many times will this loop be executed? \nfor i in 0…100 { \nprint(i) \n}", answers: ["0", "99", "100", "101"], correctAnswerIndex: 3))
     //21
     questionList.append(Question(questionTitle: "How would you call a function that returns a value and also throws errors?", answers: ["try!", "!try", "try?", "?try"], correctAnswerIndex: 2))
     //22

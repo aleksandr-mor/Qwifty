@@ -112,7 +112,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p6R-eF-e1Y">
-                                <rect key="frame" x="30" y="117" width="354" height="89"/>
+                                <rect key="frame" x="30" y="161" width="354" height="89"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
                                 <color key="textColor" systemColor="systemGrayColor"/>
                                 <color key="highlightedColor" systemColor="systemGrayColor"/>
@@ -191,7 +191,7 @@
                                 </subviews>
                             </stackView>
                             <progressView opaque="NO" tag="-1" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="jW7-rN-FxN">
-                                <rect key="frame" x="30" y="64" width="354" height="10"/>
+                                <rect key="frame" x="30" y="108" width="354" height="10"/>
                                 <color key="tintColor" red="0.90196073060000004" green="0.55686277149999996" blue="0.25490197539999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="10" id="rOt-6T-1r8"/>
@@ -213,7 +213,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 / 20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NQq-tb-V8D">
-                                <rect key="frame" x="187.5" y="79" width="39" height="18"/>
+                                <rect key="frame" x="187.5" y="123" width="39" height="18"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
                                 <color key="textColor" red="0.43029909459999999" green="0.43029909459999999" blue="0.43029909459999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -254,7 +254,13 @@
                             <constraint firstItem="wbU-kG-NAy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="zc6-DN-TVH"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="onX-hw-c9o"/>
+                    <navigationItem key="navigationItem" id="onX-hw-c9o">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="arrow.uturn.left.circle" catalog="system" id="U5r-Fh-Z2M">
+                            <connections>
+                                <action selector="restartButtonPressed:" destination="BYZ-38-t0r" id="Uyk-xT-mtL"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="correctIncorrectImage" destination="KxI-d0-qV4" id="jXq-1G-rWM"/>
                         <outlet property="firstChoiceButton" destination="erN-mC-jMH" id="tVW-br-9Eu"/>
@@ -405,12 +411,17 @@
         <!--Navigation Controller-->
         <scene sceneID="1kX-PG-zbe">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="zhp-B5-kdE" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zhp-B5-kdE" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="TsT-Vu-kQH">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sA7-YS-HxZ">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="b2J-nc-lNQ" kind="relationship" relationship="rootViewController" id="CTw-0m-vCE"/>
                     </connections>
@@ -423,6 +434,7 @@
     <resources>
         <image name="Background" width="2000" height="2000"/>
         <image name="QwiftyRounded" width="1024" height="1024"/>
+        <image name="arrow.uturn.left.circle" catalog="system" width="128" height="121"/>
         <image name="arrowshape.turn.up.right" catalog="system" width="128" height="106"/>
         <image name="correct" width="512" height="512"/>
         <image name="pngwing.com-4" width="558" height="648"/>

@@ -19,11 +19,16 @@ class StartViewController: UIViewController {
     //MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         playButton.addShadowView()
         titleLabel.alpha = 0
         subtitleLabel.alpha = 0
         appImage.alpha = 0
         catImage.alpha = 0
+        
+        navigationItem.backButtonTitle = ""
+        navigationController?.navigationBar.tintColor = .systemGray3
+
     }
     //MARK: - Animation
     override func viewDidAppear(_ animated: Bool) {
