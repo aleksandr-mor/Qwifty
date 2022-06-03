@@ -38,6 +38,7 @@ class QuizViewController: UIViewController {
     //MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        questionList.removeAll()
         fillData()
         displayQuestion()
         
@@ -99,6 +100,15 @@ class QuizViewController: UIViewController {
             } else {
                 score.incrementIncorrectAnswers()
                 isCorrectAnswer = false
+                if question.validateAnswer(to: (firstChoiceButton.titleLabel?.text)!) {
+                    firstChoiceButton.setTitleColor(.paleGreen, for: .normal)
+                } else if question.validateAnswer(to: (secondChoiceButton.titleLabel?.text)!) {
+                    secondChoiceButton.setTitleColor(.paleGreen, for: .normal)
+                } else if question.validateAnswer(to: (thirdChoiceButton.titleLabel?.text)!) {
+                    thirdChoiceButton.setTitleColor(.paleGreen, for: .normal)
+                } else {
+                    fourthChoiceButton.setTitleColor(.paleGreen, for: .normal)
+                }
             }
             firstChoiceButton.isEnabled = false
             secondChoiceButton.isEnabled = false
@@ -142,7 +152,6 @@ class QuizViewController: UIViewController {
             if (score.numberOfQuestionsAsked() == numberOfQuestionPerRound - 1) {
                 nextButton.setTitle("END QUIZ", for: .normal)
                 nextButton.isEnabled = false
-                
             } else {
                 nextButton.setTitle("NEXT", for: .normal)
                 nextButton.titleLabel?.font = UIFont.systemFont(ofSize: 17, weight: .bold)
@@ -171,7 +180,7 @@ class QuizViewController: UIViewController {
 // MARK: - Extensions
 extension UIColor {
     static var orangeColor = UIColor.init(red: 244/255, green: 137/255, blue: 40/255, alpha: 1.0)
-    static var turquoiseColor = UIColor.init(red: 77/255, green: 154/255, blue: 155/255, alpha: 1.0)
+    static var paleGreen = UIColor.init(red: 102/255, green: 153/255, blue: 102/255, alpha: 0.8)
     static var redColor = UIColor.init(red: 235/255, green: 69/255, blue: 90/255, alpha: 1.0)
 }
 
