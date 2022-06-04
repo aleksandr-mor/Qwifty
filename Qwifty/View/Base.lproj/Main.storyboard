@@ -255,7 +255,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="onX-hw-c9o">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="arrow.uturn.left.circle" catalog="system" id="U5r-Fh-Z2M">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="gobackward" catalog="system" id="U5r-Fh-Z2M">
                             <connections>
                                 <action selector="restartButtonPressed:" destination="BYZ-38-t0r" id="Uyk-xT-mtL"/>
                             </connections>
@@ -434,9 +434,9 @@
     <resources>
         <image name="Background" width="2000" height="2000"/>
         <image name="QwiftyRounded" width="1024" height="1024"/>
-        <image name="arrow.uturn.left.circle" catalog="system" width="128" height="121"/>
         <image name="arrowshape.turn.up.right" catalog="system" width="128" height="106"/>
         <image name="correct" width="512" height="512"/>
+        <image name="gobackward" catalog="system" width="121" height="128"/>
         <image name="pngwing.com-4" width="558" height="648"/>
         <namedColor name="ButtonColor">
             <color red="0.98000001907348633" green="0.82400000095367432" blue="0.68199998140335083" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

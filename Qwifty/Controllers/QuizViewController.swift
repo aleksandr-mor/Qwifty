@@ -103,13 +103,13 @@ class QuizViewController: UIViewController {
                 score.incrementIncorrectAnswers()
                 isCorrectAnswer = false
                 if question.validateAnswer(to: (firstChoiceButton.titleLabel?.text)!) {
-                    firstChoiceButton.setTitleColor(.paleGreen, for: .normal)
+                    firstChoiceButton.setTitleColor(.lightGreenColor, for: .normal)
                 } else if question.validateAnswer(to: (secondChoiceButton.titleLabel?.text)!) {
-                    secondChoiceButton.setTitleColor(.paleGreen, for: .normal)
+                    secondChoiceButton.setTitleColor(.lightGreenColor, for: .normal)
                 } else if question.validateAnswer(to: (thirdChoiceButton.titleLabel?.text)!) {
-                    thirdChoiceButton.setTitleColor(.paleGreen, for: .normal)
+                    thirdChoiceButton.setTitleColor(.lightGreenColor, for: .normal)
                 } else {
-                    fourthChoiceButton.setTitleColor(.paleGreen, for: .normal)
+                    fourthChoiceButton.setTitleColor(.lightGreenColor, for: .normal)
                 }
             }
             firstChoiceButton.isEnabled = false
@@ -123,14 +123,13 @@ class QuizViewController: UIViewController {
             sender.addShadowView()
         }
     }
+    
     @IBAction func restartButtonPressed(_ sender: Any) {
-        let refreshAlert = UIAlertController(title: "Start a new game!", message: "Current progress will be lost", preferredStyle: UIAlertController.Style.alert)
-
+        let refreshAlert = UIAlertController(title: "Start a new game!", message: "Current progress won't be saved", preferredStyle: UIAlertController.Style.alert)
         refreshAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
             guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "QuizViewController") else {return}
             self.navigationController?.pushViewController(vc, animated: true)
         }))
-
         refreshAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (action: UIAlertAction!) in
         }))
         present(refreshAlert, animated: true, completion: nil)
@@ -194,8 +193,7 @@ class QuizViewController: UIViewController {
 // MARK: - Extensions
 extension UIColor {
     static var orangeColor = UIColor.init(red: 244/255, green: 137/255, blue: 40/255, alpha: 1.0)
-    static var paleGreen = UIColor.init(red: 102/255, green: 153/255, blue: 102/255, alpha: 0.8)
-    static var redColor = UIColor.init(red: 235/255, green: 69/255, blue: 90/255, alpha: 1.0)
+    static var lightGreenColor = UIColor.init(red: 102/255, green: 153/255, blue: 102/255, alpha: 0.8)
 }
 
 extension UIView {
