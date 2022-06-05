@@ -29,6 +29,7 @@ class ScoreViewController: UIViewController {
         scoreLabel.text = "\(result)"
         DispatchQueue.main.asyncAfter(deadline: deadline) { [weak self] in
             self?.reviewService.requestReview()
+            self?.navigationItem.setHidesBackButton(true, animated: true)
         }
         
         //MARK: - SAConfettiView
