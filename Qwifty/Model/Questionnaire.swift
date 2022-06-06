@@ -147,7 +147,7 @@ func fillData() {
     //67
     questionList.append(Question(questionTitle: "Which of the following is executed when the condition in an if statement is false?", answers: ["if else", "else", "if", "if then"], correctAnswerIndex: 1))
     //68
-    questionList.append(Question(questionTitle: "Check if 'a' is not equal to 100 or 'b' is less than 200", answers: ["if a = 100 || b < 200", "if a != 100 || b > 200", "if a != 100 || b < 200", "if a != 100 && b < 200"], correctAnswerIndex: 2))
+    questionList.append(Question(questionTitle: "Check if a is not equal to 100 or b is less than 200", answers: ["if a = 100 || b < 200", "if a != 100 || b > 200", "if a != 100 || b < 200", "if a != 100 && b < 200"], correctAnswerIndex: 2))
     //69
     questionList.append(Question(questionTitle: "Name the value that can only be either true or false?", answers: ["Bin", "Int", "Double", "Boolean"], correctAnswerIndex: 3))
     //70
