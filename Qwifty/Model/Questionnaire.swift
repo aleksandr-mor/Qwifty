@@ -132,4 +132,24 @@ func fillData() {
     questionList.append(Question(questionTitle: "What is default access control level in Swift?", answers: ["open", "public", "internal", "private"], correctAnswerIndex: 2))
     //60
     questionList.append(Question(questionTitle: "A function that can change any property in its enclosing value is called...", answers: ["temporary", "changeable", "mutating", "variable"], correctAnswerIndex: 2))
+    //61
+    questionList.append(Question(questionTitle: "Which of these is a protocol?", answers: ["ObservedObject", "StateObject", "ObservableObject", "Published"], correctAnswerIndex: 2))
+    //62
+    questionList.append(Question(questionTitle: "! (not) is an example of", answers: ["function", "closure", "conditional", "logical operator"], correctAnswerIndex: 3))
+    //63
+    questionList.append(Question(questionTitle: "&& (and) is an example of", answers: ["function", "closure", "conditional", "logical operator"], correctAnswerIndex: 3))
+    //64
+    questionList.append(Question(questionTitle: "What is the best classification for the identifier 'stringOfNumbers'?", answers: ["identifier written in camel case", "conditional statement", "identifier with a string data type", "function's name"], correctAnswerIndex: 0))
+    //65
+    questionList.append(Question(questionTitle: "Identify the assignment operator", answers: ["=", "==", ">", "&&"], correctAnswerIndex: 0))
+    //66
+    questionList.append(Question(questionTitle: "if, else if, else statements are classified as", answers: ["loops", "conditionals", "constants", "variables"], correctAnswerIndex: 1))
+    //67
+    questionList.append(Question(questionTitle: "Which of the following is executed when the condition in an if statement is false?", answers: ["if else", "else", "if", "if then"], correctAnswerIndex: 1))
+    //68
+    questionList.append(Question(questionTitle: "Check if 'a' is not equal to 100 or 'b' is less than 200", answers: ["if a = 100 || b < 200", "if a != 100 || b > 200", "if a != 100 || b < 200", "if a != 100 && b < 200"], correctAnswerIndex: 2))
+    //69
+    questionList.append(Question(questionTitle: "Name the value that can only be either true or false?", answers: ["Bin", "Int", "Double", "Boolean"], correctAnswerIndex: 3))
+    //70
+    questionList.append(Question(questionTitle: "What is the correct way to call the function below:\nfunc rickAstley( ) {\nprint('Never Gonna Give You Up')\n}", answers: ["call rickAstley", "func( )", "rickAstley( )", "func = rickAstley( )"], correctAnswerIndex: 2))
 }
