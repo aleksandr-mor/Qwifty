@@ -152,4 +152,15 @@ func fillData() {
     questionList.append(Question(questionTitle: "Name the value that can only be either true or false?", answers: ["Bin", "Int", "Double", "Boolean"], correctAnswerIndex: 3))
     //70
     questionList.append(Question(questionTitle: "What is the correct way to call the function below:\nfunc rickAstley( ) {\nprint('Never Gonna Give You Up')\n}", answers: ["call rickAstley", "func( )", "rickAstley( )", "func = rickAstley( )"], correctAnswerIndex: 2))
+    //71
+    questionList.append(Question(questionTitle: "What is the correct way to call the function below:\nfunc rickAstley( ) {\nprint('Never Gonna Give You Up')\n}", answers: ["call rickAstley", "func( )", "rickAstley( )", "func = rickAstley( )"], correctAnswerIndex: 2))
+    questionList.append(Question(questionTitle: "What is the correct way to call the function below:\nfunc rickAstley( ) {\nprint('Never Gonna Give You Up')\n}", answers: ["call rickAstley", "func( )", "rickAstley( )", "func = rickAstley( )"], correctAnswerIndex: 2))
+    questionList.append(Question(questionTitle: "What is the correct way to call the function below:\nfunc rickAstley( ) {\nprint('Never Gonna Give You Up')\n}", answers: ["call rickAstley", "func( )", "rickAstley( )", "func = rickAstley( )"], correctAnswerIndex: 2))
+    questionList.append(Question(questionTitle: "What is the correct way to call the function below:\nfunc rickAstley( ) {\nprint('Never Gonna Give You Up')\n}", answers: ["call rickAstley", "func( )", "rickAstley( )", "func = rickAstley( )"], correctAnswerIndex: 2))
+    questionList.append(Question(questionTitle: "What is the correct way to call the function below:\nfunc rickAstley( ) {\nprint('Never Gonna Give You Up')\n}", answers: ["call rickAstley", "func( )", "rickAstley( )", "func = rickAstley( )"], correctAnswerIndex: 2))
+    questionList.append(Question(questionTitle: "What is the correct way to call the function below:\nfunc rickAstley( ) {\nprint('Never Gonna Give You Up')\n}", answers: ["call rickAstley", "func( )", "rickAstley( )", "func = rickAstley( )"], correctAnswerIndex: 2))
+    questionList.append(Question(questionTitle: "What is the correct way to call the function below:\nfunc rickAstley( ) {\nprint('Never Gonna Give You Up')\n}", answers: ["call rickAstley", "func( )", "rickAstley( )", "func = rickAstley( )"], correctAnswerIndex: 2))
+    questionList.append(Question(questionTitle: "What is the correct way to call the function below:\nfunc rickAstley( ) {\nprint('Never Gonna Give You Up')\n}", answers: ["call rickAstley", "func( )", "rickAstley( )", "func = rickAstley( )"], correctAnswerIndex: 2))
+    questionList.append(Question(questionTitle: "What is the correct way to call the function below:\nfunc rickAstley( ) {\nprint('Never Gonna Give You Up')\n}", answers: ["call rickAstley", "func( )", "rickAstley( )", "func = rickAstley( )"], correctAnswerIndex: 2))
+    
 }
