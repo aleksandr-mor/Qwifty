@@ -59,7 +59,7 @@ func fillData() {
     //23
     questionList.append(Question(questionTitle: "When a function takes a closure as a parameter, when should you mark it as an escaping?", answers: ["When it’s lazy loaded", "When it’s scope is undefined", "When it’s executed after function returns", "When it executed before function returns"], correctAnswerIndex: 2))
     //24
-    questionList.append(Question(questionTitle: "What are the collection types in Swift?", answers: ["Dictionary and library", "Array and library", "Library, dictionary and array", "Dictionary and array"], correctAnswerIndex: 3))
+    questionList.append(Question(questionTitle: "What are the collection types in Swift?", answers: ["Dictionary and library", "Array and library", "Library, dictionary and array", "Dictionary, array and set"], correctAnswerIndex: 3))
     //25
     questionList.append(Question(questionTitle: "Swift is…", answers: ["Scripting language", "Object-oriented language", "type safe language", "All answers are correct"], correctAnswerIndex: 3))
     //26
@@ -153,14 +153,22 @@ func fillData() {
     //70
     questionList.append(Question(questionTitle: "What is the correct way to call the function below:\nfunc rickAstley( ) {\nprint('Never Gonna Give You Up')\n}", answers: ["call rickAstley", "func( )", "rickAstley( )", "func = rickAstley( )"], correctAnswerIndex: 2))
     //71
-    questionList.append(Question(questionTitle: "What is the correct way to call the function below:\nfunc rickAstley( ) {\nprint('Never Gonna Give You Up')\n}", answers: ["call rickAstley", "func( )", "rickAstley( )", "func = rickAstley( )"], correctAnswerIndex: 2))
-    questionList.append(Question(questionTitle: "What is the correct way to call the function below:\nfunc rickAstley( ) {\nprint('Never Gonna Give You Up')\n}", answers: ["call rickAstley", "func( )", "rickAstley( )", "func = rickAstley( )"], correctAnswerIndex: 2))
-    questionList.append(Question(questionTitle: "What is the correct way to call the function below:\nfunc rickAstley( ) {\nprint('Never Gonna Give You Up')\n}", answers: ["call rickAstley", "func( )", "rickAstley( )", "func = rickAstley( )"], correctAnswerIndex: 2))
-    questionList.append(Question(questionTitle: "What is the correct way to call the function below:\nfunc rickAstley( ) {\nprint('Never Gonna Give You Up')\n}", answers: ["call rickAstley", "func( )", "rickAstley( )", "func = rickAstley( )"], correctAnswerIndex: 2))
-    questionList.append(Question(questionTitle: "What is the correct way to call the function below:\nfunc rickAstley( ) {\nprint('Never Gonna Give You Up')\n}", answers: ["call rickAstley", "func( )", "rickAstley( )", "func = rickAstley( )"], correctAnswerIndex: 2))
-    questionList.append(Question(questionTitle: "What is the correct way to call the function below:\nfunc rickAstley( ) {\nprint('Never Gonna Give You Up')\n}", answers: ["call rickAstley", "func( )", "rickAstley( )", "func = rickAstley( )"], correctAnswerIndex: 2))
-    questionList.append(Question(questionTitle: "What is the correct way to call the function below:\nfunc rickAstley( ) {\nprint('Never Gonna Give You Up')\n}", answers: ["call rickAstley", "func( )", "rickAstley( )", "func = rickAstley( )"], correctAnswerIndex: 2))
-    questionList.append(Question(questionTitle: "What is the correct way to call the function below:\nfunc rickAstley( ) {\nprint('Never Gonna Give You Up')\n}", answers: ["call rickAstley", "func( )", "rickAstley( )", "func = rickAstley( )"], correctAnswerIndex: 2))
-    questionList.append(Question(questionTitle: "What is the correct way to call the function below:\nfunc rickAstley( ) {\nprint('Never Gonna Give You Up')\n}", answers: ["call rickAstley", "func( )", "rickAstley( )", "func = rickAstley( )"], correctAnswerIndex: 2))
+    questionList.append(Question(questionTitle: "What is the question mark (?) in Swift used for?", answers: ["Used in parameter declaration", "Used in loop declaration", "Used in function declaration", "Used in property declaration"], correctAnswerIndex: 3))
+    //72
+    questionList.append(Question(questionTitle: "Define operator a..<b ", answers: ["Half-close range", "Half-open range", "Full-close range", "Full-open range"], correctAnswerIndex: 1))
+    //73
+    questionList.append(Question(questionTitle: "Define operator a... ", answers: ["One-sided range", "Half-open range", "Left-sided range", "Half-closed range"], correctAnswerIndex: 0))
+    //74
+    questionList.append(Question(questionTitle: "Single-line comments are started with...", answers: ["Asterisk", "Hash", "Single slashes", "Double slashes"], correctAnswerIndex: 3))
+    //75
+    questionList.append(Question(questionTitle: "How many types of classes in Inheritance in Swift?", answers: ["1", "2", "3", "4"], correctAnswerIndex: 1))
+    //76
+    questionList.append(Question(questionTitle: "How many primary collection types Swift provides?", answers: ["2", "3", "4", "None of the above"], correctAnswerIndex: 1))
+    //77
+    questionList.append(Question(questionTitle: "The class which inherits the properties from other class is called", answers: ["Superclass or parent class", "Subclass or child class", "Inheriting class or inheritor", "Swift does not support inheritance"], correctAnswerIndex: 1))
+    //78
+    questionList.append(Question(questionTitle: "The class you inherit from is called", answers: ["Inheriting class or inheritor", "Subclass", "Superclass or parent class", "Swift does not support inheritance"], correctAnswerIndex: 2))
+    //79
+    questionList.append(Question(questionTitle: "Design pattern that ensures a class can have only one object is called...", answers: ["Singleclass", "Singleton", "Subclass", "Private"], correctAnswerIndex: 1))
     
 }
