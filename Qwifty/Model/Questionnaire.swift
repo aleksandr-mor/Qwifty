@@ -181,7 +181,7 @@ func fillData() {
     //84
     questionList.append(Question(questionTitle: "What is the value of b\n\nlet a = ['3', '5'].dropFirst()\nb = a[0]", answers: ["3", "5", "nil", "This code contains an error"], correctAnswerIndex: 3))
     //85
-    questionList.append(Question(questionTitle: "What is the value of test in this code?\n\nvar number = 5 == 5", answers: ["5", "nil", "true", "This code contains an error"], correctAnswerIndex: 2))
+    questionList.append(Question(questionTitle: "What is the value of number in this code?\n\nvar number = 5 == 5", answers: ["5", "nil", "true", "This code contains an error"], correctAnswerIndex: 2))
     //86
     questionList.append(Question(questionTitle: "What is the value of a\n\nvar b: Int?\nlet a = b ?? 1", answers: ["1", "nil", "0", "This code contains an error"], correctAnswerIndex: 0))
     //87
@@ -193,7 +193,25 @@ func fillData() {
     //90
     questionList.append(Question(questionTitle: "What's wrong with this code?\nclass Developer {\nvar name: String\n}", answers: ["Developer has no superclass", "Developer has no initializers", "var name is not formatted correctly", "name is a keyword"], correctAnswerIndex: 1))
     //91
-    questionList.append(Question(questionTitle: "Design pattern that ensures a class can have only one object is called...", answers: ["Singleclass", "Singleton", "Subclass", "Private"], correctAnswerIndex: 1))
-    questionList.append(Question(questionTitle: "Design pattern that ensures a class can have only one object is called...", answers: ["Singleclass", "Singleton", "Subclass", "Private"], correctAnswerIndex: 1))
-    
+    questionList.append(Question(questionTitle: "What describes this line of code?\nlet number = 5", answers: ["a variable named number of type Int", "a constant named number of type Number", "a constant named number of type Int", "a variable named number of type Item"], correctAnswerIndex: 2))
+    //92
+    questionList.append(Question(questionTitle: "How can you avoid a strong reference cycle in a closure?", answers: ["Declare the closure variable as lazy", "Initialize the closure as read-only", "You can't", "Use a capture list to set weak or unowned"], correctAnswerIndex: 3))
+    //93
+    questionList.append(Question(questionTitle: "Which code snippet correctly creates a typealias closure?", answers: ["typealias Closure: () -> ()", "typealias Closure { () -> () }", "typealias Closure -> () -> ()", "typealias Closure -> () {}"], correctAnswerIndex: 0))
+    //94
+    questionList.append(Question(questionTitle: "How to reference class members from within a class?", answers: ["class", "init", "self", "instance"], correctAnswerIndex: 2))
+    //95
+    questionList.append(Question(questionTitle: "What is the correct way to add a value to this array?\n\nvar array = [3, 4, 5]", answers: ["array.append(6)", "array.insert(6, at: 1)", "array += [6]", "All of the above"], correctAnswerIndex: 3))
+    //96
+    questionList.append(Question(questionTitle: "What is the value of cpuVal after this code executes?\n\nlet cpu = (name: 'M2', val: 1)\nlet cpuVal = cpu.0", answers: ["name", "1", "M2", "nil"], correctAnswerIndex: 2))
+    //97
+    questionList.append(Question(questionTitle: "What is the superclass in this code?\n\nclass This: That {\n}", answers: ["This", "That", "There is no superclass", "The code is invalid"], correctAnswerIndex: 1))
+    //98
+    questionList.append(Question(questionTitle: "What must a convenience initializer call?", answers: ["Designated initializer", "Superclass convenience initializer", "Designated or another convenience initializer", "All of the above"], correctAnswerIndex: 0))
+    //99
+    questionList.append(Question(questionTitle: "What is the inferred type of a\n\na = ['x', 'y', 'z']?", answers: ["Array<Character>", "Set<String>", "String[]", "Array<String>"], correctAnswerIndex: 3))
+    //100
+    questionList.append(Question(questionTitle: "How to designate a failable initializer?", answers: ["init", "init?", "You can't", "deinit"], correctAnswerIndex: 1))
+    //101
+    questionList.append(Question(questionTitle: "In the function below, what are first and second examples of?\n\nsum(first x: Int, second y: Int) -> {}", answers: ["Local terms", "Argument labels", "Parameters names", "The code is invalid"], correctAnswerIndex: 1))
 }
