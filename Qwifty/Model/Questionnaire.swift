@@ -177,7 +177,7 @@ func fillData() {
     //82
     questionList.append(Question(questionTitle: "Why is DispatchGroup used in certain situations?", answers: ["To run sync or async operations", "To track and control multiple operations", "To allow one operation to wait for another", "All of the above"], correctAnswerIndex: 3))
     //83
-    questionList.append(Question(questionTitle: "What is this code an example of?\n\nnumber = 1\nprint('number = ＼(number)'", answers: ["String interpolation", "String compilation", "String encapsulation", "Method chaining"], correctAnswerIndex: 0))
+    questionList.append(Question(questionTitle: "What is this code an example of?\n\nnumber = 1\nprint('number = ＼(number)')", answers: ["String interpolation", "String compilation", "String encapsulation", "Method chaining"], correctAnswerIndex: 0))
     //84
     questionList.append(Question(questionTitle: "What is the value of b\n\nlet a = ['3', '5'].dropFirst()\nb = a[0]", answers: ["3", "5", "nil", "This code contains an error"], correctAnswerIndex: 3))
     //85
@@ -203,7 +203,7 @@ func fillData() {
     //95
     questionList.append(Question(questionTitle: "What is the correct way to add a value to this array?\n\nvar array = [3, 4, 5]", answers: ["array.append(6)", "array.insert(6, at: 1)", "array += [6]", "All of the above"], correctAnswerIndex: 3))
     //96
-    questionList.append(Question(questionTitle: "What is the value of cpuVal after this code executes?\n\nlet cpu = (name: 'M2', val: 1)\nlet cpuVal = cpu.0", answers: ["name", "1", "M2", "nil"], correctAnswerIndex: 2))
+    questionList.append(Question(questionTitle: "What is the value of cpuVal after this code executes?\nlet cpu = (name: 'M2', val: 1)\nlet cpuVal = cpu.0", answers: ["name", "1", "M2", "nil"], correctAnswerIndex: 2))
     //97
     questionList.append(Question(questionTitle: "What is the superclass in this code?\n\nclass This: That {\n}", answers: ["This", "That", "There is no superclass", "The code is invalid"], correctAnswerIndex: 1))
     //98
