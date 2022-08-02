@@ -45,7 +45,7 @@ class QuizViewController: UIViewController {
         progressLabel.text = "\(progressNumber) / 20"
         progressBar.progress = progress
         
-        nextButton.setTitle("NEXT", for: .normal)
+//        nextButton.setTitle("NEXT", for: .normal)
         nextButton.titleLabel?.textColor = .gray
         
         nextButton.addShadowView()
@@ -163,10 +163,10 @@ class QuizViewController: UIViewController {
             thirdChoiceButton.setTitle(choices[2], for: .normal)
             fourthChoiceButton.setTitle(choices[3], for: .normal)
             if (score.numberOfQuestionsAsked() == numberOfQuestionPerRound - 1) {
-                nextButton.setTitle("END QUIZ", for: .normal)
+//                nextButton.setTitle("END QUIZ", for: .normal)
                 nextButton.isEnabled = false
             } else {
-                nextButton.setTitle("NEXT", for: .normal)
+//                nextButton.setTitle("NEXT", for: .normal)
                 nextButton.titleLabel?.font = UIFont.systemFont(ofSize: 17, weight: .bold)
             }
         }
@@ -208,3 +208,9 @@ extension UIView {
         self.layer.shadowColor = UIColor.clear.cgColor
     }
 }
+//// MARK: - Localization
+//extension String {
+//    func localized() -> String {
+//        return NSLocalizedString(self, tableName: "Localizable", bundle: .main, value: self, comment: self)
+//    }
+//}

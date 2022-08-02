@@ -1,0 +1,18 @@
+//1
+"What is the default data type for floating point numbers in Swift?" = "Was ist der Standard-Datentyp für Fließkommazahlen in Swift?";
+
+//2
+"What keyword is used to declare a constant in Swift?" = "Welches Schlüsselwort wird verwendet, um eine Konstante in Swift zu deklarieren?";
+
+//3
+"How to write a multiple line comment in Swift?" = "Wie schreibt man einen mehrzeiligen Kommentar in Swift?";
+
+//4
+"How are Structs different from Classes in Swift?" = "Wie unterscheiden sich Strukturen von Klassen in Swift?";
+
+"Structures are value types" = "Strukturen sind Werttypen";
+"Structures are reference types" = "Strukturen sind Referenztypen";
+"Structures support inheritance" = "Strukturen unterstützen Vererbung";
+"Structures don’t receive a default initializer" = "Strukturen erhalten keinen Standardinitialisierer";
+
+//5
