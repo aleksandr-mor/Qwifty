@@ -57,16 +57,52 @@ func fillData() {
         ],
         correctAnswerIndex: 0))
     
-    //    //5
-    //    questionList.append(Question(questionTitle: "Name the properties whose initial values are not calculated until the first use", answers: ["Computed Properties", "Delayed Properties", "Stored Properties", "Lazy Stored Properties"], correctAnswerIndex: 3))
-    //    //6
-    //    questionList.append(Question(questionTitle: "What is the significance of “?” in Swift?", answers: ["It is used to force unwrap the variable", "It makes a property optional", "It returns first none nil value", "It is used to replace the external label"], correctAnswerIndex: 1))
-    //    //7
-    //    questionList.append(Question(questionTitle: "Choose the correct statement", answers: ["Bounds are in a view’s own coordinate system", "Frame is in the superview’s coordinate system", "Both statements are correct", "Both statements are incorrect"], correctAnswerIndex: 2))
-    //    //8
-    //    questionList.append(Question(questionTitle: "Name a protocol that allows us to convert Swift types to and from JSON", answers: ["Decodable", "Codable", "Encodable", "JSONDecoder"], correctAnswerIndex: 1))
-    //    //9
-    //    questionList.append(Question(questionTitle: "A function inside a function is called…", answers: ["Nested Function", "Super Function", "Base Function", "Encapsulation"], correctAnswerIndex: 0))
+    //5
+    questionList.append(Question(
+        questionTitle: "Name the properties whose initial values are not calculated until the first use".localized(),
+        answers: [
+            "Computed Properties".localized(),
+            "Delayed Properties".localized(),
+            "Stored Properties".localized(),
+            "Lazy Stored Properties".localized()
+        ],
+        correctAnswerIndex: 3))
+    
+    //6
+    questionList.append(Question(
+        questionTitle: "What is the significance of “?” in Swift?".localized(),
+        answers: [
+            "It is used to force unwrap the variable".localized(),
+            "It makes a property optional".localized(),
+            "It returns first none nil value".localized(),
+            "It is used to replace the external label".localized()
+        ],
+        correctAnswerIndex: 1))
+    
+    //7
+    questionList.append(Question(
+        questionTitle: "Choose the correct statement".localized(),
+        answers: [
+            "Bounds are in a view’s own coordinate system".localized(),
+            "Frame is in the superview’s coordinate system".localized(),
+            "Both statements are correct".localized(),
+            "Both statements are incorrect".localized()
+        ],
+        correctAnswerIndex: 2))
+    
+    //8
+    questionList.append(Question(
+        questionTitle: "Name a protocol that allows us to convert Swift types to and from JSON".localized(),
+        answers: [
+            "Decodable",
+            "Codable",
+            "Encodable",
+            "JSONDecoder"
+        ],
+        correctAnswerIndex: 1))
+    
+        //9
+        questionList.append(Question(questionTitle: "A function inside a function is called…", answers: ["Nested Function", "Super Function", "Base Function", "Encapsulation"], correctAnswerIndex: 0))
     //    //10
     //    questionList.append(Question(questionTitle: "Constant and variable names in Swift can't contain…", answers: ["Numbers", "Capital letters", "Spaces", "Emoji"], correctAnswerIndex: 2))
     //    //11

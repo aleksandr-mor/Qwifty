@@ -16,3 +16,29 @@
 "Structures don’t receive a default initializer" = "Strukturen erhalten keinen Standardinitialisierer";
 
 //5
+"Name the properties whose initial values are not calculated until the first use" = "Benennen Sie die Eigenschaften, deren Anfangswerte erst bei der ersten Verwendung berechnet werden";
+
+"Computed Properties" = "Berechnete Eigenschaften";
+"Delayed Properties" = "Verzögerte Eigenschaften";
+"Stored Properties" = "Gespeicherte Eigenschaften";
+"Lazy Stored Properties" = "Faule gespeicherte Eigenschaften";
+
+//6
+"What is the significance of “?” in Swift?" = "Was bedeutet das "?" in Swift?";
+
+"It is used to force unwrap the variable" = "Es wird verwendet, um die Variable zwangsweise zu entpacken";
+"It makes a property optional" = "Es macht eine Eigenschaft optional";
+"It is used to replace the external label" = "Es gibt zunächst keinen Nullwert zurück";
+
+//7
+"Choose the correct statement" = "Wählen Sie die richtige Aussage";
+
+"Bounds are in a view’s own coordinate system" = "Grenzen sind im eigenen Koordinatensystem einer View";
+"Frame is in the superview’s coordinate system" = "Der Rahmen befindet sich im Koordinatensystem der Superview";
+"Both statements are correct" = "Beide Aussagen sind richtig";
+"Both statements are incorrect" = "Beide Aussagen sind falsch";
+
+//8
+"Name a protocol that allows us to convert Swift types to and from JSON" = "Nennen Sie ein Protokoll, mit dem wir Swift-Typen in JSON und aus JSON konvertieren können";
+
+//9
