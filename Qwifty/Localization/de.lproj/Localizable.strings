@@ -24,10 +24,11 @@
 "Lazy Stored Properties" = "Faule gespeicherte Eigenschaften";
 
 //6
-"What is the significance of “?” in Swift?" = "Was bedeutet das "?" in Swift?";
+"What is the significance of “?” in Swift?" = "Was bedeutet das “?” in Swift?";
 
 "It is used to force unwrap the variable" = "Es wird verwendet, um die Variable zwangsweise zu entpacken";
 "It makes a property optional" = "Es macht eine Eigenschaft optional";
+"It returns first none nil value" = "Es gibt zunächst keinen Nullwert zurück";
 "It is used to replace the external label" = "Es gibt zunächst keinen Nullwert zurück";
 
 //7
@@ -42,3 +43,76 @@
 "Name a protocol that allows us to convert Swift types to and from JSON" = "Nennen Sie ein Protokoll, mit dem wir Swift-Typen in JSON und aus JSON konvertieren können";
 
 //9
+"A function inside a function is called…" = "Eine Funktion innerhalb einer Funktion nennt man eine...";
+
+"Nested Function" = "Verschachtelte Funktion";
+"Super Function" = "Superfunktion";
+"Base Function" = "Basisfunktion";
+"Encapsulation" = "Verkapselung";
+
+//10
+"Constant and variable names in Swift can't contain…" = "Konstanten- und Variablennamen in Swift können nicht enthalten...";
+
+"Numbers" = "Zahlen";
+"Capital letters" = "Großbuchstaben";
+"Spaces" = "Leerzeichen";
+
+//11
+"What keyword is used to declare a variable in Swift?" = "Welches Schlüsselwort wird verwendet, um eine Variable in Swift zu deklarieren?";
+
+"No keyword required" = "Kein Schlüsselwort erforderlich";
+
+//12
+"Swift consists of the following Control transfer statements, except for:" = "Swift besteht aus den folgenden Kontrollübertragungsanweisungen, mit Ausnahme der folgenden:";
+
+//13
+"What is PLIST?" = "Was ist PLIST?";
+
+//14
+"What is “??” in Swift?" = "Was ist “??” in Swift?";
+
+"Binary operator" = "Binärer Operator";
+"Logical OR operator" = "Logischer OR-Operator";
+"Nil-coalescing operator" = "Nil-Koaleszenz-Operator";
+
+//15
+"What is the logical “AND” operator in Swift?" = "Was ist der logische Operator “AND” in Swift?";
+
+//16
+"What is wrong with this code?\n\nlet num = 1.0 + 1" = "Was ist an diesem Code falsch?\n\nlet num = 1.0 + 1";
+
+"There is nothing wrong" = "Es ist alles in Ordnung";
+"There is no semicolon" = "Es gibt kein Semikolon";
+"num is constant and can’t be changed" = "num ist konstant und kann nicht verändert werden";
+"1.0 and 1 are different types" = "1.0 und 1 sind unterschiedliche Typen";
+
+//17
+"What can AnyObject represent?" = "Was kann AnyObject darstellen?";
+
+"An instance of any class" = "Eine Instanz einer beliebigen Klasse";
+"An instance of function type" = "Eine Instanz des Funktionstyps";
+"An instance of an optional type" = "Eine Instanz eines optionalen Typs";
+"All answers are correct" = "Alle Antworten sind richtig";
+
+//18
+"What is LLVM?" = "Was ist LLVM?";
+
+"Objective-C compiler" = "Objective-C Compiler";
+"Swiftc compiler" = "Swiftc Compiler";
+"Contains both compilers" = "Enthält beide Compiler";
+"None of the above" = "Nichts von alledem";
+
+//19
+"What is data type of nums?\n\nlet nums = (“num”, 0)" = "Was ist der Datentyp von nums?\n\nlet nums = (“num”, 0)";
+
+"Dictionary" = "Wörterbuch";
+"Tuple" = "Tupel";
+"All answers are incorrect" = "Alle Antworten sind falsch";
+
+//20
+"How many times will this loop be executed?\nfor i in 0…100 { \nprint(i) \n}" = "Wie viele Male wird diese Schleife ausgeführt?\nfor i in 0…100 { \nprint(i) \n}";
+
+//21
+"How would you call a function that returns a value and also throws errors?" = "Wie würde man eine Funktion aufrufen, die einen Wert zurückgibt und auch Fehler auslöst?";
+
+//22
