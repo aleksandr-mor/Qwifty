@@ -232,26 +232,62 @@ func fillData() {
     //            ],
     //            correctAnswerIndex: 3))
     
-//    //21
+    //    //21
+    //    questionList.append(Question(
+    //        questionTitle: "How would you call a function that returns a value and also throws errors?".localized(),
+    //        answers: [
+    //            "try!",
+    //            "!try",
+    //            "try?",
+    //            "?try"
+    //        ],
+    //        correctAnswerIndex: 2))
+    
+    //        //22
+    //    questionList.append(Question(
+    //        questionTitle: "didSet and willSet are…".localized(),
+    //        answers: [
+    //            "Property Observers".localized(),
+    //            "Instance Methods".localized(),
+    //            "Lifecycle Methods".localized(),
+    //            "All answers are correct".localized()
+    //        ],
+    //        correctAnswerIndex: 0))
+    //
+//    //23
 //    questionList.append(Question(
-//        questionTitle: "How would you call a function that returns a value and also throws errors?".localized(),
+//        questionTitle: "When a function takes a closure as a parameter, when should you mark it as an escaping?".localized(),
 //        answers: [
-//            "try!",
-//            "!try",
-//            "try?",
-//            "?try"
+//            "When it’s lazy loaded".localized(),
+//            "When it’s scope is undefined".localized(),
+//            "When it’s executed after function returns".localized(),
+//            "When it executed before function returns".localized()
 //        ],
 //        correctAnswerIndex: 2))
-        //22
-        questionList.append(Question(questionTitle: "didSet and willSet are…", answers: ["Property Observers", "Instance Methods", "Lifecycle Methods", "All answers are correct"], correctAnswerIndex: 0))
-    //    //23
-    //    questionList.append(Question(questionTitle: "When a function takes a closure as a parameter, when should you mark it as an escaping?", answers: ["When it’s lazy loaded", "When it’s scope is undefined", "When it’s executed after function returns", "When it executed before function returns"], correctAnswerIndex: 2))
-    //    //24
-    //    questionList.append(Question(questionTitle: "What are the collection types in Swift?", answers: ["Dictionary and library", "Array and library", "Library, dictionary and array", "Dictionary, array and set"], correctAnswerIndex: 3))
-    //    //25
-    //    questionList.append(Question(questionTitle: "Swift is…", answers: ["Scripting language", "Object-oriented language", "type safe language", "All answers are correct"], correctAnswerIndex: 3))
-    //    //26
-    //    questionList.append(Question(questionTitle: "What are the common execution states in iOS?", answers: ["Not running", "Inactive", "Active", "All of the above"], correctAnswerIndex: 3))
+//    //24
+//    questionList.append(Question(
+//        questionTitle: "What are the collection types in Swift?".localized(),
+//        answers: [
+//            "Dictionary and library".localized(),
+//            "Array and library".localized(),
+//            "Library, dictionary and array".localized(),
+//            "Dictionary, array and set".localized()
+//        ],
+//        correctAnswerIndex: 3))
+    
+//        //25
+//    questionList.append(Question(
+//        questionTitle: "Swift is…".localized(),
+//        answers: [
+//            "Scripting language".localized(),
+//            "Object-oriented language".localized(),
+//            "Type safe language".localized(),
+//            "All answers are correct".localized()
+//        ],
+//        correctAnswerIndex: 3))
+    
+        //26
+        questionList.append(Question(questionTitle: "What are the common execution states in iOS?", answers: ["Not running", "Inactive", "Active", "All of the above"], correctAnswerIndex: 3))
     //    //27
     //    questionList.append(Question(questionTitle: "What statement can be used to stop the execution of a loop, if, or switch statement?", answers: ["Damper", "Execute", "Stop", "Break"], correctAnswerIndex: 3))
     //    //28

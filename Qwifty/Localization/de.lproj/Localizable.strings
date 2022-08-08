@@ -116,3 +116,36 @@
 "How would you call a function that returns a value and also throws errors?" = "Wie würde man eine Funktion aufrufen, die einen Wert zurückgibt und auch Fehler auslöst?";
 
 //22
+"didSet and willSet are…" = "didSet und willSet sind...";
+
+"Property Observers" = "Eigenschaft Beobachter";
+"Instance Methods" = "Instanzmethoden";
+"Lifecycle Methods" = "Lebenszyklusmethoden";
+"All answers are correct" = "Alle Antworten sind richtig";
+
+//23
+
+"When a function takes a closure as a parameter, when should you mark it as an escaping?" = "Wenn eine Funktion eine Schließung als Parameter annimmt, wann sollte man sie als Escaping markieren?";
+
+"When it’s lazy loaded" = "Wenn es faul geladen ist";
+"When it’s scope is undefined" = "Wenn der Geltungsbereich unbestimmt ist";
+"When it’s executed after function returns" = "Wenn es nach der Rückkehr der Funktion ausgeführt wird";
+"When it executed before function returns" = "Wenn sie vor der Rückkehr der Funktion ausgeführt wird";
+
+//24
+"What are the collection types in Swift?" = "Was sind die Auflistungstypen in Swift?";
+
+"Dictionary and library" = "Wörterbuch und Bibliothek";
+"Array and library" = "Array und Bibliothek";
+"Library, dictionary and array" = "Bibliothek, Wörterbuch und Array";
+"Dictionary, array and set" = "Wörterbuch, Array und Set";
+
+//25
+"Swift is…" = "Swift ist...";
+"Scripting language" = "Skriptsprache";
+"Object-oriented language" = "Objektorientierte Sprache";
+"Type safe language" = "Typsichere Sprache";
+"All answers are correct" = "Alle Antworten sind richtig";
+
+//26
+
