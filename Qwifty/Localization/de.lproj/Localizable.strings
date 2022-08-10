@@ -148,4 +148,55 @@
 "All answers are correct" = "Alle Antworten sind richtig";
 
 //26
+"What are the common execution states in iOS?" = "Was sind die üblichen Ausführungszustände in iOS?";
 
+"Not running" = "Nicht rennen";
+"Inactive" = "Inaktiv";
+"Active" = "Aktiv";
+"All of the above" = "Alle oben genannten";
+
+//27
+"What statement can be used to stop the execution of a loop, if, or switch statement?" = "Welche Anweisung kann verwendet werden, um die Ausführung einer loop-, if- oder switch-Anweisung zu beenden?";
+
+//28
+"iOS was originally an acronym for…" = "iOS war ursprünglich ein Akronym für...";
+
+//29
+"The IDE used in Swift is…" = "Die in Swift verwendete IDE ist...";
+
+//30
+"Double has a precision of at least … decimal digits in Swift" = "Double hat eine Genauigkeit von mindestens ... Dezimalstellen in Swift";
+
+//31
+"Name the incorrect data type in Swift" = "Benennen Sie den falschen Datentyp in Swift";
+
+//32
+"If you don’t want to mention external name in function call, you can use…" = "Wenn Sie den externen Namen im Funktionsaufruf nicht erwähnen wollen, können Sie ... verwenden.";
+
+//33
+"Name the incorrect value type in Swift" = "Benennen Sie den falschen Wertetyp in Swift";
+
+//34
+"Which of the following frameworks is not used in iOS?" = "Welches der folgenden Frameworks wird in iOS nicht verwendet?";
+
+//35
+"Which of the following declares an immutable array in Swift?" = "Welche der folgenden Möglichkeiten deklariert ein unveränderliches Array in Swift?";
+
+//36
+"What is the current status of the App if it is running in the background but not receiving any events?" = "Was ist der aktuelle Status der App, wenn sie im Hintergrund läuft, aber keine Ereignisse empfängt?";
+
+//37
+"What is Bundle in iOS?" = "Was ist Bundle in iOS?";
+
+"It is used to send data" = "Es wird verwendet, um Daten zu senden";
+"Class" = "Klasse";
+"Folder with .app extension" = "Ordner mit .app-Erweiterung";
+"All answers are correct" = "Alle Antworten sind richtig";
+
+//38
+"Which symbol can be used to separate digits in numeric literals?" = "Welches Symbol kann verwendet werden, um Ziffern in numerischen Literalen zu trennen?";
+
+//39
+"Choose the correct statement" = "Wählen Sie die richtige Aussage";
+
+//40

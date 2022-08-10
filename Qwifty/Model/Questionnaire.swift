@@ -286,36 +286,161 @@ func fillData() {
 //        ],
 //        correctAnswerIndex: 3))
     
-        //26
-        questionList.append(Question(questionTitle: "What are the common execution states in iOS?", answers: ["Not running", "Inactive", "Active", "All of the above"], correctAnswerIndex: 3))
-    //    //27
-    //    questionList.append(Question(questionTitle: "What statement can be used to stop the execution of a loop, if, or switch statement?", answers: ["Damper", "Execute", "Stop", "Break"], correctAnswerIndex: 3))
-    //    //28
-    //    questionList.append(Question(questionTitle: "iOS was originally an acronym for…", answers: ["internet operating system", "iPhone operating system", "interwork operating system", "integrated operating system"], correctAnswerIndex: 1))
-    //    //29
-    //    questionList.append(Question(questionTitle: "The IDE used in Swift is…", answers: ["Visual Studio", "CLion", "Xcode", "Gas"], correctAnswerIndex: 2))
-    //    //30
-    //    questionList.append(Question(questionTitle: "Double has a precision of at least … decimal digits in Swift", answers: ["6", "15", "24", "32"], correctAnswerIndex: 1))
-    //    //31
-    //    questionList.append(Question(questionTitle: "Name the incorrect data type in Swift", answers: ["Double", "UInt", "Optional", "Char"], correctAnswerIndex: 3))
-    //    //32
-    //    questionList.append(Question(questionTitle: "If you don’t want to mention external name in function call, you can use…", answers: ["!", "?", "/", "_"], correctAnswerIndex: 3))
-    //    //33
-    //    questionList.append(Question(questionTitle: "Name the incorrect value type in Swift", answers: ["Class", "Enum", "String", "Double"], correctAnswerIndex: 0))
-    //    //34
-    //    questionList.append(Question(questionTitle: "Which of the following frameworks is not used in iOS?", answers: ["UIKit", "CoreMotion", "AppKit", "Foundation"], correctAnswerIndex: 2))
-    //    //35
-    //    questionList.append(Question(questionTitle: "Which of the following declares an immutable array in Swift?", answers: ["let num = [Int]()", "var num = [Int]", "let num = [Int]", "var num = [Int]()"], correctAnswerIndex: 0))
-    //    //36
-    //    questionList.append(Question(questionTitle: "What is the current status of the App if it is running in the background but not receiving any events?", answers: ["Inactive state", "Background state", "Suspended state", "Active state"], correctAnswerIndex: 0))
-    //    //37
-    //    questionList.append(Question(questionTitle: "What is Bundle in iOS?", answers: ["It is used to send data", "Class", "Folder with .app extension", "All answers are correct"], correctAnswerIndex: 2))
-    //    //38
-    //    questionList.append(Question(questionTitle: "Which symbol can be used to separate digits in numeric literals?", answers: [".", "'", "/", "_"], correctAnswerIndex: 3))
-    //    //39
-    //    questionList.append(Question(questionTitle: "Choose the correct statement", answers: ["floor(-3.001) = -3", "ceil(-3.999) = -3", "round(-3.500) = -3", "Int(-3.999) = -4"], correctAnswerIndex: 1))
-    //    //40
-    //    questionList.append(Question(questionTitle: "The supported architecture for round, ceil and floor is/are…", answers: ["32 bit", "64 bit", "Both 32 and 64 bit", "All answers are incorrect"], correctAnswerIndex: 2))
+//    //26
+//    questionList.append(Question(
+//        questionTitle: "What are the common execution states in iOS?".localized(),
+//        answers: [
+//            "Not running".localized(),
+//            "Inactive".localized(),
+//            "Active".localized(),
+//            "All of the above".localized()
+//        ],
+//        correctAnswerIndex: 3))
+    
+//    //27
+//    questionList.append(Question(
+//        questionTitle: "What statement can be used to stop the execution of a loop, if, or switch statement?".localized(),
+//        answers: [
+//            "Damper",
+//            "Execute",
+//            "Stop",
+//            "Break"
+//        ],
+//        correctAnswerIndex: 3))
+//
+//    //28
+//    questionList.append(Question(
+//        questionTitle: "iOS was originally an acronym for…".localized(),
+//        answers: [
+//            "internet operating system",
+//            "iPhone operating system",
+//            "interwork operating system",
+//            "integrated operating system"
+//        ],
+//        correctAnswerIndex: 1))
+//
+//    //29
+//    questionList.append(Question(
+//        questionTitle: "The IDE used in Swift is…".localized(),
+//        answers: [
+//            "Visual Studio",
+//            "CLion",
+//            "Xcode",
+//            "Gas"
+//        ],
+//        correctAnswerIndex: 2))
+//
+//    //30
+//    questionList.append(Question(
+//        questionTitle: "Double has a precision of at least … decimal digits in Swift".localized(),
+//        answers: [
+//            "6",
+//            "15",
+//            "24",
+//            "32"
+//        ],
+//        correctAnswerIndex: 1))
+    
+//    //31
+//    questionList.append(Question(
+//        questionTitle: "Name the incorrect data type in Swift".localized(),
+//        answers: [
+//            "Double",
+//            "UInt",
+//            "Optional",
+//            "Char"
+//        ],
+//        correctAnswerIndex: 3))
+    
+//    //32
+//    questionList.append(Question(
+//        questionTitle: "If you don’t want to mention external name in function call, you can use…".localized(),
+//        answers: [
+//            "!",
+//            "?",
+//            "/",
+//            "_"
+//        ],
+//        correctAnswerIndex: 3))
+    
+//    //33
+//    questionList.append(Question(
+//        questionTitle: "Name the incorrect value type in Swift".localized(),
+//        answers: [
+//            "Class",
+//            "Enum",
+//            "String",
+//            "Double"
+//        ],
+//        correctAnswerIndex: 0))
+    
+//    //34
+//    questionList.append(Question(
+//        questionTitle: "Which of the following frameworks is not used in iOS?".localized(),
+//        answers: [
+//            "UIKit",
+//            "CoreMotion",
+//            "AppKit",
+//            "Foundation"
+//        ],
+//        correctAnswerIndex: 2))
+//
+//    //35
+//    questionList.append(Question(
+//        questionTitle: "Which of the following declares an immutable array in Swift?".localized(),
+//        answers: [
+//            "let num = [Int]()",
+//            "var num = [Int]",
+//            "let num = [Int]",
+//            "var num = [Int]()"
+//        ],
+//        correctAnswerIndex: 0))
+//
+//    //36
+//    questionList.append(Question(
+//        questionTitle: "What is the current status of the App if it is running in the background but not receiving any events?".localized(),
+//        answers: [
+//            "Inactive",
+//            "Background",
+//            "Suspended",
+//            "Active"
+//        ],
+//        correctAnswerIndex: 0))
+    
+//    //37
+//    questionList.append(Question(
+//        questionTitle: "What is Bundle in iOS?".localized(),
+//        answers: [
+//            "It is used to send data".localized(),
+//            "Class".localized(),
+//            "Folder with .app extension".localized(),
+//            "All answers are correct".localized()
+//        ],
+//        correctAnswerIndex: 2))
+//    //38
+//    questionList.append(Question(
+//        questionTitle: "Which symbol can be used to separate digits in numeric literals?".localized(),
+//        answers: [
+//            ".",
+//            "'",
+//            "/",
+//            "_"
+//        ],
+//        correctAnswerIndex: 3))
+    
+//    //39
+//    questionList.append(Question(
+//        questionTitle: "Choose the correct statement".localized(),
+//        answers: [
+//            "floor(-3.001) = -3",
+//            "ceil(-3.999) = -3",
+//            "round(-3.500) = -3",
+//            "Int(-3.999) = -4"
+//        ],
+//        correctAnswerIndex: 1))
+    
+        //40
+        questionList.append(Question(questionTitle: "The supported architecture for round, ceil and floor is/are…", answers: ["32 bit", "64 bit", "Both 32 and 64 bit", "All answers are incorrect"], correctAnswerIndex: 2))
     //    //41
     //    questionList.append(Question(questionTitle: "Which statements evaluates to true while checking the equal strings in Swift?", answers: ["'abc' === 'def'", "'abc' == 'ABC'", "'abc' === 'def'", "'abc' == 'abc'"], correctAnswerIndex: 3))
     //    //42
