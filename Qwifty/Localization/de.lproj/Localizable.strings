@@ -200,3 +200,12 @@
 "Choose the correct statement" = "Wählen Sie die richtige Aussage";
 
 //40
+"The supported architecture for round, ceil and floor is/are…" = "Die unterstützte Architektur für round, ceil und floor ist/sind...";
+
+"32 bit" = "32 Bit";
+"64 bit" = "64 Bit";
+"Both 32 and 64 bit" = "32 und 64 Bit";
+"All answers are incorrect" = "Alle Antworten sind falsch";
+
+//41
+"Which statements evaluates to true while checking the equal strings in Swift?" = "Welche Anweisungen werden bei der Überprüfung der gleichen Zeichenketten in Swift als true ausgewertet?";

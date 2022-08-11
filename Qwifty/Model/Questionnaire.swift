@@ -439,10 +439,28 @@ func fillData() {
 //        ],
 //        correctAnswerIndex: 1))
     
-        //40
-        questionList.append(Question(questionTitle: "The supported architecture for round, ceil and floor is/are…", answers: ["32 bit", "64 bit", "Both 32 and 64 bit", "All answers are incorrect"], correctAnswerIndex: 2))
-    //    //41
-    //    questionList.append(Question(questionTitle: "Which statements evaluates to true while checking the equal strings in Swift?", answers: ["'abc' === 'def'", "'abc' == 'ABC'", "'abc' === 'def'", "'abc' == 'abc'"], correctAnswerIndex: 3))
+//        //40
+//        questionList.append(Question(
+//            questionTitle: "The supported architecture for round, ceil and floor is/are…".localized(),
+//            answers: [
+//                "32 bit".localized(),
+//                "64 bit".localized(),
+//                "Both 32 and 64 bit".localized(),
+//                "All answers are incorrect".localized()
+//            ],
+//            correctAnswerIndex: 2))
+    
+        //41
+        questionList.append(Question(
+            questionTitle: "Which statements evaluates to true while checking the equal strings in Swift?".localized(),
+            answers: [
+                "“abc“ === “def“",
+                "“abc“ == “ABC“",
+                "“abc“ === “def“",
+                "“abc“ == “abc“"
+            ],
+            correctAnswerIndex: 3))
+    
     //    //42
     //    questionList.append(Question(questionTitle: "Which method is used to check for prefix in Swift?", answers: ["has", "hasPrefix", "isPrefix", "isPart"], correctAnswerIndex: 1))
     //    //43
