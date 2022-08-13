@@ -567,37 +567,71 @@ func fillData() {
 //            "string.reversed()"
 //        ],
 //        correctAnswerIndex: 3))
-    //52
+//    //52
+//    questionList.append(Question(
+//        questionTitle: "How to declare an Iboutlet property?".localized(),
+//        answers: [
+//            "var button: UIButton(IBOutlet)",
+//            "IBOutlet var button:UIButton",
+//            "var button: UIButtonOutlet",
+//            "None of the above".localized()
+//        ],
+//        correctAnswerIndex: 3))
+//
+//    //53
+//    questionList.append(Question(
+//        questionTitle: "Name the control transfer statement in Swift?".localized(),
+//        answers: [
+//            "Break",
+//            "Continue",
+//            "Fallthrough",
+//            "All of the above".localized()
+//        ],
+//        correctAnswerIndex: 3))
+    
+//    //54
+//    questionList.append(Question(
+//        questionTitle: "What are the advantages of Swift?".localized(),
+//        answers: [
+//            "All answers are correct".localized(),
+//            "It’s safe".localized(),
+//            "It’s fast".localized(),
+//            "It’s opensource".localized()
+//        ],
+//        correctAnswerIndex: 0))
+    
+//    //55
+//    questionList.append(Question(
+//        questionTitle: "What type of integer is denoted by “Int8“?".localized(),
+//        answers: [
+//            "Closed",
+//            "Signed",
+//            "Unsigned",
+//            "Open"
+//        ],
+//        correctAnswerIndex: 1))
+//
+//    //56
+//    questionList.append(Question(
+//        questionTitle: "What will be printed in the console?\n\nvar greeting = “Hello World!“\ngreeting = nil?".localized(),
+//        answers: [
+//            "nil",
+//            "Hello World!",
+//            "greeting == nil",
+//            "The compiler won’t allow it".localized()
+//        ],
+//        correctAnswerIndex: 3))
+    
+    //57
     questionList.append(Question(
-        questionTitle: "How to declare an Iboutlet property?".localized(),
+        questionTitle: "What is super class of AppDelegate?".localized(),
         answers: [
-            "var button: UIButton(IBOutlet)",
-            "IBOutlet var button:UIButton",
-            "var button: UIButtonOutlet",
+            "NSObject",
+            "UIDelegate",
+            "UIResponder",
             "None of the above".localized()
         ],
-        correctAnswerIndex: 3))
-    
-    //53
-    questionList.append(Question(
-        questionTitle: "Name the control transfer statement in Swift?".localized(),
-        answers: [
-            "Break",
-            "Continue",
-            "Fallthrough",
-            "All of the above".localized()
-        ],
-        correctAnswerIndex: 3))
-    
-    //54
-    questionList.append(Question(
-        questionTitle: "What are the advantages of Swift?", answers: ["All answers are correct", "It’s safe", "It’s fast", "It’s opensource"], correctAnswerIndex: 0))
-    //    //55
-    //    questionList.append(Question(questionTitle: "What type of integer is denoted by 'Int8'?", answers: ["Closed", "Signed", "Unsigned", "Open"], correctAnswerIndex: 1))
-    //    //56
-    //    questionList.append(Question(questionTitle: "What will be printed in the console?\n\nvar greeting = 'Hello World!'\ngreeting = nil?", answers: ["nil", "Hello World!", "greeting == nil", "The compiler won’t allow it"], correctAnswerIndex: 3))
-    //    //57
-    //    questionList.append(Question(questionTitle: "What is super class of AppDelegate?", answers: ["NSObject", "UIDelegate", "UIResponder", "None of the above"], correctAnswerIndex: 2))
+        correctAnswerIndex: 2))
     //    //58
     //    questionList.append(Question(questionTitle: "What access control modifier restricts the use of an entity within the same defined source file?", answers: ["fileprivate", "internal", "private", "open"], correctAnswerIndex: 0))
     //    //59

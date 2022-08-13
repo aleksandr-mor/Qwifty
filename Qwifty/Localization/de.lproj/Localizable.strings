@@ -266,4 +266,22 @@
 "All of the above" = "Alles von dem";
 
 //54
+"What are the advantages of Swift?" = "Was sind die Vorteile von Swift?";
 
+"All answers are correct" = "Alle Antworten sind richtig";
+"It’s safe" = "Es ist sicher";
+"It’s fast" = "Es ist schnell";
+"It’s opensource" = "Es ist Open Source";
+
+//55
+"What type of integer is denoted by “Int8“?" = "Welcher Typ von Ganzzahl wird mit “Int8“ bezeichnet?";
+
+//56
+"What will be printed in the console?\n\nvar greeting = “Hello World!“\ngreeting = nil?" = "Was wird in der Konsole ausgedruckt?\n\nvar greeting = “Hello World!“\ngreeting = nil?";
+
+"The compiler won’t allow it" = "Der Compiler lässt es nicht zu";
+
+//57
+"What is super class of AppDelegate?" = "Was ist die Superklasse von AppDelegate?";
+
+"None of the above" = "Nichts von alledem";
