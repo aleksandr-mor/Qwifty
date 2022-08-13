@@ -209,3 +209,61 @@
 
 //41
 "Which statements evaluates to true while checking the equal strings in Swift?" = "Welche Anweisungen werden bei der Überprüfung der gleichen Zeichenketten in Swift als true ausgewertet?";
+
+//42
+"Which method is used to check for prefix in Swift?" = "Welche Methode wird verwendet, um in Swift nach Präfixen zu suchen?";
+
+//43
+"How to convert a String to uppercase in Swift?" = "Wie konvertiert man in Swift einen String in Großbuchstaben?";
+
+//44
+"Which operator is used to negate a Bool in Swift?" = "Welcher Operator wird verwendet, um ein Bool in Swift zu negieren?";
+
+//45
+"Which type are arrays in Swift?" = "Welcher Typ sind Arrays in Swift?";
+
+"Reference" = "Referenz";
+"Value" = "Wert";
+"Object" = "Objekt";
+"Immutable" = "Unveränderlich";
+
+//46
+"Which of the following are supported by Swift?" = "Welche der folgenden Optionen werden von Swift unterstützt?";
+
+"Arrays with repeated values" = "Arrays mit wiederholten Werten";
+"Empty arrays" = "Leere Arrays";
+"Multi-dimensional arrays" = "Mehrdimensionale Arrays";
+"All answers are correct" = "Alle Antworten sind richtig";
+
+//47
+"Which method is used to extract values of a given type from an array?" = "Welche Methode wird verwendet, um Werte eines bestimmten Typs aus einem Array zu extrahieren?";
+
+//48
+"How to filter out nil from an array?" = "Wie filtert man nil aus einem Array heraus?";
+
+//49
+"Which is the feature of tuple in Swift?" = "Welches ist die Funktion von Tupel in Swift?";
+
+"Tuples can be decomposed into variables" = "Tupel können in Variablen zerlegt werden";
+"The values within a tuple can be of any type" = "Die Werte innerhalb eines Tupels können von beliebigem Typ sein";
+"It's a comma-separated list of types" = "Es ist eine kommagetrennte Liste von Typen";
+"All of the above" = "Alles von dem";
+
+//50
+"How to swap a and b in Swift?\n\nvar a = 0\nvar b = 1" = "Wie vertauscht man a und b in Swift?\n\nvar a = 0\nvar b = 1";
+
+//51
+"How to reverse a String in Swift?" = "Wie kehrt man einen String in Swift um?";
+
+//52
+"How to declare an Iboutlet property?" = "Wie deklariert man eine Iboutlet-Eigenschaft?";
+
+"None of the above" = "Nichts von alledem";
+
+//53
+"Name the control transfer statement in Swift?" = "Wie lautet die Anweisung zur Kontrollübergabe in Swift?";
+
+"All of the above" = "Alles von dem";
+
+//54
+

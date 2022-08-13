@@ -450,43 +450,148 @@ func fillData() {
 //            ],
 //            correctAnswerIndex: 2))
     
-        //41
-        questionList.append(Question(
-            questionTitle: "Which statements evaluates to true while checking the equal strings in Swift?".localized(),
-            answers: [
-                "“abc“ === “def“",
-                "“abc“ == “ABC“",
-                "“abc“ === “def“",
-                "“abc“ == “abc“"
-            ],
-            correctAnswerIndex: 3))
+//    //41
+//    questionList.append(Question(
+//        questionTitle: "Which statements evaluates to true while checking the equal strings in Swift?".localized(),
+//        answers: [
+//            "“abc“ === “def“",
+//            "“abc“ == “ABC“",
+//            "“abc“ === “def“",
+//            "“abc“ == “abc“"
+//        ],
+//        correctAnswerIndex: 3))
     
-    //    //42
-    //    questionList.append(Question(questionTitle: "Which method is used to check for prefix in Swift?", answers: ["has", "hasPrefix", "isPrefix", "isPart"], correctAnswerIndex: 1))
-    //    //43
-    //    questionList.append(Question(questionTitle: "How to convert a String to uppercase in Swift?", answers: ["string.uppercase()", "string.uppercased()", "string.upper()", "string.toUppercase()"], correctAnswerIndex: 1))
-    //    //44
-    //    questionList.append(Question(questionTitle: "Which operator is used to negate a Bool in Swift?", answers: ["NOT", "~", "!=", "!"], correctAnswerIndex: 3))
-    //    //45
-    //    questionList.append(Question(questionTitle: "Which type are arrays in Swift?", answers: ["reference", "value", "object", "immutable"], correctAnswerIndex: 1))
-    //    //46
-    //    questionList.append(Question(questionTitle: "Which of the following are supported by Swift?", answers: ["Arrays with repeated values", "Empty arrays", "Multi-dimensional arrays", "All answers are correct"], correctAnswerIndex: 3))
-    //    //47
-    //    questionList.append(Question(questionTitle: "Which method is used to extract values of a given type from an array?", answers: ["extractValue", "getValue", "getMap", "flatMap"], correctAnswerIndex: 3))
-    //    //48
-    //    questionList.append(Question(questionTitle: "How to filter out nil from an array?", answers: ["flatMap", "filterMap", "valueMap", "extractMap"], correctAnswerIndex: 0))
-    //    //49
-    //    questionList.append(Question(questionTitle: "Which is the feature of tuple in Swift?", answers: ["Tuples can be decomposed into variables", "The values within a tuple can be of any type", "It's a comma-separated list of types", "All of the above"], correctAnswerIndex: 3))
-    //    //50
-    //    questionList.append(Question(questionTitle: "How to swap a and b in Swift?\n\nvar a = 0\nvar b = 1", answers: ["(a)=(b)", "swap(a,b)", "a.swap(b)", "(a, b) = (b, a)"], correctAnswerIndex: 3))
-    //    //51
-    //    questionList.append(Question(questionTitle: "How to reverse a String in Swift?", answers: ["string.reverse()", "string.return()", "[::-1]", "string.reversed()"], correctAnswerIndex: 3))
-    //    //52
-    //    questionList.append(Question(questionTitle: "How to declare an Iboutlet property?", answers: ["var button: UIButton(IBOutlet)", "IBOutlet var button:UIButton", "var button: UIButtonOutlet", "None of the above"], correctAnswerIndex: 3))
-    //    //53
-    //    questionList.append(Question(questionTitle: "Name the control transfer statement in Swift?", answers: ["Break", "Continue", "Fallthrough", "All of the above"], correctAnswerIndex: 3))
-    //    //54
-    //    questionList.append(Question(questionTitle: "What are the advantages of Swift?", answers: ["All answers are correct", "It’s safe", "It’s fast", "It’s opensource"], correctAnswerIndex: 0))
+//    //42
+//    questionList.append(Question(
+//        questionTitle: "Which method is used to check for prefix in Swift?".localized(),
+//        answers: [
+//            "has",
+//            "hasPrefix",
+//            "isPrefix",
+//            "isPart"
+//        ],
+//        correctAnswerIndex: 1))
+    
+//    //43
+//    questionList.append(Question(
+//        questionTitle: "How to convert a String to uppercase in Swift?".localized(), answers: [
+//            "string.uppercase()",
+//            "string.uppercased()",
+//            "string.upper()",
+//            "string.toUppercase()"
+//        ],
+//        correctAnswerIndex: 1))
+//
+//    //44
+//    questionList.append(Question(
+//        questionTitle: "Which operator is used to negate a Bool in Swift?".localized(),
+//        answers: [
+//            "NOT",
+//            "~",
+//            "!=",
+//            "!"],
+//        correctAnswerIndex: 3))
+    
+//    //45
+//    questionList.append(Question(
+//        questionTitle: "Which type are arrays in Swift?".localized(),
+//        answers: [
+//            "Reference".localized(),
+//            "Value".localized(),
+//            "Object".localized(),
+//            "Immutable".localized()
+//        ],
+//        correctAnswerIndex: 1))
+    
+//    //46
+//    questionList.append(Question(
+//        questionTitle: "Which of the following are supported by Swift?".localized(),
+//        answers: [
+//            "Arrays with repeated values".localized(),
+//            "Empty arrays".localized(),
+//            "Multi-dimensional arrays".localized(),
+//            "All answers are correct".localized()
+//        ],
+//        correctAnswerIndex: 3))
+    
+//    //47
+//    questionList.append(Question(
+//        questionTitle: "Which method is used to extract values of a given type from an array?".localized(),
+//        answers: [
+//            "extractValue",
+//            "getValue",
+//            "getMap",
+//            "flatMap"
+//        ],
+//        correctAnswerIndex: 3))
+    
+//    //48
+//    questionList.append(Question(
+//        questionTitle: "How to filter out nil from an array?".localized(),
+//        answers: [
+//            "flatMap",
+//            "filterMap",
+//            "valueMap",
+//            "extractMap"
+//        ],
+//        correctAnswerIndex: 0))
+//    //49
+//    questionList.append(Question(
+//        questionTitle: "Which is the feature of tuple in Swift?".localized(),
+//        answers: [
+//            "Tuples can be decomposed into variables".localized(),
+//            "The values within a tuple can be of any type".localized(),
+//            "It's a comma-separated list of types".localized(),
+//            "All of the above".localized()
+//        ],
+//        correctAnswerIndex: 3))
+    
+//    //50
+//    questionList.append(Question(
+//        questionTitle: "How to swap a and b in Swift?\n\nvar a = 0\nvar b = 1".localized(),
+//        answers: [
+//            "(a)=(b)",
+//            "swap(a,b)",
+//            "a.swap(b)",
+//            "(a, b) = (b, a)"
+//        ],
+//        correctAnswerIndex: 3))
+//
+//    //51
+//    questionList.append(Question(
+//        questionTitle: "How to reverse a String in Swift?".localized(),
+//        answers: [
+//            "string.reverse()",
+//            "string.return()",
+//            "[::-1]",
+//            "string.reversed()"
+//        ],
+//        correctAnswerIndex: 3))
+    //52
+    questionList.append(Question(
+        questionTitle: "How to declare an Iboutlet property?".localized(),
+        answers: [
+            "var button: UIButton(IBOutlet)",
+            "IBOutlet var button:UIButton",
+            "var button: UIButtonOutlet",
+            "None of the above".localized()
+        ],
+        correctAnswerIndex: 3))
+    
+    //53
+    questionList.append(Question(
+        questionTitle: "Name the control transfer statement in Swift?".localized(),
+        answers: [
+            "Break",
+            "Continue",
+            "Fallthrough",
+            "All of the above".localized()
+        ],
+        correctAnswerIndex: 3))
+    
+    //54
+    questionList.append(Question(
+        questionTitle: "What are the advantages of Swift?", answers: ["All answers are correct", "It’s safe", "It’s fast", "It’s opensource"], correctAnswerIndex: 0))
     //    //55
     //    questionList.append(Question(questionTitle: "What type of integer is denoted by 'Int8'?", answers: ["Closed", "Signed", "Unsigned", "Open"], correctAnswerIndex: 1))
     //    //56
