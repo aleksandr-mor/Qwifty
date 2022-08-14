@@ -125,12 +125,12 @@ class QuizViewController: UIViewController {
     }
     
     @IBAction func restartButtonPressed(_ sender: Any) {
-        let refreshAlert = UIAlertController(title: "Start a new game!", message: "Current progress won't be saved", preferredStyle: UIAlertController.Style.alert)
+        let refreshAlert = UIAlertController(title: "Start a new game!".localized(), message: "Current progress won't be saved".localized(), preferredStyle: UIAlertController.Style.alert)
         refreshAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
             guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "QuizViewController") else {return}
             self.navigationController?.pushViewController(vc, animated: true)
         }))
-        refreshAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (action: UIAlertAction!) in
+        refreshAlert.addAction(UIAlertAction(title: "Cancel".localized(), style: .cancel, handler: { (action: UIAlertAction!) in
         }))
         present(refreshAlert, animated: true, completion: nil)
     }
@@ -208,9 +208,10 @@ extension UIView {
         self.layer.shadowColor = UIColor.clear.cgColor
     }
 }
-//// MARK: - Localization
-//extension String {
-//    func localized() -> String {
-//        return NSLocalizedString(self, tableName: "Localizable", bundle: .main, value: self, comment: self)
-//    }
-//}
+
+// MARK: - Localization
+extension String {
+    func localized() -> String {
+        return NSLocalizedString(self, tableName: "Localizable", bundle: .main, value: self, comment: self)
+    }
+}

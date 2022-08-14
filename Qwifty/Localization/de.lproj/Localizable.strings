@@ -285,3 +285,91 @@
 "What is super class of AppDelegate?" = "Was ist die Superklasse von AppDelegate?";
 
 "None of the above" = "Nichts von alledem";
+
+//58
+"What access control modifier restricts the use of an entity within the same defined source file?" = "Welcher Zugriffskontrollmodifikator schränkt die Verwendung einer Entität innerhalb der gleichen definierten Quelldatei ein?";
+
+//59
+"What is default access control level in Swift?" = "Was ist die Standard-Zugriffskontrollebene in Swift?";
+
+//60
+"A function that can change any property in its enclosing value is called..." = "Eine Funktion, die eine beliebige Eigenschaft in ihrem umschließenden Wert ändern kann, heißt...";
+
+//61
+"Which of these is a protocol?" = "Was davon ist ein Protokoll?";
+
+//62
+"! (not) is an example of" = "! (nicht) ist ein Beispiel für";
+
+"function" = "Funktion";
+"closure" = "Schließung";
+"conditional" = "Bedingt";
+"logical operator" = "logischer Operator";
+
+//63
+"&& (and) is an example of" = "&& (und) ist ein Beispiel für";
+
+//64
+"What is the best classification for the identifier “stringOfNumbers“?" = "Was ist die beste Klassifizierung für den Bezeichner “stringOfNumbers“?";
+
+"identifier written in camel case" = "Bezeichner geschrieben in camel case";
+"conditional statement" = "bedingte Aussage";
+"identifier with a string data type" = "Bezeichner mit einem String-Datentyp";
+"function's name" = "Name der Funktion";
+
+//65
+"Identify the assignment operator" = "Identifizieren Sie den Zuweisungsoperator";
+
+//66
+"if, else if, else statements are classified as" = "if, else if, else-Anweisungen werden klassifiziert als";
+
+"loops" = "Schleifen";
+"conditionals" = "Konditionale";
+"constants" = "Konstanten";
+"variables" = "Variablen";
+
+//67
+"Which of the following is executed when the condition in an if statement is false?" = "Welche der folgenden Aufgaben wird ausgeführt, wenn die Bedingung in einer if-Anweisung false ist?";
+
+//68
+"Check if a is not equal to 100 or b is less than 200" = "Prüfen, ob a ungleich 100 ist oder b kleiner als 200 ist";
+
+//69
+"Name the value that can only be either true or false?" = "Nennen Sie den Wert, der nur entweder true oder false sein kann?";
+
+//70
+"What is the correct way to call the function below:\nfunc rickAstley() {\nprint(“Never Gonna Give You Up“)\n}" = "Wie kann man die folgende Funktion korrekt aufrufen?:\nfunc rickAstley() {\nprint(“Never Gonna Give You Up“)\n}";
+
+//71
+"What is the question mark (?) in Swift used for?" = "Wofür wird das Fragezeichen (?) in Swift verwendet?";
+
+"Used in parameter declaration" = "Wird in der Parameterdeklaration verwendet";
+"Used in loop declaration" = "Wird in der Schleifendeklaration verwendet";
+"Used in function declaration" = "Wird in der Funktionsdeklaration verwendet";
+"Used in property declaration" = "Wird in der Eigenschaftserklärung verwendet";
+
+//72
+"Define operator a..<b" = "Definieren Sie den Operator a..<b";
+
+"Half-closed range" = "Halbgeschlossener Bereich";
+"Half-open range" = "Halboffener Bereich";
+"Full-closed range" = "Vollständig geschlossener Bereich";
+"Full-open range" = "Vollständig geöffneter Bereich";
+
+//73
+"Define operator a..." = "Definieren Sie Operator a...";
+
+"One-sided range" = "Einseitiger Bereich";
+"Left-sided range" = "Linksseitiger Bereich";
+
+//74
+
+
+
+
+
+
+//Restart
+"Start a new game!" = "Beginnen Sie ein neues Spiel!";
+"Current progress won't be saved" = "Aktueller Fortschritt wird nicht gespeichert";
+"Cancel" = "Abbrechen";

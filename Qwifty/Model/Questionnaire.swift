@@ -13,247 +13,247 @@ var questionList = [Question]()
 //MARK: - Questions
 func fillData() {
     
-    //        //1
-    //        questionList.append(Question(
-    //            questionTitle: "What is the default data type for floating point numbers in Swift?".localized(),
-    //            answers: [
-    //                "Float",
-    //                "Double",
-    //                "Int",
-    //                "Fract"
-    //            ],
-    //            correctAnswerIndex: 1))
-    //
-    //        //2
-    //        questionList.append(Question(
-    //            questionTitle: "What keyword is used to declare a constant in Swift?".localized(),
-    //            answers: [
-    //                "var",
-    //                "const",
-    //                "let",
-    //                "strong"
-    //            ],
-    //            correctAnswerIndex: 2))
-    //
-    //        //3
-    //        questionList.append(Question(
-    //            questionTitle: "How to write a multiple line comment in Swift?".localized(),
-    //            answers: [
-    //                "/ … /",
-    //                "/n … n/",
-    //                "/* … */",
-    //                "// … //"
-    //            ],
-    //            correctAnswerIndex: 2))
-    //
-    //        //4
-    //        questionList.append(Question(
-    //            questionTitle: "How are Structs different from Classes in Swift?".localized(),
-    //            answers: [
-    //                "Structures are value types".localized(),
-    //                "Structures are reference types".localized(),
-    //                "Structures support inheritance".localized(),
-    //                "Structures don’t receive a default initializer".localized()
-    //            ],
-    //            correctAnswerIndex: 0))
-    //
-    //        //5
-    //        questionList.append(Question(
-    //            questionTitle: "Name the properties whose initial values are not calculated until the first use".localized(),
-    //            answers: [
-    //                "Computed Properties".localized(),
-    //                "Delayed Properties".localized(),
-    //                "Stored Properties".localized(),
-    //                "Lazy Stored Properties".localized()
-    //            ],
-    //            correctAnswerIndex: 3))
-    //
-    //        //6
-    //        questionList.append(Question(
-    //            questionTitle: "What is the significance of “?” in Swift?".localized(),
-    //            answers: [
-    //                "It is used to force unwrap the variable".localized(),
-    //                "It makes a property optional".localized(),
-    //                "It returns first none nil value".localized(),
-    //                "It is used to replace the external label".localized()
-    //            ],
-    //            correctAnswerIndex: 1))
-    //
-    //        //7
-    //        questionList.append(Question(
-    //            questionTitle: "Choose the correct statement".localized(),
-    //            answers: [
-    //                "Bounds are in a view’s own coordinate system".localized(),
-    //                "Frame is in the superview’s coordinate system".localized(),
-    //                "Both statements are correct".localized(),
-    //                "Both statements are incorrect".localized()
-    //            ],
-    //            correctAnswerIndex: 2))
-    //
-    //        //8
-    //        questionList.append(Question(
-    //            questionTitle: "Name a protocol that allows us to convert Swift types to and from JSON".localized(),
-    //            answers: [
-    //                "Decodable",
-    //                "Codable",
-    //                "Encodable",
-    //                "JSONDecoder"
-    //            ],
-    //            correctAnswerIndex: 1))
-    //
-    //        //9
-    //        questionList.append(Question(
-    //            questionTitle: "A function inside a function is called…".localized(),
-    //            answers: [
-    //                "Nested Function".localized(),
-    //                "Super Function".localized(),
-    //                "Base Function".localized(),
-    //                "Encapsulation".localized()
-    //            ],
-    //            correctAnswerIndex: 0))
-    //
-    //        //10
-    //        questionList.append(Question(
-    //            questionTitle: "Constant and variable names in Swift can't contain…".localized(),
-    //            answers: [
-    //                "Numbers".localized(),
-    //                "Capital letters".localized(),
-    //                "Spaces".localized(),
-    //                "Emoji".localized()
-    //            ],
-    //            correctAnswerIndex: 2))
-    //
-    //        //11
-    //        questionList.append(Question(
-    //            questionTitle: "What keyword is used to declare a variable in Swift?".localized(),
-    //            answers: [
-    //                "No keyword required".localized(),
-    //                "let",
-    //                "dyn",
-    //                "var"
-    //            ],
-    //            correctAnswerIndex: 3))
-    //
-    //        //12
-    //        questionList.append(Question(
-    //            questionTitle: "Swift consists of the following Control transfer statements, except for:".localized(),
-    //            answers: [
-    //                "Continue",
-    //                "Fallthrough",
-    //                "Pass",
-    //                "Break"
-    //            ],
-    //            correctAnswerIndex: 2))
-    //
-    //        //13
-    //        questionList.append(Question(
-    //            questionTitle: "What is PLIST?".localized(),
-    //            answers: [
-    //                "Process list",
-    //                "Programming list",
-    //                "Property list",
-    //                "Protocol list"
-    //            ],
-    //            correctAnswerIndex: 2))
-    //
-    //        //14
-    //        questionList.append(Question(
-    //            questionTitle: "What is “??” in Swift?".localized(),
-    //            answers: [
-    //                "Optional".localized(),
-    //                "Binary operator".localized(),
-    //                "Logical OR operator".localized(),
-    //                "Nil-coalescing operator".localized()
-    //            ],
-    //            correctAnswerIndex: 3))
-    //
-    //        //15
-    //        questionList.append(Question(
-    //            questionTitle: "What is the logical “AND” operator in Swift?".localized(),
-    //            answers: [
-    //                "||",
-    //                "&&",
-    //                "&",
-    //                "+"
-    //            ],
-    //            correctAnswerIndex: 1))
-    //
-    //        //16
-    //        questionList.append(Question(
-    //            questionTitle: "What is wrong with this code?\n\nlet num = 1.0 + 1".localized(),
-    //            answers: [
-    //                "There is nothing wrong".localized(),
-    //                "There is no semicolon".localized(),
-    //                "num is constant and can’t be changed".localized(),
-    //                "1.0 and 1 are different types".localized()
-    //            ],
-    //            correctAnswerIndex: 0))
-    //
-    //    //17
-    //            questionList.append(Question(
-    //                questionTitle: "What can AnyObject represent?".localized(),
-    //                answers: [
-    //                    "An instance of any class".localized(),
-    //                    "An instance of function type".localized(),
-    //                    "An instance of an optional type".localized(),
-    //                    "All answers are correct".localized()
-    //                ],
-    //                correctAnswerIndex: 3))
-    //   // 18
-    //    questionList.append(Question(
-    //        questionTitle: "What is LLVM?".localized(),
-    //        answers: [
-    //            "Objective-C compiler".localized(),
-    //            "Swiftc compiler".localized(),
-    //            "Contains both compilers".localized(),
-    //            "None of the above".localized()
-    //        ],
-    //        correctAnswerIndex: 2))
-    //
-    //        //19
-    //        questionList.append(Question(
-    //            questionTitle: "What is data type of nums?\n\nlet nums = (“num”, 0)".localized(),
-    //            answers: [
-    //                "Dictionary".localized(),
-    //                "Optional".localized(),
-    //                "Tuple".localized(),
-    //                "All answers are incorrect".localized()
-    //            ],
-    //            correctAnswerIndex: 2))
-    
-    //        //20
-    //        questionList.append(Question(
-    //            questionTitle: "How many times will this loop be executed?\nfor i in 0…100 { \nprint(i) \n}".localized(),
-    //            answers: [
-    //                "0",
-    //                "99",
-    //                "100",
-    //                "101"
-    //            ],
-    //            correctAnswerIndex: 3))
-    
-    //    //21
-    //    questionList.append(Question(
-    //        questionTitle: "How would you call a function that returns a value and also throws errors?".localized(),
-    //        answers: [
-    //            "try!",
-    //            "!try",
-    //            "try?",
-    //            "?try"
-    //        ],
-    //        correctAnswerIndex: 2))
-    
-    //        //22
-    //    questionList.append(Question(
-    //        questionTitle: "didSet and willSet are…".localized(),
-    //        answers: [
-    //            "Property Observers".localized(),
-    //            "Instance Methods".localized(),
-    //            "Lifecycle Methods".localized(),
-    //            "All answers are correct".localized()
-    //        ],
-    //        correctAnswerIndex: 0))
-    //
+//            //1
+//            questionList.append(Question(
+//                questionTitle: "What is the default data type for floating point numbers in Swift?".localized(),
+//                answers: [
+//                    "Float",
+//                    "Double",
+//                    "Int",
+//                    "Fract"
+//                ],
+//                correctAnswerIndex: 1))
+//
+//            //2
+//            questionList.append(Question(
+//                questionTitle: "What keyword is used to declare a constant in Swift?".localized(),
+//                answers: [
+//                    "var",
+//                    "const",
+//                    "let",
+//                    "strong"
+//                ],
+//                correctAnswerIndex: 2))
+//
+//            //3
+//            questionList.append(Question(
+//                questionTitle: "How to write a multiple line comment in Swift?".localized(),
+//                answers: [
+//                    "/ … /",
+//                    "/n … n/",
+//                    "/* … */",
+//                    "// … //"
+//                ],
+//                correctAnswerIndex: 2))
+//
+//            //4
+//            questionList.append(Question(
+//                questionTitle: "How are Structs different from Classes in Swift?".localized(),
+//                answers: [
+//                    "Structures are value types".localized(),
+//                    "Structures are reference types".localized(),
+//                    "Structures support inheritance".localized(),
+//                    "Structures don’t receive a default initializer".localized()
+//                ],
+//                correctAnswerIndex: 0))
+//
+//            //5
+//            questionList.append(Question(
+//                questionTitle: "Name the properties whose initial values are not calculated until the first use".localized(),
+//                answers: [
+//                    "Computed Properties".localized(),
+//                    "Delayed Properties".localized(),
+//                    "Stored Properties".localized(),
+//                    "Lazy Stored Properties".localized()
+//                ],
+//                correctAnswerIndex: 3))
+//
+//            //6
+//            questionList.append(Question(
+//                questionTitle: "What is the significance of “?” in Swift?".localized(),
+//                answers: [
+//                    "It is used to force unwrap the variable".localized(),
+//                    "It makes a property optional".localized(),
+//                    "It returns first none nil value".localized(),
+//                    "It is used to replace the external label".localized()
+//                ],
+//                correctAnswerIndex: 1))
+//
+//            //7
+//            questionList.append(Question(
+//                questionTitle: "Choose the correct statement".localized(),
+//                answers: [
+//                    "Bounds are in a view’s own coordinate system".localized(),
+//                    "Frame is in the superview’s coordinate system".localized(),
+//                    "Both statements are correct".localized(),
+//                    "Both statements are incorrect".localized()
+//                ],
+//                correctAnswerIndex: 2))
+//
+//            //8
+//            questionList.append(Question(
+//                questionTitle: "Name a protocol that allows us to convert Swift types to and from JSON".localized(),
+//                answers: [
+//                    "Decodable",
+//                    "Codable",
+//                    "Encodable",
+//                    "JSONDecoder"
+//                ],
+//                correctAnswerIndex: 1))
+//
+//            //9
+//            questionList.append(Question(
+//                questionTitle: "A function inside a function is called…".localized(),
+//                answers: [
+//                    "Nested Function".localized(),
+//                    "Super Function".localized(),
+//                    "Base Function".localized(),
+//                    "Encapsulation".localized()
+//                ],
+//                correctAnswerIndex: 0))
+//
+//            //10
+//            questionList.append(Question(
+//                questionTitle: "Constant and variable names in Swift can't contain…".localized(),
+//                answers: [
+//                    "Numbers".localized(),
+//                    "Capital letters".localized(),
+//                    "Spaces".localized(),
+//                    "Emoji".localized()
+//                ],
+//                correctAnswerIndex: 2))
+//
+//            //11
+//            questionList.append(Question(
+//                questionTitle: "What keyword is used to declare a variable in Swift?".localized(),
+//                answers: [
+//                    "No keyword required".localized(),
+//                    "let",
+//                    "dyn",
+//                    "var"
+//                ],
+//                correctAnswerIndex: 3))
+//
+//            //12
+//            questionList.append(Question(
+//                questionTitle: "Swift consists of the following Control transfer statements, except for:".localized(),
+//                answers: [
+//                    "Continue",
+//                    "Fallthrough",
+//                    "Pass",
+//                    "Break"
+//                ],
+//                correctAnswerIndex: 2))
+//
+//            //13
+//            questionList.append(Question(
+//                questionTitle: "What is PLIST?".localized(),
+//                answers: [
+//                    "Process list",
+//                    "Programming list",
+//                    "Property list",
+//                    "Protocol list"
+//                ],
+//                correctAnswerIndex: 2))
+//
+//            //14
+//            questionList.append(Question(
+//                questionTitle: "What is “??” in Swift?".localized(),
+//                answers: [
+//                    "Optional".localized(),
+//                    "Binary operator".localized(),
+//                    "Logical OR operator".localized(),
+//                    "Nil-coalescing operator".localized()
+//                ],
+//                correctAnswerIndex: 3))
+//
+//            //15
+//            questionList.append(Question(
+//                questionTitle: "What is the logical “AND” operator in Swift?".localized(),
+//                answers: [
+//                    "||",
+//                    "&&",
+//                    "&",
+//                    "+"
+//                ],
+//                correctAnswerIndex: 1))
+//
+//            //16
+//            questionList.append(Question(
+//                questionTitle: "What is wrong with this code?\n\nlet num = 1.0 + 1".localized(),
+//                answers: [
+//                    "There is nothing wrong".localized(),
+//                    "There is no semicolon".localized(),
+//                    "num is constant and can’t be changed".localized(),
+//                    "1.0 and 1 are different types".localized()
+//                ],
+//                correctAnswerIndex: 0))
+//
+//        //17
+//                questionList.append(Question(
+//                    questionTitle: "What can AnyObject represent?".localized(),
+//                    answers: [
+//                        "An instance of any class".localized(),
+//                        "An instance of function type".localized(),
+//                        "An instance of an optional type".localized(),
+//                        "All answers are correct".localized()
+//                    ],
+//                    correctAnswerIndex: 3))
+//       // 18
+//        questionList.append(Question(
+//            questionTitle: "What is LLVM?".localized(),
+//            answers: [
+//                "Objective-C compiler".localized(),
+//                "Swiftc compiler".localized(),
+//                "Contains both compilers".localized(),
+//                "None of the above".localized()
+//            ],
+//            correctAnswerIndex: 2))
+//
+//            //19
+//            questionList.append(Question(
+//                questionTitle: "What is data type of nums?\n\nlet nums = (“num”, 0)".localized(),
+//                answers: [
+//                    "Dictionary".localized(),
+//                    "Optional".localized(),
+//                    "Tuple".localized(),
+//                    "All answers are incorrect".localized()
+//                ],
+//                correctAnswerIndex: 2))
+//
+//            //20
+//            questionList.append(Question(
+//                questionTitle: "How many times will this loop be executed?\nfor i in 0…100 { \nprint(i) \n}".localized(),
+//                answers: [
+//                    "0",
+//                    "99",
+//                    "100",
+//                    "101"
+//                ],
+//                correctAnswerIndex: 3))
+//
+//        //21
+//        questionList.append(Question(
+//            questionTitle: "How would you call a function that returns a value and also throws errors?".localized(),
+//            answers: [
+//                "try!",
+//                "!try",
+//                "try?",
+//                "?try"
+//            ],
+//            correctAnswerIndex: 2))
+//
+//            //22
+//        questionList.append(Question(
+//            questionTitle: "didSet and willSet are…".localized(),
+//            answers: [
+//                "Property Observers".localized(),
+//                "Instance Methods".localized(),
+//                "Lifecycle Methods".localized(),
+//                "All answers are correct".localized()
+//            ],
+//            correctAnswerIndex: 0))
+//
 //    //23
 //    questionList.append(Question(
 //        questionTitle: "When a function takes a closure as a parameter, when should you mark it as an escaping?".localized(),
@@ -274,7 +274,7 @@ func fillData() {
 //            "Dictionary, array and set".localized()
 //        ],
 //        correctAnswerIndex: 3))
-    
+//
 //        //25
 //    questionList.append(Question(
 //        questionTitle: "Swift is…".localized(),
@@ -285,7 +285,7 @@ func fillData() {
 //            "All answers are correct".localized()
 //        ],
 //        correctAnswerIndex: 3))
-    
+//
 //    //26
 //    questionList.append(Question(
 //        questionTitle: "What are the common execution states in iOS?".localized(),
@@ -296,7 +296,7 @@ func fillData() {
 //            "All of the above".localized()
 //        ],
 //        correctAnswerIndex: 3))
-    
+//
 //    //27
 //    questionList.append(Question(
 //        questionTitle: "What statement can be used to stop the execution of a loop, if, or switch statement?".localized(),
@@ -340,7 +340,7 @@ func fillData() {
 //            "32"
 //        ],
 //        correctAnswerIndex: 1))
-    
+//
 //    //31
 //    questionList.append(Question(
 //        questionTitle: "Name the incorrect data type in Swift".localized(),
@@ -351,7 +351,7 @@ func fillData() {
 //            "Char"
 //        ],
 //        correctAnswerIndex: 3))
-    
+//
 //    //32
 //    questionList.append(Question(
 //        questionTitle: "If you don’t want to mention external name in function call, you can use…".localized(),
@@ -362,7 +362,7 @@ func fillData() {
 //            "_"
 //        ],
 //        correctAnswerIndex: 3))
-    
+//
 //    //33
 //    questionList.append(Question(
 //        questionTitle: "Name the incorrect value type in Swift".localized(),
@@ -373,7 +373,7 @@ func fillData() {
 //            "Double"
 //        ],
 //        correctAnswerIndex: 0))
-    
+//
 //    //34
 //    questionList.append(Question(
 //        questionTitle: "Which of the following frameworks is not used in iOS?".localized(),
@@ -406,7 +406,7 @@ func fillData() {
 //            "Active"
 //        ],
 //        correctAnswerIndex: 0))
-    
+//
 //    //37
 //    questionList.append(Question(
 //        questionTitle: "What is Bundle in iOS?".localized(),
@@ -427,7 +427,7 @@ func fillData() {
 //            "_"
 //        ],
 //        correctAnswerIndex: 3))
-    
+//
 //    //39
 //    questionList.append(Question(
 //        questionTitle: "Choose the correct statement".localized(),
@@ -438,7 +438,7 @@ func fillData() {
 //            "Int(-3.999) = -4"
 //        ],
 //        correctAnswerIndex: 1))
-    
+//
 //        //40
 //        questionList.append(Question(
 //            questionTitle: "The supported architecture for round, ceil and floor is/are…".localized(),
@@ -449,7 +449,7 @@ func fillData() {
 //                "All answers are incorrect".localized()
 //            ],
 //            correctAnswerIndex: 2))
-    
+//
 //    //41
 //    questionList.append(Question(
 //        questionTitle: "Which statements evaluates to true while checking the equal strings in Swift?".localized(),
@@ -460,7 +460,7 @@ func fillData() {
 //            "“abc“ == “abc“"
 //        ],
 //        correctAnswerIndex: 3))
-    
+//
 //    //42
 //    questionList.append(Question(
 //        questionTitle: "Which method is used to check for prefix in Swift?".localized(),
@@ -471,7 +471,7 @@ func fillData() {
 //            "isPart"
 //        ],
 //        correctAnswerIndex: 1))
-    
+//
 //    //43
 //    questionList.append(Question(
 //        questionTitle: "How to convert a String to uppercase in Swift?".localized(), answers: [
@@ -491,7 +491,7 @@ func fillData() {
 //            "!=",
 //            "!"],
 //        correctAnswerIndex: 3))
-    
+//
 //    //45
 //    questionList.append(Question(
 //        questionTitle: "Which type are arrays in Swift?".localized(),
@@ -502,7 +502,7 @@ func fillData() {
 //            "Immutable".localized()
 //        ],
 //        correctAnswerIndex: 1))
-    
+//
 //    //46
 //    questionList.append(Question(
 //        questionTitle: "Which of the following are supported by Swift?".localized(),
@@ -513,7 +513,7 @@ func fillData() {
 //            "All answers are correct".localized()
 //        ],
 //        correctAnswerIndex: 3))
-    
+//
 //    //47
 //    questionList.append(Question(
 //        questionTitle: "Which method is used to extract values of a given type from an array?".localized(),
@@ -524,7 +524,7 @@ func fillData() {
 //            "flatMap"
 //        ],
 //        correctAnswerIndex: 3))
-    
+//
 //    //48
 //    questionList.append(Question(
 //        questionTitle: "How to filter out nil from an array?".localized(),
@@ -545,7 +545,7 @@ func fillData() {
 //            "All of the above".localized()
 //        ],
 //        correctAnswerIndex: 3))
-    
+//
 //    //50
 //    questionList.append(Question(
 //        questionTitle: "How to swap a and b in Swift?\n\nvar a = 0\nvar b = 1".localized(),
@@ -588,7 +588,7 @@ func fillData() {
 //            "All of the above".localized()
 //        ],
 //        correctAnswerIndex: 3))
-    
+//
 //    //54
 //    questionList.append(Question(
 //        questionTitle: "What are the advantages of Swift?".localized(),
@@ -599,7 +599,7 @@ func fillData() {
 //            "It’s opensource".localized()
 //        ],
 //        correctAnswerIndex: 0))
-    
+//
 //    //55
 //    questionList.append(Question(
 //        questionTitle: "What type of integer is denoted by “Int8“?".localized(),
@@ -621,51 +621,197 @@ func fillData() {
 //            "The compiler won’t allow it".localized()
 //        ],
 //        correctAnswerIndex: 3))
+//
+//    //57
+//    questionList.append(Question(
+//        questionTitle: "What is super class of AppDelegate?".localized(),
+//        answers: [
+//            "NSObject",
+//            "UIDelegate",
+//            "UIResponder",
+//            "None of the above".localized()
+//        ],
+//        correctAnswerIndex: 2))
+//
+//    //58
+//    questionList.append(Question(
+//        questionTitle: "What access control modifier restricts the use of an entity within the same defined source file?".localized(),
+//        answers: [
+//            "fileprivate",
+//            "internal",
+//            "private",
+//            "open"
+//        ],
+//        correctAnswerIndex: 0))
+//
+//    //59
+//    questionList.append(Question(
+//        questionTitle: "What is default access control level in Swift?".localized(),
+//        answers: [
+//            "open",
+//            "public",
+//            "internal",
+//            "private"
+//        ],
+//        correctAnswerIndex: 2))
+//
+//    //60
+//    questionList.append(Question(
+//        questionTitle: "A function that can change any property in its enclosing value is called...".localized(),
+//        answers: [
+//            "temporary",
+//            "changeable",
+//            "mutating",
+//            "variable"
+//        ],
+//        correctAnswerIndex: 2))
+//
+//    //61
+//    questionList.append(Question(
+//        questionTitle: "Which of these is a protocol?".localized(),
+//        answers: [
+//            "ObservedObject",
+//            "StateObject",
+//            "ObservableObject",
+//            "Published"
+//        ],
+//        correctAnswerIndex: 2))
+//
+//    //62
+//    questionList.append(Question(
+//        questionTitle: "! (not) is an example of".localized(),
+//        answers: [
+//            "function".localized(),
+//            "closure".localized(),
+//            "conditional".localized(),
+//            "logical operator".localized()
+//        ],
+//        correctAnswerIndex: 3))
     
-    //57
-    questionList.append(Question(
-        questionTitle: "What is super class of AppDelegate?".localized(),
-        answers: [
-            "NSObject",
-            "UIDelegate",
-            "UIResponder",
-            "None of the above".localized()
-        ],
-        correctAnswerIndex: 2))
-    //    //58
-    //    questionList.append(Question(questionTitle: "What access control modifier restricts the use of an entity within the same defined source file?", answers: ["fileprivate", "internal", "private", "open"], correctAnswerIndex: 0))
-    //    //59
-    //    questionList.append(Question(questionTitle: "What is default access control level in Swift?", answers: ["open", "public", "internal", "private"], correctAnswerIndex: 2))
-    //    //60
-    //    questionList.append(Question(questionTitle: "A function that can change any property in its enclosing value is called...", answers: ["temporary", "changeable", "mutating", "variable"], correctAnswerIndex: 2))
-    //    //61
-    //    questionList.append(Question(questionTitle: "Which of these is a protocol?", answers: ["ObservedObject", "StateObject", "ObservableObject", "Published"], correctAnswerIndex: 2))
-    //    //62
-    //    questionList.append(Question(questionTitle: "! (not) is an example of", answers: ["function", "closure", "conditional", "logical operator"], correctAnswerIndex: 3))
-    //    //63
-    //    questionList.append(Question(questionTitle: "&& (and) is an example of", answers: ["function", "closure", "conditional", "logical operator"], correctAnswerIndex: 3))
-    //    //64
-    //    questionList.append(Question(questionTitle: "What is the best classification for the identifier 'stringOfNumbers'?", answers: ["identifier written in camel case", "conditional statement", "identifier with a string data type", "function's name"], correctAnswerIndex: 0))
-    //    //65
-    //    questionList.append(Question(questionTitle: "Identify the assignment operator", answers: ["=", "==", ">", "&&"], correctAnswerIndex: 0))
-    //    //66
-    //    questionList.append(Question(questionTitle: "if, else if, else statements are classified as", answers: ["loops", "conditionals", "constants", "variables"], correctAnswerIndex: 1))
-    //    //67
-    //    questionList.append(Question(questionTitle: "Which of the following is executed when the condition in an if statement is false?", answers: ["if else", "else", "if", "if then"], correctAnswerIndex: 1))
-    //    //68
-    //    questionList.append(Question(questionTitle: "Check if a is not equal to 100 or b is less than 200", answers: ["if a = 100 || b < 200", "if a != 100 || b > 200", "if a != 100 || b < 200", "if a != 100 && b < 200"], correctAnswerIndex: 2))
-    //    //69
-    //    questionList.append(Question(questionTitle: "Name the value that can only be either true or false?", answers: ["Bin", "Int", "Double", "Boolean"], correctAnswerIndex: 3))
-    //    //70
-    //    questionList.append(Question(questionTitle: "What is the correct way to call the function below:\nfunc rickAstley( ) {\nprint('Never Gonna Give You Up')\n}", answers: ["call rickAstley", "func( )", "rickAstley( )", "func = rickAstley( )"], correctAnswerIndex: 2))
-    //    //71
-    //    questionList.append(Question(questionTitle: "What is the question mark (?) in Swift used for?", answers: ["Used in parameter declaration", "Used in loop declaration", "Used in function declaration", "Used in property declaration"], correctAnswerIndex: 3))
-    //    //72
-    //    questionList.append(Question(questionTitle: "Define operator a..<b ", answers: ["Half-close range", "Half-open range", "Full-close range", "Full-open range"], correctAnswerIndex: 1))
-    //    //73
-    //    questionList.append(Question(questionTitle: "Define operator a... ", answers: ["One-sided range", "Half-open range", "Left-sided range", "Half-closed range"], correctAnswerIndex: 0))
-    //    //74
-    //    questionList.append(Question(questionTitle: "Single-line comments are started with...", answers: ["Asterisk", "Hash", "Single slashes", "Double slashes"], correctAnswerIndex: 3))
+//    //63
+//    questionList.append(Question(
+//        questionTitle: "&& (and) is an example of".localized(),
+//        answers: [
+//            "function".localized(),
+//            "closure".localized(),
+//            "conditional".localized(),
+//            "logical operator".localized()
+//        ],
+//        correctAnswerIndex: 3))
+    
+//    //64
+//    questionList.append(Question(
+//        questionTitle: "What is the best classification for the identifier “stringOfNumbers“?".localized(),
+//        answers: [
+//            "identifier written in camel case".localized(),
+//            "conditional statement".localized(),
+//            "identifier with a string data type".localized(),
+//            "function's name".localized()
+//        ],
+//        correctAnswerIndex: 0))
+    
+//    //65
+//    questionList.append(Question(
+//        questionTitle: "Identify the assignment operator".localized(),
+//        answers: [
+//            "=",
+//            "==",
+//            ">",
+//            "&&"
+//        ],
+//        correctAnswerIndex: 0))
+    
+//    //66
+//    questionList.append(Question(
+//        questionTitle: "if, else if, else statements are classified as".localized(),
+//        answers: [
+//            "loops".localized(),
+//            "conditionals".localized(),
+//            "constants".localized(),
+//            "variables".localized()
+//        ],
+//        correctAnswerIndex: 1))
+    
+//    //67
+//    questionList.append(Question(
+//        questionTitle: "Which of the following is executed when the condition in an if statement is false?".localized(),
+//        answers: [
+//            "if else",
+//            "else",
+//            "if",
+//            "if then"
+//        ],
+//        correctAnswerIndex: 1))
+    
+//    //68
+//    questionList.append(Question(
+//        questionTitle: "Check if a is not equal to 100 or b is less than 200".localized(),
+//        answers: [
+//            "if a = 100 || b < 200",
+//            "if a != 100 || b > 200",
+//            "if a != 100 || b < 200",
+//            "if a != 100 && b < 200"
+//        ],
+//        correctAnswerIndex: 2))
+    
+//    //69
+//    questionList.append(Question(
+//        questionTitle: "Name the value that can only be either true or false?".localized(),
+//        answers: [
+//            "Bin",
+//            "Int",
+//            "Double",
+//            "Boolean"
+//        ],
+//        correctAnswerIndex: 3))
+    
+//    //70
+//    questionList.append(Question(
+//        questionTitle: "What is the correct way to call the function below:\nfunc rickAstley() {\nprint(“Never Gonna Give You Up“)\n}".localized(),
+//        answers: [
+//            "call rickAstley",
+//            "func()",
+//            "rickAstley()",
+//            "func = rickAstley()"
+//        ],
+//        correctAnswerIndex: 2))
+    
+//    //71
+//    questionList.append(Question(
+//        questionTitle: "What is the question mark (?) in Swift used for?".localized(),
+//        answers: [
+//            "Used in parameter declaration".localized(),
+//            "Used in loop declaration".localized(),
+//            "Used in function declaration".localized(),
+//            "Used in property declaration".localized()
+//        ],
+//        correctAnswerIndex: 3))
+    
+//    //72
+//    questionList.append(Question(
+//        questionTitle: "Define operator a..<b".localized(),
+//        answers: [
+//            "Half-closed range".localized(),
+//            "Half-open range".localized(),
+//            "Full-closed range".localized(),
+//            "Full-open range".localized()
+//        ],
+//        correctAnswerIndex: 1))
+//
+//        //73
+//        questionList.append(Question(
+//            questionTitle: "Define operator a...".localized(),
+//            answers: [
+//                "One-sided range".localized(),
+//                "Half-open range".localized(),
+//                "Left-sided range".localized(),
+//                "Half-closed range".localized()
+//            ],
+//            correctAnswerIndex: 0))
+    
+    //74
+    questionList.append(Question(questionTitle: "Single-line comments are started with...", answers: ["Asterisk", "Hash", "Single slashes", "Double slashes"], correctAnswerIndex: 3))
+    
     //    //75
     //    questionList.append(Question(questionTitle: "How many types of classes in Inheritance in Swift?", answers: ["1", "2", "3", "4"], correctAnswerIndex: 1))
     //    //76
@@ -721,9 +867,4 @@ func fillData() {
     //    //101
     //    questionList.append(Question(questionTitle: "In the function below, what are first and second examples of?\n\nsum(first x: Int, second y: Int) -> {}", answers: ["Local terms", "Argument labels", "Parameters names", "The code is invalid"], correctAnswerIndex: 1))
 }
-// MARK: - Localization
-extension String {
-    func localized() -> String {
-        return NSLocalizedString(self, tableName: "Localizable", bundle: .main, value: self, comment: self)
-    }
-}
+

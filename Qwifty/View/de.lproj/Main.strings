@@ -18,7 +18,7 @@
 "H6T-5k-mqv.normalTitle" = "NÄCHSTE";
 
 /* Class = "UILabel"; text = "Congratulations!"; ObjectID = "HBv-hm-cfa"; */
-"HBv-hm-cfa.text" = "Congratulations!";
+"HBv-hm-cfa.text" = "Glückwunsch!";
 
 /* Class = "UILabel"; text = "0"; ObjectID = "Hyx-AE-m4r"; */
 "Hyx-AE-m4r.text" = "0";
@@ -30,19 +30,19 @@
 "NQq-tb-V8D.text" = "1 / 20";
 
 /* Class = "UIButton"; configuration.title = " Share"; ObjectID = "RhM-0R-TpM"; */
-"RhM-0R-TpM.configuration.title" = " Share";
+"RhM-0R-TpM.configuration.title" = "Teilen";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "RhM-0R-TpM"; */
 "RhM-0R-TpM.normalTitle" = "Button";
 
 /* Class = "UILabel"; text = "Your Score"; ObjectID = "Sd0-nu-tCp"; */
-"Sd0-nu-tCp.text" = "Your Score";
+"Sd0-nu-tCp.text" = "Ihr Spielstand";
 
 /* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "U5r-Fh-Z2M"; */
 "U5r-Fh-Z2M.title" = "Item";
 
 /* Class = "UILabel"; text = "Play again to learn more!"; ObjectID = "VOc-fv-uy0"; */
-"VOc-fv-uy0.text" = "Play again to learn more!";
+"VOc-fv-uy0.text" = "Spielen und mehr erfahren!";
 
 /* Class = "UIButton"; normalTitle = "Third Choice"; ObjectID = "Vdx-MV-wQy"; */
 "Vdx-MV-wQy.normalTitle" = "Third Choice";
@@ -60,10 +60,10 @@
 "p6R-eF-e1Y.text" = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
 
 /* Class = "UIButton"; configuration.title = "PLAY AGAIN"; ObjectID = "uAx-A5-xfp"; */
-"uAx-A5-xfp.configuration.title" = "PLAY AGAIN";
+"uAx-A5-xfp.configuration.title" = "WIEDERSPIELEN";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "uAx-A5-xfp"; */
 "uAx-A5-xfp.normalTitle" = "Button";
 
 /* Class = "UILabel"; text = "You did a great job!"; ObjectID = "wTr-D3-5s0"; */
-"wTr-D3-5s0.text" = "You did a great job!";
+"wTr-D3-5s0.text" = "Gute Arbeit!";
