@@ -809,17 +809,52 @@ func fillData() {
 //            ],
 //            correctAnswerIndex: 0))
     
-    //74
-    questionList.append(Question(questionTitle: "Single-line comments are started with...", answers: ["Asterisk", "Hash", "Single slashes", "Double slashes"], correctAnswerIndex: 3))
+//    //74
+//    questionList.append(Question(
+//        questionTitle: "Single-line comments are started with...".localized(),
+//        answers: [
+//            "Asterisk",
+//            "Hash",
+//            "Single slashes".localized(),
+//            "Double slashes".localized()
+//        ],
+//        correctAnswerIndex: 3))
     
-    //    //75
-    //    questionList.append(Question(questionTitle: "How many types of classes in Inheritance in Swift?", answers: ["1", "2", "3", "4"], correctAnswerIndex: 1))
-    //    //76
-    //    questionList.append(Question(questionTitle: "How many primary collection types Swift provides?", answers: ["2", "3", "4", "None of the above"], correctAnswerIndex: 1))
-    //    //77
-    //    questionList.append(Question(questionTitle: "The class which inherits the properties from other class is called", answers: ["Superclass or parent class", "Subclass or child class", "Inheriting class or inheritor", "Swift does not support inheritance"], correctAnswerIndex: 1))
-    //    //78
-    //    questionList.append(Question(questionTitle: "The class you inherit from is called", answers: ["Inheriting class or inheritor", "Subclass", "Superclass or parent class", "Swift does not support inheritance"], correctAnswerIndex: 2))
+//    //75
+//    questionList.append(Question(
+//        questionTitle: "How many types of classes in Inheritance in Swift?".localized(),
+//        answers: [
+//            "1",
+//            "2",
+//            "3",
+//            "4"
+//        ],
+//        correctAnswerIndex: 1))
+    
+//        //76
+//        questionList.append(Question(
+//            questionTitle: "How many primary collection types Swift provides?".localized(),
+//            answers: [
+//                "2",
+//                "3",
+//                "4",
+//                "None of the above".localized()
+//            ],
+//            correctAnswerIndex: 1))
+    
+//        //77
+//        questionList.append(Question(
+//            questionTitle: "The class which inherits the properties from other class is called...".localized(),
+//            answers: [
+//                "Superclass or parent class".localized(),
+//                "Subclass or child class".localized(),
+//                "Inheriting class or inheritor".localized(),
+//                "Swift does not support inheritance".localized()
+//            ],
+//            correctAnswerIndex: 1))
+    
+    //78
+    questionList.append(Question(questionTitle: "The class you inherit from is called", answers: ["Inheriting class or inheritor", "Subclass", "Superclass or parent class", "Swift does not support inheritance"], correctAnswerIndex: 2))
     //    //79
     //    questionList.append(Question(questionTitle: "Design pattern that ensures a class can have only one object is called...", answers: ["Singleclass", "Singleton", "Subclass", "Private"], correctAnswerIndex: 1))
     //    //80

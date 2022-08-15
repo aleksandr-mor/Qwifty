@@ -30,7 +30,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="FJk-7X-39G">
                                 <rect key="frame" x="92" y="286.5" width="230.5" height="143.5"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="QwiftyRounded" translatesAutoresizingMaskIntoConstraints="NO" id="HNG-PO-1OU">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Qwifty Blank" translatesAutoresizingMaskIntoConstraints="NO" id="HNG-PO-1OU">
                                         <rect key="frame" x="75" y="0.0" width="80" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="80" id="4xd-i6-9Ui"/>
@@ -437,7 +437,7 @@
     </scenes>
     <resources>
         <image name="Background" width="2000" height="2000"/>
-        <image name="QwiftyRounded" width="1024" height="1024"/>
+        <image name="Qwifty Blank" width="1024" height="1024"/>
         <image name="arrowshape.turn.up.right" catalog="system" width="128" height="106"/>
         <image name="correct" width="512" height="512"/>
         <image name="gobackward" catalog="system" width="121" height="128"/>

@@ -363,6 +363,31 @@
 "Left-sided range" = "Linksseitiger Bereich";
 
 //74
+"Single-line comments are started with..." = "Einzeilige Kommentare werden mit... eingeleitet";
+
+"Single slashes" = "Einfacher Schrägstrich";
+"Double slashes" = "Doppelte Schrägstriche";
+
+//75
+"How many types of classes in Inheritance in Swift?" = "Wie viele Arten von Klassen gibt es bei der Vererbung in Swift?";
+
+//76
+"How many primary collection types Swift provides?" = "Wie viele Arten von Primärsammlungen bietet Swift an?";
+
+//77
+"The class which inherits the properties from other class is called..." = "Die Klasse, die die Eigenschaften von einer anderen Klasse erbt, heißt...";
+
+"Superclass or parent class" = "Oberklasse oder übergeordnete Klasse";
+"Subclass or child class" = "Unterklasse oder Unterklasse";
+"Inheriting class or inheritor" = "Vererbende Klasse oder Erbe";
+"Swift does not support inheritance" = "Swift unterstützt keine Vererbung";
+
+//78
+
+
+
+
+
 
 
 
