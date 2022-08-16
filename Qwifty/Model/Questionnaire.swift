@@ -854,7 +854,16 @@ func fillData() {
 //            correctAnswerIndex: 1))
     
     //78
-    questionList.append(Question(questionTitle: "The class you inherit from is called", answers: ["Inheriting class or inheritor", "Subclass", "Superclass or parent class", "Swift does not support inheritance"], correctAnswerIndex: 2))
+//    questionList.append(Question(
+//        questionTitle: "The class you inherit from is called".localized(),
+//        answers: [
+//            "Inheriting class or inheritor".localized(),
+//            "Subclass".localized(),
+//            "Superclass or parent class".localized(),
+//            "Swift does not support inheritance".localized()
+//        ],
+//        correctAnswerIndex: 2))
+    
     //    //79
     //    questionList.append(Question(questionTitle: "Design pattern that ensures a class can have only one object is called...", answers: ["Singleclass", "Singleton", "Subclass", "Private"], correctAnswerIndex: 1))
     //    //80

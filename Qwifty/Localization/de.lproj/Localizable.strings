@@ -383,8 +383,13 @@
 "Swift does not support inheritance" = "Swift unterstützt keine Vererbung";
 
 //78
+"The class you inherit from is called" = "Die Klasse, von der Sie erben, heißt";
 
+"Inheriting class or inheritor" = "Vererbende Klasse oder Erbe";
+"Subclass" = "Unterklasse";
+"Superclass or parent class" = "Superklasse oder übergeordnete Klasse";
 
+//79
 
 
 
