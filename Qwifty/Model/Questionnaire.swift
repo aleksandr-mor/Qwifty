@@ -864,32 +864,141 @@ func fillData() {
 //        ],
 //        correctAnswerIndex: 2))
     
-    //    //79
-    //    questionList.append(Question(questionTitle: "Design pattern that ensures a class can have only one object is called...", answers: ["Singleclass", "Singleton", "Subclass", "Private"], correctAnswerIndex: 1))
-    //    //80
-    //    questionList.append(Question(questionTitle: "What is this code an example of?\n\nlet number = (Float)1", answers: ["Initialization", "Assignment", "Typecasting", "Syntax issue"], correctAnswerIndex: 3))
-    //    //81
-    //    questionList.append(Question(questionTitle: "What is the error in this code?\n\nlet number = 1\nguard number == 1 { return }", answers: ["Code is correct", "The guard is missing 'then'", "The guard is missing 'else'", "Comparison is wrong"], correctAnswerIndex: 2))
-    //    //82
-    //    questionList.append(Question(questionTitle: "Why is DispatchGroup used in certain situations?", answers: ["To run sync or async operations", "To track and control multiple operations", "To allow one operation to wait for another", "All of the above"], correctAnswerIndex: 3))
-    //    //83
-    //    questionList.append(Question(questionTitle: "What is this code an example of?\n\nnumber = 1\nprint('number = ＼(number)')", answers: ["String interpolation", "String compilation", "String encapsulation", "Method chaining"], correctAnswerIndex: 0))
-    //    //84
-    //    questionList.append(Question(questionTitle: "What is the value of b\n\nlet a = ['3', '5'].dropFirst()\nb = a[0]", answers: ["3", "5", "nil", "This code contains an error"], correctAnswerIndex: 3))
-    //    //85
-    //    questionList.append(Question(questionTitle: "What is the value of number in this code?\n\nvar number = 5 == 5", answers: ["5", "nil", "true", "This code contains an error"], correctAnswerIndex: 2))
-    //    //86
-    //    questionList.append(Question(questionTitle: "What is the value of a\n\nvar b: Int?\nlet a = b ?? 1", answers: ["1", "nil", "0", "This code contains an error"], correctAnswerIndex: 0))
-    //    //87
-    //    questionList.append(Question(questionTitle: "What is the type of this function?\n\nfunc sum(x: Int, y: Int) -> Int { return x+y }", answers: ["Int", "(Int, Int)", "(Int, Int) -> Int", "Functions don't have types"], correctAnswerIndex: 2))
-    //    //88
-    //    questionList.append(Question(questionTitle: "What is the correct way to call this function?\nfunc sum(_ x: Int, y: Int) -> Int {\nreturn x + y\n}", answers: ["sum(1, y: 2)", "sum(x: 1, y: 2)", "sum(1, 2)", "sum(x,y)"], correctAnswerIndex: 0))
-    //    //89
-    //    questionList.append(Question(questionTitle: "What is the type of number1?\n\nlet number1 = '＼('number1'.count)'", answers: ["Int", "String", "nil", "number1.count"], correctAnswerIndex: 1))
-    //    //90
-    //    questionList.append(Question(questionTitle: "What's wrong with this code?\nclass Developer {\nvar name: String\n}", answers: ["Developer has no superclass", "Developer has no initializers", "var name is not formatted correctly", "name is a keyword"], correctAnswerIndex: 1))
-    //    //91
-    //    questionList.append(Question(questionTitle: "What describes this line of code?\nlet number = 5", answers: ["a variable named number of type Int", "a constant named number of type Number", "a constant named number of type Int", "a variable named number of type Item"], correctAnswerIndex: 2))
+//    //79
+//    questionList.append(Question(
+//        questionTitle: "Design pattern that ensures a class can have only one object is called...".localized(),
+//        answers: [
+//            "Singleclass",
+//            "Singleton",
+//            "Subclass",
+//            "Private"
+//        ],
+//        correctAnswerIndex: 1))
+    
+//    //80
+//    questionList.append(Question(
+//        questionTitle: "What is this code an example of?\n\nlet number = (Float)1".localized(),
+//        answers: [
+//            "Initialization".localized(),
+//            "Assignment".localized(),
+//            "Typecasting",
+//            "Syntax issue".localized()
+//        ],
+//        correctAnswerIndex: 3))
+    
+//    //81
+//    questionList.append(Question(
+//        questionTitle: "What is the error in this code?\n\nlet number = 1\nguard number == 1 { return }".localized(),
+//        answers: [
+//            "Code is correct".localized(),
+//            "The guard is missing “then“".localized(),
+//            "The guard is missing “else“".localized(),
+//            "Comparison is wrong".localized()
+//        ],
+//        correctAnswerIndex: 2))
+    
+//    //82
+//    questionList.append(Question(
+//        questionTitle: "Why is DispatchGroup used in certain situations?".localized(),
+//        answers: [
+//            "To run sync or async operations".localized(),
+//            "To track and control multiple operations".localized(),
+//            "To allow one operation to wait for another".localized(),
+//            "All of the above".localized()
+//        ],
+//        correctAnswerIndex: 3))
+//
+//    //83
+//    questionList.append(Question(
+//        questionTitle: "What is this code an example of?\n\nnumber = 1\nprint(“number = ＼(number)“)".localized(),
+//        answers: [
+//            "String interpolation".localized(),
+//            "String compilation".localized(),
+//            "String encapsulation".localized(),
+//            "Method chaining".localized()
+//        ],
+//        correctAnswerIndex: 0))
+    
+//    //84
+//    questionList.append(Question(
+//        questionTitle:
+//            "What is the value of b\n\nlet a = [“3“, “5“].dropFirst()\nb = a[0]".localized(),
+//        answers: [
+//            "3",
+//            "5",
+//            "nil",
+//            "This code contains an error".localized()
+//        ],
+//        correctAnswerIndex: 3))
+//
+//    //85
+//    questionList.append(Question(
+//        questionTitle: "What is the value of number in this code?\n\nvar number = 5 == 5".localized(),
+//        answers: [
+//            "5",
+//            "nil",
+//            "true",
+//            "This code contains an error".localized()
+//        ],
+//        correctAnswerIndex: 2))
+    
+//    //86
+//    questionList.append(Question(
+//        questionTitle: "What is the value of a\n\nvar b: Int?\nlet a = b ?? 1".localized(),
+//        answers: [
+//            "1",
+//            "nil",
+//            "0",
+//            "This code contains an error".localized()
+//        ],
+//        correctAnswerIndex: 0))
+    
+//    //87
+//    questionList.append(Question(
+//        questionTitle: "What is the type of this function?\n\nfunc sum(x: Int, y: Int) -> Int { return x+y }".localized(),
+//        answers: [
+//            "Int",
+//            "(Int, Int)",
+//            "(Int, Int) -> Int",
+//            "Functions don't have types".localized()
+//        ],
+//        correctAnswerIndex: 2))
+    
+//    //88
+//    questionList.append(Question(
+//        questionTitle: "What is the correct way to call this function?\nfunc sum(_ x: Int, y: Int) -> Int {\nreturn x + y\n}".localized(),
+//        answers: [
+//            "sum(1, y: 2)",
+//            "sum(x: 1, y: 2)",
+//            "sum(1, 2)",
+//            "sum(x,y)"
+//        ],
+//        correctAnswerIndex: 0))
+    
+//    //89
+//    questionList.append(Question(
+//        questionTitle: "What is the type of number1?\n\nlet number1 = “＼(“number1“.count)“".localized(),
+//        answers: [
+//            "Int",
+//            "String",
+//            "nil",
+//            "number1.count"
+//        ],
+//        correctAnswerIndex: 1))
+    
+//    //90
+//    questionList.append(Question(
+//        questionTitle: "What's wrong with this code?\nclass Developer {\nvar name: String\n}".localized(),
+//        answers: [
+//            "Developer has no superclass".localized(),
+//            "Developer has no initializers".localized(),
+//            "var name is not formatted correctly".localized(),
+//            "name is a keyword".localized()
+//        ],
+//        correctAnswerIndex: 1))
+    
+        //91
+        questionList.append(Question(questionTitle: "What describes this line of code?\nlet number = 5", answers: ["a variable named number of type Int", "a constant named number of type Number", "a constant named number of type Int", "a variable named number of type Item"], correctAnswerIndex: 2))
     //    //92
     //    questionList.append(Question(questionTitle: "How can you avoid a strong reference cycle in a closure?", answers: ["Declare the closure variable as lazy", "Initialize the closure as read-only", "You can't", "Use a capture list to set weak or unowned"], correctAnswerIndex: 3))
     //    //93

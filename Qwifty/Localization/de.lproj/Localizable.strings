@@ -390,11 +390,69 @@
 "Superclass or parent class" = "Superklasse oder übergeordnete Klasse";
 
 //79
+"Design pattern that ensures a class can have only one object is called..." = "Ein Entwurfsmuster, das sicherstellt, dass eine Klasse nur ein Objekt haben kann, heißt...";
 
+//80
+"What is this code an example of?\n\nlet number = (Float)1" = "Für was ist dieser Code ein Beispiel?\n\nlet number = (Float)1";
 
+"Initialization" = "Initialisierung";
+"Assignment" = "Auftrag";
+"Syntax issue" = "Syntax-Problem";
 
+//81
+"What is the error in this code?\n\nlet number = 1\nguard number == 1 { return }" = "Was ist der Fehler in diesem Code?\n\nlet number = 1\nguard number == 1 { return }";
 
+"Code is correct" = "Code ist korrekt";
+"The guard is missing “then“" = "Dem guard fehlt das “then“";
+"The guard is missing “else“" = "Dem guard fehlt das “else“";
+"Comparison is wrong" = "Vergleich ist falsch";
 
+//82
+"Why is DispatchGroup used in certain situations?" = "Warum wird DispatchGroup in bestimmten Situationen verwendet?";
+
+"To run sync or async operations" = "So führen Sie synchrone oder asynchrone Vorgänge aus";
+"To track and control multiple operations" = "Verfolgung und Kontrolle mehrerer Vorgänge";
+"To allow one operation to wait for another" = "Damit ein Vorgang auf einen anderen warten kann";
+
+//83
+"What is this code an example of?\n\nnumber = 1\nprint(“number = ＼(number)“)" = "Für was ist dieser Code ein Beispiel?\n\nnumber = 1\nprint(“number = ＼(number)“)";
+
+"String interpolation" = "String-Interpolation";
+"String compilation" = "String-Kompilierung";
+"String encapsulation" = "String-Kapselung";
+"Method chaining" = "Methodenverkettung";
+
+//84
+"What is the value of b\n\nlet a = [“3“, “5“].dropFirst()\nb = a[0]" = "Was ist der Wert von b\n\nlet a = [“3“, “5“].dropFirst()\nb = a[0]";
+
+"This code contains an error" = "Dieser Code enthält einen Fehler";
+
+//85
+"What is the value of number in this code?\n\nvar number = 5 == 5" = "Wie hoch ist der Wert von number in diesem Code\n\nvar number = 5 == 5?";
+
+//86
+"What is the value of a\n\nvar b: Int?\nlet a = b ?? 1" = "Was ist der Wert von a\n\nvar b: Int?\nlet a = b ?? 1";
+
+//87
+"What is the type of this function?\n\nfunc sum(x: Int, y: Int) -> Int { return x+y }" = "Was ist der Typ dieser Funktion?\n\nfunc sum(x: Int, y: Int) -> Int { return x+y }";
+
+"Functions don't have types" = "Funktionen haben keine Typen";
+
+//88
+"What is the correct way to call this function?\nfunc sum(_ x: Int, y: Int) -> Int {\nreturn x + y\n}" = "Wie kann ich diese Funktion korrekt aufrufen?\nfunc sum(_ x: Int, y: Int) -> Int {\nreturn x + y\n}";
+
+//89
+"What is the type of number1?\n\nlet number1 = “＼(“number1“.count)“" = "Was ist der Typ von number1?\n\nlet number1 = “＼(“number1“.count)“";
+
+//90
+"What's wrong with this code?\nclass Developer {\nvar name: String\n}" = "Was ist an diesem Code falsch?\nclass Developer {\nvar name: String\n}";
+
+"Developer has no superclass" = "Developer hat keine Superklasse";
+"Developer has no initializers" = "Developer hat keine Initialisierungen";
+"var name is not formatted correctly" = "var name ist nicht korrekt formatiert";
+"name is a keyword" = "name ist ein Schlüsselwort";
+
+//91
 
 
 
