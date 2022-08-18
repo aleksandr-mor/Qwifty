@@ -453,9 +453,58 @@
 "name is a keyword" = "name ist ein Schlüsselwort";
 
 //91
+"What describes this line of code?\nlet number = 5" = "Was beschreibt diese Codezeile?\nlet number = 5";
 
+"a variable named number of type Int" = "eine Variable namens number vom Typ Int";
+"a constant named number of type Number" = "eine Konstante namens number vom Typ Number";
+"a constant named number of type Int" = "eine Konstante namens number vom Typ Int";
+"a variable named number of type Item" = "eine Variable namens number vom Typ Item";
 
+//92
+"How can you avoid a strong reference cycle in a closure?" = "Wie können Sie einen starken Referenzzyklus in einem Abschluss vermeiden?";
 
+"Declare the closure variable as lazy" = "Die Schließungsvariable als lazy deklarieren";
+"Initialize the closure as read-only" = "Initialisieren Sie die Schließung als read-only";
+"You can't" = "Sie können nicht";
+"Use a capture list to set weak or unowned" = "Weak oder unowned über eine Erfassungsliste einstellen";
+
+//93
+"Which code snippet correctly creates a typealias closure?" = "Welcher Codeschnipsel erzeugt korrekt eine Typealias-Schließung?";
+
+//94
+"How to reference class members from within a class?" = "Wie referenziert man Klassenmitglieder innerhalb einer Klasse?";
+
+//95
+"What is the correct way to add a value to this array?\n\nvar array = [3, 4, 5]" = "Wie fügt man diesem Array einen Wert hinzu?\n\nvar array = [3, 4, 5]";
+
+//96
+"What is the value of cpuVal after this code executes?\nlet cpu = (name: “M2“, val: 1)\nlet cpuVal = cpu.0" = "Welchen Wert hat cpuVal, nachdem dieser Code ausgeführt wurde?\nlet cpu = (name: “M2“, val: 1)\nlet cpuVal = cpu.0";
+
+//97
+"What is the superclass in this code?\nclass This: That {\n}" = "Was ist die Superklasse in diesem Code?\nclass This: That {\n}";
+
+"There is no superclass" = "Es gibt keine Superklasse";
+"The code is invalid" = "Der Code ist ungültig";
+
+//98
+"What must a convenience initializer call?" = "Was muss ein Convenience-Initializer aufrufen?";
+
+"Designated initializer" = "Designierter Initialisierer";
+"Superclass convenience initializer" = "Superklassen Convenience Initialisierer";
+"Designated or another convenience initializer" = "Designierter oder ein anderer bequemer Initialisierer";
+
+//99
+"What is the inferred type of a?\n\na = [“x“, “y“, “z“]" = "Was ist der abgeleitete Typ von a\n\na = [“x“, “y“, “z“]";
+
+//100
+"How to designate a failable initializer?" = "Wie kann man einen fehlerhaften Initialisierer bezeichnen?";
+
+//101
+"In the function below, what are “first“ and “second“ examples of?\nsum(first x: Int, second y: Int) -> {}" = "Wofür stehen in der nachstehenden Funktion “first“ und “second“ Beispiele?\nsum(first x: Int, second y: Int) -> {}";
+
+"Local terms" = "Lokale Begriffe";
+"Argument labels" = "Argument Etiketten";
+"Parameters names" = "Parameter Namen";
 
 //Restart
 "Start a new game!" = "Beginnen Sie ein neues Spiel!";

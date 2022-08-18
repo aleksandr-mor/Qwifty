@@ -997,27 +997,125 @@ func fillData() {
 //        ],
 //        correctAnswerIndex: 1))
     
-        //91
-        questionList.append(Question(questionTitle: "What describes this line of code?\nlet number = 5", answers: ["a variable named number of type Int", "a constant named number of type Number", "a constant named number of type Int", "a variable named number of type Item"], correctAnswerIndex: 2))
-    //    //92
-    //    questionList.append(Question(questionTitle: "How can you avoid a strong reference cycle in a closure?", answers: ["Declare the closure variable as lazy", "Initialize the closure as read-only", "You can't", "Use a capture list to set weak or unowned"], correctAnswerIndex: 3))
-    //    //93
-    //    questionList.append(Question(questionTitle: "Which code snippet correctly creates a typealias closure?", answers: ["typealias Closure: () -> ()", "typealias Closure { () -> () }", "typealias Closure -> () -> ()", "typealias Closure -> () {}"], correctAnswerIndex: 0))
-    //    //94
-    //    questionList.append(Question(questionTitle: "How to reference class members from within a class?", answers: ["class", "init", "self", "instance"], correctAnswerIndex: 2))
-    //    //95
-    //    questionList.append(Question(questionTitle: "What is the correct way to add a value to this array?\n\nvar array = [3, 4, 5]", answers: ["array.append(6)", "array.insert(6, at: 1)", "array += [6]", "All of the above"], correctAnswerIndex: 3))
-    //    //96
-    //    questionList.append(Question(questionTitle: "What is the value of cpuVal after this code executes?\nlet cpu = (name: 'M2', val: 1)\nlet cpuVal = cpu.0", answers: ["name", "1", "M2", "nil"], correctAnswerIndex: 2))
-    //    //97
-    //    questionList.append(Question(questionTitle: "What is the superclass in this code?\n\nclass This: That {\n}", answers: ["This", "That", "There is no superclass", "The code is invalid"], correctAnswerIndex: 1))
-    //    //98
-    //    questionList.append(Question(questionTitle: "What must a convenience initializer call?", answers: ["Designated initializer", "Superclass convenience initializer", "Designated or another convenience initializer", "All of the above"], correctAnswerIndex: 0))
-    //    //99
-    //    questionList.append(Question(questionTitle: "What is the inferred type of a?\n\na = ['x', 'y', 'z']", answers: ["Array<Character>", "Set<String>", "String[]", "Array<String>"], correctAnswerIndex: 3))
-    //    //100
-    //    questionList.append(Question(questionTitle: "How to designate a failable initializer?", answers: ["init", "init?", "You can't", "deinit"], correctAnswerIndex: 1))
-    //    //101
-    //    questionList.append(Question(questionTitle: "In the function below, what are first and second examples of?\n\nsum(first x: Int, second y: Int) -> {}", answers: ["Local terms", "Argument labels", "Parameters names", "The code is invalid"], correctAnswerIndex: 1))
+//    //91
+//    questionList.append(Question(
+//        questionTitle: "What describes this line of code?\nlet number = 5".localized(),
+//        answers: [
+//            "a variable named number of type Int".localized(),
+//            "a constant named number of type Number".localized(),
+//            "a constant named number of type Int".localized(),
+//            "a variable named number of type Item".localized()
+//        ],
+//        correctAnswerIndex: 2))
+  
+//    //92
+//    questionList.append(Question(
+//        questionTitle: "How can you avoid a strong reference cycle in a closure?".localized(),
+//        answers: [
+//            "Declare the closure variable as lazy".localized(),
+//            "Initialize the closure as read-only".localized(),
+//            "You can't".localized(),
+//            "Use a capture list to set weak or unowned".localized()
+//        ],
+//        correctAnswerIndex: 3))
+    
+//    //93
+//    questionList.append(Question(
+//        questionTitle: "Which code snippet correctly creates a typealias closure?".localized(),
+//        answers: [
+//            "typealias Closure: () -> ()",
+//            "typealias Closure { () -> () }",
+//            "typealias Closure -> () -> ()",
+//            "typealias Closure -> () {}"
+//        ],
+//        correctAnswerIndex: 0))
+    
+//    //94
+//    questionList.append(Question(
+//        questionTitle: "How to reference class members from within a class?".localized(),
+//        answers: [
+//            "class",
+//            "init",
+//            "self",
+//            "instance"
+//        ],
+//        correctAnswerIndex: 2))
+    
+//    //95
+//    questionList.append(Question(
+//        questionTitle: "What is the correct way to add a value to this array?\n\nvar array = [3, 4, 5]".localized(),
+//        answers: [
+//            "array.append(6)",
+//            "array.insert(6, at: 1)",
+//            "array += [6]",
+//            "All of the above".localized()
+//        ],
+//        correctAnswerIndex: 3))
+    
+//    //96
+//    questionList.append(Question(
+//        questionTitle: "What is the value of cpuVal after this code executes?\nlet cpu = (name: “M2“, val: 1)\nlet cpuVal = cpu.0".localized(),
+//        answers: [
+//            "name",
+//            "1",
+//            "M2",
+//            "nil"
+//        ],
+//        correctAnswerIndex: 2))
+    
+//    //97
+//    questionList.append(Question(
+//        questionTitle: "What is the superclass in this code?\nclass This: That {\n}".localized(),
+//        answers: [
+//            "This",
+//            "That",
+//            "There is no superclass".localized(),
+//            "The code is invalid".localized()
+//        ],
+//        correctAnswerIndex: 1))
+    
+//    //98
+//    questionList.append(Question(
+//        questionTitle: "What must a convenience initializer call?".localized(),
+//        answers: [
+//            "Designated initializer".localized(),
+//            "Superclass convenience initializer".localized(),
+//            "Designated or another convenience initializer".localized(),
+//            "All of the above".localized()
+//        ],
+//        correctAnswerIndex: 0))
+    
+//    //99
+//    questionList.append(Question(
+//        questionTitle: "What is the inferred type of a?\n\na = [“x“, “y“, “z“]".localized(),
+//        answers: [
+//            "Array<Character>",
+//            "Set<String>",
+//            "String[]",
+//            "Array<String>"
+//        ],
+//        correctAnswerIndex: 3))
+    
+//    //100
+//    questionList.append(Question(
+//        questionTitle: "How to designate a failable initializer?".localized(),
+//        answers: [
+//            "init",
+//            "init?",
+//            "You can't".localized(),
+//            "deinit"
+//        ],
+//        correctAnswerIndex: 1))
+    
+    //101
+    questionList.append(Question(
+        questionTitle:
+            "In the function below, what are “first“ and “second“ examples of?\nsum(first x: Int, second y: Int) -> {}".localized(),
+        answers: [
+            "Local terms".localized(),
+            "Argument labels".localized(),
+            "Parameters names".localized(),
+            "The code is invalid".localized()
+        ], correctAnswerIndex: 1))
 }
 
