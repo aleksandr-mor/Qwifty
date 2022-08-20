@@ -163,10 +163,8 @@ class QuizViewController: UIViewController {
             thirdChoiceButton.setTitle(choices[2], for: .normal)
             fourthChoiceButton.setTitle(choices[3], for: .normal)
             if (score.numberOfQuestionsAsked() == numberOfQuestionPerRound - 1) {
-//                nextButton.setTitle("END QUIZ", for: .normal)
                 nextButton.isEnabled = false
             } else {
-//                nextButton.setTitle("NEXT", for: .normal)
                 nextButton.titleLabel?.font = UIFont.systemFont(ofSize: 17, weight: .bold)
             }
         }
