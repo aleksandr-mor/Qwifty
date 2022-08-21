@@ -12,7 +12,7 @@ var questionList = [Question]()
 
 //MARK: - Questions
 func fillData() {
-    
+
     //1
     questionList.append(Question(
         questionTitle: "What is the default data type for floating point numbers in Swift?".localized(),
@@ -199,7 +199,7 @@ func fillData() {
             "All answers are correct".localized()
         ],
         correctAnswerIndex: 3))
-    
+
     // 18
     questionList.append(Question(
         questionTitle: "What is LLVM?".localized(),
@@ -265,7 +265,7 @@ func fillData() {
             "When it executed before function returns".localized()
         ],
         correctAnswerIndex: 2))
-    
+
     //24
     questionList.append(Question(
         questionTitle: "What are the collection types in Swift?".localized(),
@@ -537,7 +537,7 @@ func fillData() {
             "extractMap"
         ],
         correctAnswerIndex: 0))
-    
+
     //49
     questionList.append(Question(
         questionTitle: "Which is the feature of tuple in Swift?".localized(),
@@ -570,7 +570,7 @@ func fillData() {
             "string.reversed()"
         ],
         correctAnswerIndex: 3))
-    
+
     //52
     questionList.append(Question(
         questionTitle: "How to declare an Iboutlet property?".localized(),

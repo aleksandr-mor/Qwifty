@@ -21,7 +21,7 @@
 "Computed Properties" = "Berechnete Eigenschaften";
 "Delayed Properties" = "Verzögerte Eigenschaften";
 "Stored Properties" = "Gespeicherte Eigenschaften";
-"Lazy Stored Properties" = "Faule gespeicherte Eigenschaften";
+"Lazy Stored Properties" = "Faul gespeicherte Eigenschaften";
 
 //6
 "What is the significance of “?” in Swift?" = "Was bedeutet das “?” in Swift?";
@@ -29,7 +29,7 @@
 "It is used to force unwrap the variable" = "Es wird verwendet, um die Variable zwangsweise zu entpacken";
 "It makes a property optional" = "Es macht eine Eigenschaft optional";
 "It returns first none nil value" = "Es gibt zunächst keinen Nullwert zurück";
-"It is used to replace the external label" = "Es gibt zunächst keinen Nullwert zurück";
+"It is used to replace the external label" = "Es wird verwendet, um das externe Etikett zu ersetzen";
 
 //7
 "Choose the correct statement" = "Wählen Sie die richtige Aussage";
@@ -150,7 +150,7 @@
 //26
 "What are the common execution states in iOS?" = "Was sind die üblichen Ausführungszustände in iOS?";
 
-"Not running" = "Nicht rennen";
+"Not running" = "Nicht rennend";
 "Inactive" = "Inaktiv";
 "Active" = "Aktiv";
 "All of the above" = "Alle oben genannten";
@@ -200,7 +200,7 @@
 "Choose the correct statement" = "Wählen Sie die richtige Aussage";
 
 //40
-"The supported architecture for round, ceil and floor is/are…" = "Die unterstützte Architektur für round, ceil und floor ist/sind...";
+"The supported architecture for round, ceil and floor is/are…" = "Die unterstützte Architektur für rund, aufgerundet und abgerundet ist/sind...";
 
 "32 bit" = "32 Bit";
 "64 bit" = "64 Bit";
